@@ -1,0 +1,53 @@
+#! /bin/sh
+
+#---------------------------------Workspace---------------------------------
+bspc monitor -d      
+#---------------------------------------------------------------------------
+
+
+#----------------------------------Bordas-----------------------------------
+bspc config border_width         0
+bspc config window_gap           4
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
+#---------------------------------------------------------------------------
+
+
+#---------------------------------Wallpaper---------------------------------
+nitrogen --restore
+#---------------------------------------------------------------------------
+
+
+#--------------------------------Window Rules-------------------------------
+bspc rule -a Google-chrome desktop='^1'
+bspc rule -a Chromium desktop='^1'
+bspc rule -a Thunar desktop='^3'
+bspc rule -a Ranger desktop='^3'
+bspc rule -a Termite desktop='^2'
+bspc rule -a Subl3 desktop='^5'
+bspc rule -a Vim desktop='^5'
+bspc rule -a jetbrains-pycharm-ce desktop='^5'
+bspc rule -a Code desktop='^5'
+bspc rule -a TelegramDesktop desktop='^4'
+bspc rule -a whats-app-nativefier-7bbd2c desktop='^4'
+bspc rule -a Oblogout state=fullscreen
+bspc rule -a gpick state=floating
+bspc rule -a Spotify desktop='^6'
+bspc rule -a vlc desktop='^6'
+bspc rule -a NCMPCPP='^6'
+#bspc rule -a Transmisson-gtk state=floating
+#bspc rule -a Termite state=floating
+#---------------------------------------------------------------------------
+
+
+#-------------------------------Inicialização-------------------------------
+sxhkd &
+mpd &
+compton &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+~/.config/polybar/launch.sh &
+#setxkbmap -model abnt2 -layout br &
+#---------------------------------------------------------------------------

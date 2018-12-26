@@ -10,19 +10,26 @@ XF86AudioRaiseVolume
 XF86AudioLowerVolume
 	amixer set Master 5%-
 
+# NCMPCPP Keys
+shift + XF86AudioNext
+	mpc next
+shift + XF86AudioStop
+	mpc stop
+shift + XF86AudioPlay
+	mpc toggle
+shift + XF86AudioPrev
+	mpc prev
+
 # Media Keys
 XF86AudioNext
-#	playerctl next
-	mpc next
+	playerctl next
 XF86AudioStop
-#	playerctl pause
-	mpc stop
+	playerctl pause
 XF86AudioPlay
-#	playerctl play-pause
-	mpc toggle
+	playerctl play-pause
 XF86AudioPrev
-#	playerctl previous
-	mpc prev
+	playerctl previous
+
 
 # Emulador de terminal
 super + Return

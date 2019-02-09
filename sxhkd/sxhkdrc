@@ -46,7 +46,7 @@ control + shift + Escape
 
 # Rofi
 super + d
-	rofi -show drun
+	rofi -show drun -show-icons -location 1
 
 	
 # Explorador de Arquivos
@@ -63,18 +63,29 @@ super + F1
 super + F2
 	subl3
 
-#Vim
+# Vim
 super + F4
 	termite --exec=nvim --class=Vim
 
-#VScode
+# VScode
 super + F5
 	code
 
+# NetBeans
+super + F6
+	netbeans
+
 # Screenshot
 Print
-	scrot 'Screenshot_%Y-%m-%d_%H-%M-%S.png' -e 'mv $f ~/Imagens/Screenshots/'
+	flameshot full -p /home/fhilipe/Imagens/Screenshots/
+#	scrot 'Screenshot_%Y-%m-%d_%H-%M-%S.png' -e 'mv $f ~/Imagens/Screenshots/'
 #	maim ~/Imagens/$(date +%s).png
+
+shift + Print
+	flameshot gui
+
+control + Print
+	flameshot full -d 3000 -p /home/fhilipe/Imagens/Screenshots/
 
 # NCMPCPP
 super + F3

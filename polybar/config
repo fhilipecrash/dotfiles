@@ -9,27 +9,27 @@
 
 [colors]
 #background = ${xrdb:color0:#222}
-background = #FFF
+background = #281759
 background-alt = #0003
 ;foreground = ${xrdb:color7:#222}
-foreground = #000
+foreground = #FF217C
 foreground-alt = #929292
-primary = #000
+primary = #FF217C
 secondary = #e60053
 alert = #bd2c40
 
 [bar/baixo]
 monitor = ${env:MONITOR:VGA-1}
-width = 99.4%
+width = 99.5%
 height = 24
-offset-x = 0.3%
-offset-y = 0.7%
+offset-x = 0.2%
+offset-y = 0.4%
 radius = 7.0
 fixed-center = true
 bottom = true
 
-background = #000
-foreground = #FFF
+background = ${colors.background}
+foreground = ${colors.foreground}
 
 line-size = 2
 line-color = #f00
@@ -43,16 +43,14 @@ padding-right = 1
 module-margin-left = 0
 module-margin-right = 2
 
-font-0 = Misc Tamsyn:pixelsize=7;1
-#font-0 = nu:pixelsize=7;1
-#font-0 = OCR A Extended:pixelsize=7;1
-#font-0 = PF Tempesta Five Condensed:pixelsize=7;1
+#font-0 = Misc Tamsyn:pixelsize=7;1
+font-0 = artwiz nu.se:pixelsize=10;0
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 font-3 = FontAwesome:size=10;1
 font-4 = 3270 Medium Nerd Font:size=10;1
 
-modules-left = mpd
+modules-left = powermenu mpd
 modules-center = 
 modules-right = cpu memory root home
 
@@ -75,10 +73,10 @@ scroll-down = i3wm-wsprev
 
 [bar/cima]
 monitor = ${env:MONITOR:VGA-1}
-width = 99.4%
+width = 99.5%
 height = 24
-offset-x = 0.3%
-offset-y = 0.7%
+offset-x = 0.2%
+offset-y = 0.4%
 radius = 7.0
 fixed-center = true
 bottom = false
@@ -98,7 +96,8 @@ padding-right = 1
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = Misc Tamsyn:pixelsize=10;1
+#font-0 = Misc Tamsyn:pixelsize=10;1
+font-0 = artwiz nu.se:pixelsize=10;0
 #font-0 = nu:pixelsize=7;1
 #font-0 = OCR A Extended:pixelsize=7;1
 #font-0 = PF Tempesta Five Condensed:pixelsize=7;1
@@ -107,9 +106,9 @@ font-2 = siji:pixelsize=10;1
 font-3 = FontAwesome:size=11;1
 font-4 = 3270Medium Nerd Font:size=10;1
 
-modules-left = i3 bspwm 
+modules-left = bspwm i3 
 modules-center = xwindow
-modules-right = updates eth wlan volume date clock
+modules-right = updates eth volume date clock
 
 #tray-detached = false
 #tray-position = right
@@ -183,7 +182,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F${colors.foreground}Root%{F-}: %used% / %total%
+label-mounted =    %{F${colors.foreground}Root%{F-}: %used% / %total%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -219,10 +218,10 @@ label-empty-padding = 2
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
-index-sort = false
+index-sort = true
 wrapping-scroll = false
 enable-click = true
-strip-wsnumbers = true
+strip-wsnumbers = false
 
 ; Only show workspaces on the same output as the bar
 pin-workspaces = true
@@ -270,22 +269,22 @@ icon-next = 
 icon-random = 
 icon-repeat = 
 
-icon-play-foreground = #FFF
-icon-pause-foreground = #FFF
-icon-stop-foreground = #FFF
-icon-prev-foreground = #FFF
-icon-next-foreground = #FFF
-icon-random-foreground = #FFF
-icon-repeat-foreground = #FFF
-bar-progress-fill-foreground = #FFF
-bar-progress-empty-foreground = #FFF
-bar-progress-indicator-foreground = #FFF
+icon-play-foreground = #FF217C
+icon-pause-foreground = #FF217C
+icon-stop-foreground = #FF217C
+icon-prev-foreground = #FF217C
+icon-next-foreground = #FF217C
+icon-random-foreground = #FF217C
+icon-repeat-foreground = #FF217C
+bar-progress-fill-foreground = #FF217C
+bar-progress-empty-foreground = #FF217C
+bar-progress-indicator-foreground = #FF217C
 bar-progress-indicator = 
 bar-progress-fill = ─
 bar-progress-empty = ─
 bar-progress-width = 10
-label-song-maxlen = 100
-label-song-ellipsis = false
+label-song-maxlen = 50
+label-song-ellipsis = true
 
 [module/xbacklight]
 type = internal/xbacklight
@@ -313,7 +312,7 @@ card = intel_backlight
 type = internal/cpu
 interval = 2
 format-prefix = " "
-format-prefix-foreground = #FFF
+format-prefix-foreground = #FF217C
 #format-underline = #E5680C
 label = %percentage%%
 
@@ -321,7 +320,7 @@ label = %percentage%%
 type = internal/memory
 interval = 2
 format-prefix = " "
-format-prefix-foreground = #FFF
+format-prefix-foreground = #FF217C
 #format-underline = #E3E90C
 label = %percentage_used%%
 
@@ -334,7 +333,7 @@ format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
 label-connected = %essid%
 
-format-disconnected =
+format-disconnected = "Disconnected"
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
@@ -352,7 +351,7 @@ type = internal/network
 interface = enp0s3
 interval = 3.0
 
-#format-connected-underline = #55aa55
+format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
@@ -395,7 +394,7 @@ label-volume = 
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = ""
-format-muted-foreground = #FFFFFF
+format-muted-foreground = ${root.foreground}
 label-muted = " Mudo "
 
 bar-volume-width = 10
@@ -436,7 +435,7 @@ ramp-foreground = #FFFFFF
 
 [module/powermenu]
 type = custom/script
-label = "   "
+label = "Power"
 #exec = oblogout
 
 [module/weather]
@@ -450,7 +449,7 @@ type = custom/script
 interval = 600
 format = <label>
 label = "  %output:0:30%  "
-#exec = "~/.config/polybar/updates.sh"
+exec = "~/.config/polybar/updates.sh"
 #format-underline = #C02A4C
 
 [modules/sys]

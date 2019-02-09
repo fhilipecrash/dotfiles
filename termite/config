@@ -9,8 +9,8 @@ cursor_shape = block
 dynamic_title = true
 filter_unmatched_urls = true
 font = monofur for Powerline 12
-#font = Monospace 12
-geometry = 680x500
+#font = beastie terminus14 10
+geometry = 800x600
 highlight = #2f2f2f
 icon_name = terminal
 modify_other_keys = false
@@ -56,7 +56,7 @@ cursor          = #f8f8f2
 #background      = #282a36
 
 # black
-color0  = #000000
+color0  = #281759
 color8  = #79A9FF
 
 # red
@@ -68,11 +68,11 @@ color2  = #50fa7b
 color10 = #5af78e
 
 # yellow
-color3  = #f1fa8c
+color3  = #ffffff
 color11 = #f4f99d
 
 # blue
-color4  = #6790EB
+color4  = #FF217C
 color12 = #79A9FF
 
 # magenta

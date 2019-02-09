@@ -1,0 +1,6 @@
+# www.jirrezdex.com
+# contato@jirrezdex.com
+# Jirrez Matheus
+
+################ Arquivo para execução do Rofi
+rofi.theme: .config/rofi/rofi.rasi

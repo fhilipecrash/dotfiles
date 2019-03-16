@@ -107,7 +107,7 @@ font-4 = 3270Medium Nerd Font:size=10;1
 
 modules-left = bspwm i3 
 modules-center = xwindow
-modules-right = eth volume date clock
+modules-right = updates-pacman updates-aur eth volume date clock
 
 #tray-detached = false
 #tray-position = right
@@ -365,10 +365,10 @@ format-prefix-foreground = ${colors.foreground}
 type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
-label-volume = 
+label-volume = "  "
 label-volume-foreground = ${root.foreground}
 
-format-muted-prefix = ""
+format-muted-prefix = "  "
 format-muted-foreground = ${root.foreground}
 label-muted = " Mudo "
 
@@ -389,18 +389,17 @@ bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
-[module/powermenu]
-type = custom/script
-label = "Power"
-#exec = oblogout
-
-[module/updates]
+[module/updates-pacman]
 type = custom/script
 interval = 600
-format = <label>
-label = "  %output:0:30%  "
-exec = "~/.config/polybar/updates.sh"
-#format-underline = #C02A4C
+format-prefix = " "
+exec = "pacman -Qum | wc -l"
+
+[module/updates-aur]
+type = custom/script
+interval = 600
+format-prefix = "  AUR "
+exec = "yay -Qum 2> /dev/null | wc -l"
 
 [settings]
 screenchange-reload = true

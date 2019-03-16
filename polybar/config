@@ -398,7 +398,7 @@ exec = "checkupdates 2> /dev/null | wc -l"
 [module/updates-aur]
 type = custom/script
 interval = 600
-format-prefix = "  AUR "
+format-prefix = " | AUR "
 exec = "yay -Qum 2> /dev/null | wc -l"
 
 [settings]

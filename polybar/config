@@ -38,7 +38,7 @@ padding-left = 1
 padding-right = 1
 
 module-margin-left = 0
-module-margin-right = 2
+module-margin-right = 0
 
 #font-0 = Misc Tamsyn:pixelsize=7;1
 #font-0 = artwiz nu.se:pixelsize=10;0
@@ -50,12 +50,12 @@ font-4 = 3270 Medium Nerd Font:size=10;1
 
 modules-left = powermenu mpd
 modules-center = 
-modules-right = cpu memory home
+modules-right = updates-pacman updates-aur eth volume date clock
 
-tray-detached = false
-tray-position = right
-tray-padding = 1
-tray-transparent = false
+#tray-detached = false
+#tray-position = right
+#tray-padding = 1
+#tray-transparent = false
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
@@ -107,12 +107,12 @@ font-4 = 3270Medium Nerd Font:size=10;1
 
 modules-left = bspwm i3 
 modules-center = xwindow
-modules-right = updates-pacman updates-aur eth volume date clock
+modules-right = cpu memory home
 
-#tray-detached = false
-#tray-position = right
-#tray-padding = 1
-#tray-transparent = false
+tray-detached = false
+tray-position = right
+tray-padding = 1
+tray-transparent = false
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
@@ -163,7 +163,7 @@ interval = 25
 
 mount-0 = /home
 
-label-mounted = %{F${colors.foreground}| Home%{F-}: %used% / %total%
+label-mounted = %{F${colors.foreground} | Home%{F-}: %used% / %total%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -294,7 +294,7 @@ label = %percentage%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "| RAM: "
+format-prefix = " | RAM: "
 format-prefix-foreground = ${colors.foreground}
 #format-underline = #E3E90C
 label = %percentage_used%%

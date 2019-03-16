@@ -3,4 +3,5 @@
 # Jirrez Matheus
 
 ################ Arquivo para execução do Rofi
-rofi.theme: .config/rofi/rofi.rasi
+#rofi.theme: .config/rofi/rofi.rasi
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi

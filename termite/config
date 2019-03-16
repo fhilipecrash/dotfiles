@@ -8,8 +8,10 @@ cursor_blink = system
 cursor_shape = block
 dynamic_title = true
 filter_unmatched_urls = true
-font = monofur for Powerline 12
+#font = monofur for Powerline 12
+font = xos4 Terminess Powerline 12
 #font = beastie terminus14 10
+#font = artwiz nu.se 9
 geometry = 800x600
 highlight = #2f2f2f
 icon_name = terminal
@@ -47,7 +49,7 @@ urgent_on_bell = true
 [colors]
 # https://critical.ch/xterm/
 #dracula theme adapted by Erik Dubois
-background = rgba(40, 42, 54, 0.8)
+background = rgba(40, 40, 40, 0.7)
 
 # special
 foreground      = #f8f8f2

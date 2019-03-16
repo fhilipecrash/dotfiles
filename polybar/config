@@ -8,15 +8,12 @@
 ;=====================================================
 
 [colors]
-#background = ${xrdb:color0:#222}
-background = #281759
-background-alt = #0003
-;foreground = ${xrdb:color7:#222}
-foreground = #FF217C
-foreground-alt = #929292
-primary = #FF217C
-secondary = #e60053
-alert = #bd2c40
+background = ${xrdb:color0:#222}
+foreground = ${xrdb:color7:#222}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
 
 [bar/baixo]
 monitor = ${env:MONITOR:VGA-1}
@@ -44,7 +41,8 @@ module-margin-left = 0
 module-margin-right = 2
 
 #font-0 = Misc Tamsyn:pixelsize=7;1
-font-0 = artwiz nu.se:pixelsize=10;0
+#font-0 = artwiz nu.se:pixelsize=10;0
+font-0 = xos4 Terminess Powerline:pixelsize=10;0
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 font-3 = FontAwesome:size=10;1
@@ -52,7 +50,7 @@ font-4 = 3270 Medium Nerd Font:size=10;1
 
 modules-left = powermenu mpd
 modules-center = 
-modules-right = cpu memory root home
+modules-right = cpu memory home
 
 tray-detached = false
 tray-position = right
@@ -97,7 +95,8 @@ module-margin-left = 0
 module-margin-right = 0
 
 #font-0 = Misc Tamsyn:pixelsize=10;1
-font-0 = artwiz nu.se:pixelsize=10;0
+#font-0 = artwiz nu.se:pixelsize=10;0
+font-0 = xos4 Terminess Powerline:pixelsize=10;0
 #font-0 = nu:pixelsize=7;1
 #font-0 = OCR A Extended:pixelsize=7;1
 #font-0 = PF Tempesta Five Condensed:pixelsize=7;1
@@ -108,7 +107,7 @@ font-4 = 3270Medium Nerd Font:size=10;1
 
 modules-left = bspwm i3 
 modules-center = xwindow
-modules-right = updates eth volume date clock
+modules-right = eth volume date clock
 
 #tray-detached = false
 #tray-position = right
@@ -130,23 +129,6 @@ scroll-down = i3wm-wsprev
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:80:...%
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-blacklist-1 = caps lock
-
-format-prefix = "  "
-format-prefix-foreground = ${colors.foreground}
-#format-prefix-underline = #72D5A3
-
-label-layout = %layout%
-#label-layout-underline = #72D5A3
-
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
 
 [module/battery]
 type = internal/battery
@@ -175,24 +157,13 @@ animation-charging-2 = 
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-
-[module/root]
-type = internal/fs
-interval = 25
-
-mount-0 = /
-
-label-mounted =    %{F${colors.foreground}Root%{F-}: %used% / %total%
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
-
 [module/home]
 type = internal/fs
 interval = 25
 
 mount-0 = /home
 
-label-mounted = %{F${colors.foreground}Home%{F-}: %used% / %total%
+label-mounted = %{F${colors.foreground}| Home%{F-}: %used% / %total%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -200,7 +171,7 @@ label-unmounted-foreground = ${colors.foreground-alt}
 type = internal/bspwm
 
 label-focused = %name%
-label-focused-background = ${colors.background-alt}
+label-focused-background = ${colors.background}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
@@ -212,8 +183,12 @@ label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
 label-empty = %name%
-label-empty-foreground = ${colors.foreground-alt}
+#label-empty-foreground = ${colors.foreground}
+label-empty-foreground = #474D42
 label-empty-padding = 2
+
+; Separator in between workspaces
+; label-separator = |
 
 [module/i3]
 type = internal/i3
@@ -269,16 +244,16 @@ icon-next = 
 icon-random = 
 icon-repeat = 
 
-icon-play-foreground = #FF217C
-icon-pause-foreground = #FF217C
-icon-stop-foreground = #FF217C
-icon-prev-foreground = #FF217C
-icon-next-foreground = #FF217C
-icon-random-foreground = #FF217C
-icon-repeat-foreground = #FF217C
-bar-progress-fill-foreground = #FF217C
-bar-progress-empty-foreground = #FF217C
-bar-progress-indicator-foreground = #FF217C
+icon-play-foreground = ${colors.foreground}
+icon-pause-foreground = ${colors.foreground}
+icon-stop-foreground = ${colors.foreground}
+icon-prev-foreground = ${colors.foreground}
+icon-next-foreground = ${colors.foreground}
+icon-random-foreground = ${colors.foreground}
+icon-repeat-foreground = ${colors.foreground}
+bar-progress-fill-foreground = ${colors.foreground}
+bar-progress-empty-foreground = ${colors.foreground}
+bar-progress-indicator-foreground = ${colors.foreground}
 bar-progress-indicator = 
 bar-progress-fill = ─
 bar-progress-empty = ─
@@ -311,16 +286,16 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
-format-prefix-foreground = #FF217C
+format-prefix = "CPU: "
+format-prefix-foreground = ${colors.foreground}
 #format-underline = #E5680C
 label = %percentage%%
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
-format-prefix-foreground = #FF217C
+format-prefix = "| RAM: "
+format-prefix-foreground = ${colors.foreground}
 #format-underline = #E3E90C
 label = %percentage_used%%
 
@@ -387,7 +362,7 @@ format-prefix-foreground = ${colors.foreground}
 #format-underline = #0a6cf5
 
 [module/volume]
-type = internal/volume
+type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
 label-volume = 
@@ -414,35 +389,10 @@ bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
-[module/temperature]
-type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
-
-format = <ramp> <label>
-format-underline = #f50a4d
-format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
-
-label = %temperature%
-label-warn = %temperature%
-label-warn-foreground = ${colors.secondary}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = #FFFFFF
-
 [module/powermenu]
 type = custom/script
 label = "Power"
 #exec = oblogout
-
-[module/weather]
-type = custom/script
-exec = ~/.config/polybar/weather.py
-interval = 300
-label = "%output:0:30%"
 
 [module/updates]
 type = custom/script
@@ -452,12 +402,6 @@ label = "  %output:0:30%  "
 exec = "~/.config/polybar/updates.sh"
 #format-underline = #C02A4C
 
-[modules/sys]
-type=custom/script
-label = arch
-format = <label>
-exec = echo -e ArchMerge
-
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
@@ -466,7 +410,7 @@ screenchange-reload = true
 ;compositing-border = over
 
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+margin-top = 2
+margin-bottom = 2
 
-vim:ft=dosini
+;vim:ft=dosini

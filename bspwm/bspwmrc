@@ -16,7 +16,7 @@ bspc config focus_follows_pointer true
 
 
 #---------------------------------Wallpaper---------------------------------
-nitrogen --restore
+#nitrogen --restore
 #---------------------------------------------------------------------------
 
 
@@ -24,6 +24,7 @@ nitrogen --restore
 bspc rule -a Google-chrome desktop='^1'
 bspc rule -a Chromium desktop='^1'
 bspc rule -a Thunar desktop='^3'
+bspc rule -a Nemo desktop='^3'
 bspc rule -a Ranger desktop='^3'
 bspc rule -a Termite desktop='^2'
 bspc rule -a Subl3 desktop='^5'
@@ -51,5 +52,6 @@ compton &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 ~/.config/polybar/launch.sh &
 flameshot &
-mpDris2 &
+wal -R &
+python2 /usr/bin/mpDris2 &
 #---------------------------------------------------------------------------

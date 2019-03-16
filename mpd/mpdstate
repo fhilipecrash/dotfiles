@@ -1,17 +1,335 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
-state: play
-current: 1
-time: 4.120000
-random: 0
-repeat: 0
+state: pause
+current: 222
+time: 21.951000
+random: 1
+repeat: 1
 single: 0
 consume: 0
 crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:J-Rock/[YumeOST] DOWN BY LAW.mp3
-1:J-Rock/[YumeOST] MADKID - Rise.mp3
+0:Rock/A7x/Avenged Sevenfold/01. Critical Acclaim.mp3
+1:Rock/A7x/Avenged Sevenfold/02. Almost Easy.mp3
+2:Rock/A7x/Avenged Sevenfold/03. Scream.mp3
+3:Rock/A7x/Avenged Sevenfold/04. Afterlife.mp3
+4:Rock/A7x/Avenged Sevenfold/05. Gunslinger.mp3
+5:Rock/A7x/Avenged Sevenfold/06. Unbound (The Wild Ride).mp3
+6:Rock/A7x/Avenged Sevenfold/07. Brompton Cocktail.mp3
+7:Rock/A7x/Avenged Sevenfold/08. Lost.mp3
+8:Rock/A7x/Avenged Sevenfold/09. A Little Piece Of Heaven.mp3
+9:Rock/A7x/Avenged Sevenfold/10. Dear God.mp3
+10:Rock/A7x/Bat Country [Single]/01. Avenged Sevenfold - Bat Country.mp3
+11:Rock/A7x/Bat Country [Single]/02. Avenged Sevenfold - Beast and the Harlot (Live).mp3
+12:Rock/A7x/Carry On/01. Carry On.mp3
+13:Rock/A7x/City of Evil/01. Beast and the Harlot.mp3
+14:Rock/A7x/City of Evil/02. Burn It Down.mp3
+15:Rock/A7x/City of Evil/03. Blinded In Chains.mp3
+16:Rock/A7x/City of Evil/04. Bat Country.mp3
+17:Rock/A7x/City of Evil/05. Trashed and Scattered.mp3
+18:Rock/A7x/City of Evil/06. Seize the Day.mp3
+19:Rock/A7x/City of Evil/07. Sidewinder.mp3
+20:Rock/A7x/City of Evil/08. The Wicked End.mp3
+21:Rock/A7x/City of Evil/09. Strength of the World.mp3
+22:Rock/A7x/City of Evil/10. Betrayed.mp3
+23:Rock/A7x/City of Evil/11. M.I.A.mp3
+24:Rock/A7x/Hail To The King/01. Shepherd Of Fire.mp3
+25:Rock/A7x/Hail To The King/02. Hail To The King.mp3
+26:Rock/A7x/Hail To The King/03. Doing Times.mp3
+27:Rock/A7x/Hail To The King/04. This Means War.mp3
+28:Rock/A7x/Hail To The King/05. Requiem.mp3
+29:Rock/A7x/Hail To The King/06. Crimson Day.mp3
+30:Rock/A7x/Hail To The King/07. Heretic.mp3
+31:Rock/A7x/Hail To The King/08. Coming Home.mp3
+32:Rock/A7x/Hail To The King/09. Planets.mp3
+33:Rock/A7x/Hail To The King/10. Acid Rain.mp3
+34:Rock/A7x/Hail To The King/11. St. James (Bonus Track).mp3
+35:Rock/A7x/Hail To The King [Single]/01. Hail to the King.mp3
+36:Rock/A7x/Live In The LBC & Diamonds In The Rough/01. Demons.mp3
+37:Rock/A7x/Live In The LBC & Diamonds In The Rough/02. Girl I Know.mp3
+38:Rock/A7x/Live In The LBC & Diamonds In The Rough/03. Crossroads.mp3
+39:Rock/A7x/Live In The LBC & Diamonds In The Rough/04. Flash Of The Blade.mp3
+40:Rock/A7x/Live In The LBC & Diamonds In The Rough/05. Until The End.mp3
+41:Rock/A7x/Live In The LBC & Diamonds In The Rough/06. Tension.mp3
+42:Rock/A7x/Live In The LBC & Diamonds In The Rough/07. Walk.mp3
+43:Rock/A7x/Live In The LBC & Diamonds In The Rough/08. The Fight.mp3
+44:Rock/A7x/Live In The LBC & Diamonds In The Rough/09. Dancing Dead.mp3
+45:Rock/A7x/Live In The LBC & Diamonds In The Rough/10. Almost Easy (CLA Mix).mp3
+46:Rock/A7x/Live In The LBC & Diamonds In The Rough/11. Afterlife (Alternate Version).mp3
+47:Rock/A7x/Nightmare/01. Nightmare.mp3
+48:Rock/A7x/Nightmare/02. Welcome to the Family.mp3
+49:Rock/A7x/Nightmare/03. Danger Line.mp3
+50:Rock/A7x/Nightmare/04. Buried Alive.mp3
+51:Rock/A7x/Nightmare/05. Natural Born Killer.mp3
+52:Rock/A7x/Nightmare/06. So Far Away.mp3
+53:Rock/A7x/Nightmare/07. God Hates Us.mp3
+54:Rock/A7x/Nightmare/08. Victim.mp3
+55:Rock/A7x/Nightmare/09. Tonight the World Dies.mp3
+56:Rock/A7x/Nightmare/10. Fiction.mp3
+57:Rock/A7x/Nightmare/11. Save Me.mp3
+58:Rock/A7x/Nightmare/16. Nightmare-instrumental.mp3
+59:Rock/A7x/Nightmare/14. Danger Line-instrumental.mp3
+60:Rock/A7x/Nightmare/17. Buried Alive-instrumental.mp3
+61:Rock/A7x/Nightmare/15. Natural Born Killer-instrumental.mp3
+62:Rock/A7x/Nightmare/18. So Far Away-instrumental.mp3
+63:Rock/A7x/Nightmare/19. God Hates Us-instrumental.mp3
+64:Rock/A7x/Nightmare/20. Victim-instrumental.mp3
+65:Rock/A7x/Nightmare/21. Fiction-instrumental.mp3
+66:Rock/A7x/Nightmare/22. Save Me-instrumental.mp3
+67:Rock/A7x/Nightmare/12. Lost It All (iTunes Bonus Track).mp3
+68:Rock/A7x/Nightmare/13. Nightmare [Demo] (Bonus Track).mp3
+69:Rock/A7x/Nightmare [Single]/01. Nightmare (Radio Edit).mp3
+70:Rock/A7x/Nightmare [Single]/02. Nightmare (Album Version).mp3
+71:Rock/A7x/Nightmare [Single]/03. Nightmare (Explicit).mp3
+72:Rock/A7x/Not Ready to Die [Single]/01. Not Ready to Die (from Call of the Dead).mp3
+73:Rock/A7x/Sounding The Seventh Trumpet/01. To End the Rapture.mp3
+74:Rock/A7x/Sounding The Seventh Trumpet/02. Turn the Other Way.mp3
+75:Rock/A7x/Sounding The Seventh Trumpet/03. Darkness Surrounding.mp3
+76:Rock/A7x/Sounding The Seventh Trumpet/04. The Art of Subconscious Illusion.mp3
+77:Rock/A7x/Sounding The Seventh Trumpet/05. We Come Out at Night.mp3
+78:Rock/A7x/Sounding The Seventh Trumpet/06. Lips of Deceit.mp3
+79:Rock/A7x/Sounding The Seventh Trumpet/07. Warmness on the Soul.mp3
+80:Rock/A7x/Sounding The Seventh Trumpet/08. An Epic of Time Wasted.mp3
+81:Rock/A7x/Sounding The Seventh Trumpet/09. Breaking their Hold.mp3
+82:Rock/A7x/Sounding The Seventh Trumpet/10. Forgotten Faces.mp3
+83:Rock/A7x/Sounding The Seventh Trumpet/11. Thick and Thin.mp3
+84:Rock/A7x/Sounding The Seventh Trumpet/12. Streets.mp3
+85:Rock/A7x/Sounding The Seventh Trumpet/13. Shattered by Broken Dreams.mp3
+86:Rock/A7x/The Stage/01. The Stage.mp3
+87:Rock/A7x/The Stage/02. Paradigm.mp3
+88:Rock/A7x/The Stage/03. Sunny Disposition.mp3
+89:Rock/A7x/The Stage/04. God Damn.mp3
+90:Rock/A7x/The Stage/05. Creating God.mp3
+91:Rock/A7x/The Stage/06. Angels.mp3
+92:Rock/A7x/The Stage/07. Simulation.mp3
+93:Rock/A7x/The Stage/08. Higher.mp3
+94:Rock/A7x/The Stage/09. Roman Sky.mp3
+95:Rock/A7x/The Stage/10. Fermi Paradox.mp3
+96:Rock/A7x/The Stage/11. Exist.mp3
+97:Rock/A7x/Walking the Fallen/01. Waking the Fallen.mp3
+98:Rock/A7x/Walking the Fallen/02. Unholy Confessions.mp3
+99:Rock/A7x/Walking the Fallen/03. Chapter Four.mp3
+100:Rock/A7x/Walking the Fallen/04. Remenissions.mp3
+101:Rock/A7x/Walking the Fallen/05. Desecrate Through Reverence.mp3
+102:Rock/A7x/Walking the Fallen/06. Eternal Rest.mp3
+103:Rock/A7x/Walking the Fallen/07. Second Heartbeat.mp3
+104:Rock/A7x/Walking the Fallen/08. Radiant Eclipse.mp3
+105:Rock/A7x/Walking the Fallen/09. I Won't See You Tonight part 1.mp3
+106:Rock/A7x/Walking the Fallen/10. I Won't See You Tonight part 2.mp3
+107:Rock/A7x/Walking the Fallen/11. Clairvoyant Disease.mp3
+108:Rock/A7x/Walking the Fallen/12. And All Things Will End.mp3
+109:Rock/A7x/Warmness on the Soul/01. Warmness on the Soul (single version).mp3
+110:Rock/A7x/Warmness on the Soul/02. Darkness Surrounding.mp3
+111:Rock/A7x/Warmness on the Soul/03. We Come Out at Night.mp3
+112:Rock/A7x/Warmness on the Soul/04. To End the Rapture (heavy metal version).mp3
+113:Rock/A7x/Welcome to the Family -Deluxe Single/01. Welcome to the Family.mp3
+114:Rock/A7x/Welcome to the Family -Deluxe Single/02. 4_00 AM.mp3
+115:Rock/A7x/Welcome to the Family -Deluxe Single/03. Seize the Day (Live In Seattle).mp3
+116:Rock/Iron Maiden/Iron Maiden - Gates Of Tomorrow.mp3
+117:Rock/Iron Maiden/Iron Maiden - No More Lies.mp3
+118:Rock/Iron Maiden/Mighty Morphing Power Rangers-Música.mp3
+119:Rock/Iron Maiden/Iron Maiden - The Wickerman.mp3
+120:Rock/Iron Maiden/Iron Maiden - 07 - The Fallen Angel.mp3
+121:Rock/Iron Maiden/Iron Maiden - Fear of the Dark.mp3
+122:Rock/Iron Maiden/05. Phantom of The Opera.mp3
+123:Rock/Korn/Korn_-__Way_Too_Far__(Official_Video)-mc.mp3
+124:Rock/Korn/Korn_-_A.D.I.D.A.S.-mc.mp3
+125:Rock/Korn/Korn_-_Coming_Undone-mc.mp3
+126:Rock/Korn/Korn_-_Falling_Away_from_Me_(Official_Video)-mc.mp3
+127:Rock/Korn/Korn_-_Got_The_Life-mc.mp3
+128:Rock/Linkin Park/01 - Hybrid Theory (2000)/13 - High Voltage.mp3
+129:Rock/Linkin Park/01 - Hybrid Theory (2000)/14 - My December_.mp3
+130:Rock/Linkin Park/01 - Hybrid Theory (2000)/01 - Papercut.mp3
+131:Rock/Linkin Park/01 - Hybrid Theory (2000)/02 - One Step Closer.mp3
+132:Rock/Linkin Park/01 - Hybrid Theory (2000)/03 - With You.mp3
+133:Rock/Linkin Park/01 - Hybrid Theory (2000)/04 - Points Of Authority.mp3
+134:Rock/Linkin Park/01 - Hybrid Theory (2000)/05 - Crawling.mp3
+135:Rock/Linkin Park/01 - Hybrid Theory (2000)/06 - Runaway.mp3
+136:Rock/Linkin Park/01 - Hybrid Theory (2000)/07 - By Myself.mp3
+137:Rock/Linkin Park/01 - Hybrid Theory (2000)/08 - In The End.mp3
+138:Rock/Linkin Park/01 - Hybrid Theory (2000)/09 - A Place For My Head.mp3
+139:Rock/Linkin Park/01 - Hybrid Theory (2000)/10 - Forgotten.mp3
+140:Rock/Linkin Park/01 - Hybrid Theory (2000)/11 - Cure For The Itch.mp3
+141:Rock/Linkin Park/01 - Hybrid Theory (2000)/12 - Pushing Me Away.mp3
+142:Rock/Linkin Park/02 - Reanimation (2002)/01 - Opening.mp3
+143:Rock/Linkin Park/02 - Reanimation (2002)/02 - Pts. Of. Athrty.mp3
+144:Rock/Linkin Park/02 - Reanimation (2002)/03 - Enth E Nd.mp3
+145:Rock/Linkin Park/02 - Reanimation (2002)/04 - Chali.mp3
+146:Rock/Linkin Park/02 - Reanimation (2002)/05 - Frgt_10.mp3
+147:Rock/Linkin Park/02 - Reanimation (2002)/06 - P5hng Me A_wy.mp3
+148:Rock/Linkin Park/02 - Reanimation (2002)/07 - Plc.4 Mie Haed.mp3
+149:Rock/Linkin Park/02 - Reanimation (2002)/08 - X-Ecutioner Style.mp3
+150:Rock/Linkin Park/02 - Reanimation (2002)/09 - H! Vltg3.mp3
+151:Rock/Linkin Park/02 - Reanimation (2002)/10 - Riff Raff.mp3
+152:Rock/Linkin Park/02 - Reanimation (2002)/11 - Wth_You.mp3
+153:Rock/Linkin Park/02 - Reanimation (2002)/12 - Ntr_Mssion.mp3
+154:Rock/Linkin Park/02 - Reanimation (2002)/13 - PPr_Kut.mp3
+155:Rock/Linkin Park/02 - Reanimation (2002)/14 - Rnw@y.mp3
+156:Rock/Linkin Park/02 - Reanimation (2002)/15 - My_Dsmbr.mp3
+157:Rock/Linkin Park/02 - Reanimation (2002)/16 - Stef.mp3
+158:Rock/Linkin Park/02 - Reanimation (2002)/17 - By_Myslf.mp3
+159:Rock/Linkin Park/02 - Reanimation (2002)/18 - Kyur4 Th Ich.mp3
+160:Rock/Linkin Park/02 - Reanimation (2002)/19 - 1stp Klosr.mp3
+161:Rock/Linkin Park/02 - Reanimation (2002)/20 Krwlng.mp3
+162:Rock/Linkin Park/03 - Meteora (2003)/01 - Foreword.mp3
+163:Rock/Linkin Park/03 - Meteora (2003)/02 - Don't Say.mp3
+164:Rock/Linkin Park/03 - Meteora (2003)/03 - Somewhere I Belong.mp3
+165:Rock/Linkin Park/03 - Meteora (2003)/04 - Lying From You.mp3
+166:Rock/Linkin Park/03 - Meteora (2003)/05 - Hit The Floor.mp3
+167:Rock/Linkin Park/03 - Meteora (2003)/06 - Easier To Run.mp3
+168:Rock/Linkin Park/03 - Meteora (2003)/07 - Faint.mp3
+169:Rock/Linkin Park/03 - Meteora (2003)/08 - Figure.09.mp3
+170:Rock/Linkin Park/03 - Meteora (2003)/09 - Breaking The Habit.mp3
+171:Rock/Linkin Park/03 - Meteora (2003)/10 - From The Inside.mp3
+172:Rock/Linkin Park/03 - Meteora (2003)/11 - Nobody's Listening.mp3
+173:Rock/Linkin Park/03 - Meteora (2003)/12 - Session.mp3
+174:Rock/Linkin Park/03 - Meteora (2003)/13 - Numb.mp3
+175:Rock/Linkin Park/04 - Live in Texas (2003)/01 - Somewhere I Belong.mp3
+176:Rock/Linkin Park/04 - Live in Texas (2003)/02 - Lying From You.mp3
+177:Rock/Linkin Park/04 - Live in Texas (2003)/03 - Papercut.mp3
+178:Rock/Linkin Park/04 - Live in Texas (2003)/04 - Points Of Authority.mp3
+179:Rock/Linkin Park/04 - Live in Texas (2003)/05 - Runaway.mp3
+180:Rock/Linkin Park/04 - Live in Texas (2003)/06 - Faint.mp3
+181:Rock/Linkin Park/04 - Live in Texas (2003)/07 - From The Inside.mp3
+182:Rock/Linkin Park/04 - Live in Texas (2003)/08 - Pushing Me Away.mp3
+183:Rock/Linkin Park/04 - Live in Texas (2003)/09 - Numb.mp3
+184:Rock/Linkin Park/04 - Live in Texas (2003)/10 - Crawling.mp3
+185:Rock/Linkin Park/04 - Live in Texas (2003)/11 - In The End.mp3
+186:Rock/Linkin Park/04 - Live in Texas (2003)/12 - One Step Closer.mp3
+187:Rock/Linkin Park/05 - Minutes to Midnight (2007)/01  Linkin Park - Wake.mp3
+188:Rock/Linkin Park/05 - Minutes to Midnight (2007)/02  Linkin Park - Given Up.mp3
+189:Rock/Linkin Park/05 - Minutes to Midnight (2007)/03  Linkin Park - Leave Out All The Rest.mp3
+190:Rock/Linkin Park/05 - Minutes to Midnight (2007)/04  Linkin Park - Bleed It Out.mp3
+191:Rock/Linkin Park/05 - Minutes to Midnight (2007)/05  Linkin Park - Shadow Of The Day.mp3
+192:Rock/Linkin Park/05 - Minutes to Midnight (2007)/06  Linkin Park - What I've Done.mp3
+193:Rock/Linkin Park/05 - Minutes to Midnight (2007)/07  Linkin Park - Hands Held High.mp3
+194:Rock/Linkin Park/05 - Minutes to Midnight (2007)/08  Linkin Park - No More Sorrow.mp3
+195:Rock/Linkin Park/05 - Minutes to Midnight (2007)/09  Linkin Park - Valentine's Day.mp3
+196:Rock/Linkin Park/05 - Minutes to Midnight (2007)/10  Linkin Park - In Between.mp3
+197:Rock/Linkin Park/05 - Minutes to Midnight (2007)/11  Linkin Park - In Pieces.mp3
+198:Rock/Linkin Park/05 - Minutes to Midnight (2007)/12  Linkin Park - The Little Things Give You Away.mp3
+199:Rock/Linkin Park/06 - Road to Revolution (2008)/01- One Step closer.mp3
+200:Rock/Linkin Park/06 - Road to Revolution (2008)/02- From The Inside.mp3
+201:Rock/Linkin Park/06 - Road to Revolution (2008)/03- No More Sorrow.mp3
+202:Rock/Linkin Park/06 - Road to Revolution (2008)/04- Given Up.mp3
+203:Rock/Linkin Park/06 - Road to Revolution (2008)/05- Lying From You.mp3
+204:Rock/Linkin Park/06 - Road to Revolution (2008)/06- Hans Held High.mp3
+205:Rock/Linkin Park/06 - Road to Revolution (2008)/07- Leave Out All The Rest.mp3
+206:Rock/Linkin Park/06 - Road to Revolution (2008)/08- Numb.mp3
+207:Rock/Linkin Park/06 - Road to Revolution (2008)/09- The Little Things Give You Away.mp3
+208:Rock/Linkin Park/06 - Road to Revolution (2008)/10- Breaking The Habit.mp3
+209:Rock/Linkin Park/06 - Road to Revolution (2008)/11- Shadow Of The Day.mp3
+210:Rock/Linkin Park/06 - Road to Revolution (2008)/12- Crawling.mp3
+211:Rock/Linkin Park/06 - Road to Revolution (2008)/13- In The End.mp3
+212:Rock/Linkin Park/06 - Road to Revolution (2008)/14- Pushing Me Away.mp3
+213:Rock/Linkin Park/06 - Road to Revolution (2008)/15- What I`ve Done.mp3
+214:Rock/Linkin Park/06 - Road to Revolution (2008)/16- Numb Encore (Feat. Jay-Z).mp3
+215:Rock/Linkin Park/06 - Road to Revolution (2008)/17- Jigga What-Faint (Feat. Jay-Z).mp3
+216:Rock/Linkin Park/06 - Road to Revolution (2008)/18- Bleed It Out.mp3
+217:Rock/Linkin Park/07 - A Thousand Suns (2010)/01 - The Requiem.mp3
+218:Rock/Linkin Park/07 - A Thousand Suns (2010)/02 - The Radiance.mp3
+219:Rock/Linkin Park/07 - A Thousand Suns (2010)/03 - Burning In The Skies.mp3
+220:Rock/Linkin Park/07 - A Thousand Suns (2010)/04 - Empty Spaces.mp3
+221:Rock/Linkin Park/07 - A Thousand Suns (2010)/05 - When they Come For Me.mp3
+222:Rock/Linkin Park/07 - A Thousand Suns (2010)/06 - Robot Boy.mp3
+223:Rock/Linkin Park/07 - A Thousand Suns (2010)/07 - Jornada Del Muerto.mp3
+224:Rock/Linkin Park/07 - A Thousand Suns (2010)/08 - Waiting For The End.mp3
+225:Rock/Linkin Park/07 - A Thousand Suns (2010)/09 - Blackout.mp3
+226:Rock/Linkin Park/07 - A Thousand Suns (2010)/10 - Wretches And Kings.mp3
+227:Rock/Linkin Park/07 - A Thousand Suns (2010)/11 - Wisdom, Justice And Love.mp3
+228:Rock/Linkin Park/07 - A Thousand Suns (2010)/12 - Iridescent.mp3
+229:Rock/Linkin Park/07 - A Thousand Suns (2010)/13 - Fallout.mp3
+230:Rock/Linkin Park/07 - A Thousand Suns (2010)/14 - The Catalyst.mp3
+231:Rock/Linkin Park/07 - A Thousand Suns (2010)/15 - The Messenger.mp3
+232:Rock/Linkin Park/08 - Living Things (2012)/01 - Linkin Park - Lost In The Echo.mp3
+233:Rock/Linkin Park/08 - Living Things (2012)/02 - Linkin Park - In My Remains.mp3
+234:Rock/Linkin Park/08 - Living Things (2012)/03 - Linkin Park - Burn It Down.mp3
+235:Rock/Linkin Park/08 - Living Things (2012)/04 - Linkin Park - Lies Greed Misery.mp3
+236:Rock/Linkin Park/08 - Living Things (2012)/05 - Linkin Park - I'll Be Gone.mp3
+237:Rock/Linkin Park/08 - Living Things (2012)/06 - Linkin Park - Castle Of Glass.mp3
+238:Rock/Linkin Park/08 - Living Things (2012)/07 - Linkin Park - Victimized.mp3
+239:Rock/Linkin Park/08 - Living Things (2012)/08 - Linkin Park - Roads Untraveled.mp3
+240:Rock/Linkin Park/08 - Living Things (2012)/09 - Linkin Park - Skin To Bone.mp3
+241:Rock/Linkin Park/08 - Living Things (2012)/10 - Linkin Park - Until It Breaks.mp3
+242:Rock/Linkin Park/08 - Living Things (2012)/11 - Linkin Park - Tinfoil.mp3
+243:Rock/Linkin Park/08 - Living Things (2012)/12 - Linkin Park - Powerless.mp3
+244:Rock/Linkin Park/09 - Recharged (2013)/01 - Linkin Park & Steve Aoki - A Light That Never Comes.mp3
+245:Rock/Linkin Park/09 - Recharged (2013)/02 - Mike Shinoda - Castle of Glass.mp3
+246:Rock/Linkin Park/09 - Recharged (2013)/03 - Killsonik - Lost in the Echo.mp3
+247:Rock/Linkin Park/09 - Recharged (2013)/04 - Mike Shinoda - Victimized.mp3
+248:Rock/Linkin Park/09 - Recharged (2013)/05 - Vice & Pusha T - I'll Be Gone.mp3
+249:Rock/Linkin Park/09 - Recharged (2013)/06 - Dirtyphonics - Lies Greed Misery.mp3
+250:Rock/Linkin Park/09 - Recharged (2013)/07 - Rad Omen feat. Bun B - Roads Untraveled.mp3
+251:Rock/Linkin Park/09 - Recharged (2013)/08 - DJ Enferno - Powerless.mp3
+252:Rock/Linkin Park/09 - Recharged (2013)/09 - Tom Swoon - Burn It Down.mp3
+253:Rock/Linkin Park/09 - Recharged (2013)/10 - Datsik - Until It Breaks.mp3
+254:Rock/Linkin Park/09 - Recharged (2013)/11 - Nick Catchdubs feat. Cody B. Ware & Ryu - Skin to Bone.mp3
+255:Rock/Linkin Park/09 - Recharged (2013)/12 - Schoolboy - I'll Be Gone.mp3
+256:Rock/Linkin Park/09 - Recharged (2013)/13 - Money Mark - Until It Breaks.mp3
+257:Rock/Linkin Park/09 - Recharged (2013)/14 - Rick Rubin - A Light That Never Comes (Reboot).mp3
+258:Rock/Linkin Park/10 - The Hunting Party (2014)/01 - Guilty All The Same (Feat. Rakim) - Linkin Park.mp3
+259:Rock/Linkin Park/10 - The Hunting Party (2014)/02 - The Summoning - Linkin Park.mp3
+260:Rock/Linkin Park/10 - The Hunting Party (2014)/03 - War - Linkin Park.mp3
+261:Rock/Linkin Park/10 - The Hunting Party (2014)/04 - Wastelands - Linkin Park.mp3
+262:Rock/Linkin Park/10 - The Hunting Party (2014)/05 - Until It's Gone - Linkin Park.mp3
+263:Rock/Linkin Park/10 - The Hunting Party (2014)/06 - Rebellion (Feat. Daron Malakian) - Linkin Park.mp3
+264:Rock/Linkin Park/10 - The Hunting Party (2014)/07 - Mark The Graves - Linkin Park.mp3
+265:Rock/Linkin Park/10 - The Hunting Party (2014)/08 - Drawbar (Feat. Tom Morello) - Linkin Park.mp3
+266:Rock/Linkin Park/10 - The Hunting Party (2014)/09 - Final Masquerade - Linkin Park.mp3
+267:Rock/Linkin Park/10 - The Hunting Party (2014)/10 - A Line In The Sand - Linkin Park.mp3
+268:Rock/Linkin Park/10 - The Hunting Party (2014)/11 - Keys To The Kingdom - Linkin Park.mp3
+269:Rock/Linkin Park/10 - The Hunting Party (2014)/12 - All For Nothing (Feat. Page Hamilton) - Linkin Park.mp3
+270:Rock/Linkin Park/11 - The Very Best Of Linkin Park/25 - High Voltage.mp3
+271:Rock/Linkin Park/11 - The Very Best Of Linkin Park/01 - In The End.mp3
+272:Rock/Linkin Park/11 - The Very Best Of Linkin Park/02 - Numb.mp3
+273:Rock/Linkin Park/11 - The Very Best Of Linkin Park/03 - What I've Done.mp3
+274:Rock/Linkin Park/11 - The Very Best Of Linkin Park/04 - From The Inside.mp3
+275:Rock/Linkin Park/11 - The Very Best Of Linkin Park/05 - Iridescent.mp3
+276:Rock/Linkin Park/11 - The Very Best Of Linkin Park/06 - One Step Closer.mp3
+277:Rock/Linkin Park/11 - The Very Best Of Linkin Park/07 - Faint.mp3
+278:Rock/Linkin Park/11 - The Very Best Of Linkin Park/08 - In Pieces.mp3
+279:Rock/Linkin Park/11 - The Very Best Of Linkin Park/09 - Waiting For The End.mp3
+280:Rock/Linkin Park/11 - The Very Best Of Linkin Park/10 - Bleed It Out.mp3
+281:Rock/Linkin Park/11 - The Very Best Of Linkin Park/11 - Lying From You.mp3
+282:Rock/Linkin Park/11 - The Very Best Of Linkin Park/12 - The Catalyst.mp3
+283:Rock/Linkin Park/11 - The Very Best Of Linkin Park/13 - Papercut.mp3
+284:Rock/Linkin Park/11 - The Very Best Of Linkin Park/14 - Breaking The Habit.mp3
+285:Rock/Linkin Park/11 - The Very Best Of Linkin Park/15 - Crawling.mp3
+286:Rock/Linkin Park/11 - The Very Best Of Linkin Park/16 - Leave Out All The Rest.mp3
+287:Rock/Linkin Park/11 - The Very Best Of Linkin Park/17 - Somewhere I Belong.mp3
+288:Rock/Linkin Park/11 - The Very Best Of Linkin Park/18 - Shadow Of The Day.mp3
+289:Rock/Linkin Park/11 - The Very Best Of Linkin Park/19 - Given Up.mp3
+290:Rock/Linkin Park/11 - The Very Best Of Linkin Park/20 - Lost In The Echo.mp3
+291:Rock/Linkin Park/11 - The Very Best Of Linkin Park/21 - Blackbirds.mp3
+292:Rock/Linkin Park/11 - The Very Best Of Linkin Park/22 - Castle Of Glass.mp3
+293:Rock/Linkin Park/11 - The Very Best Of Linkin Park/23 - Burning In The Skies.mp3
+294:Rock/Linkin Park/11 - The Very Best Of Linkin Park/24 - Pushing Me Away.mp3
+295:Rock/Linkin Park/11 - The Very Best Of Linkin Park/26 - Figure.09.mp3
+296:Rock/Linkin Park/11 - The Very Best Of Linkin Park/27 - Points Of Authority.mp3
+297:Rock/Linkin Park/11 - The Very Best Of Linkin Park/28 - No More Sorrow.mp3
+298:Rock/Linkin Park/11 - The Very Best Of Linkin Park/29 - Burn It Down.mp3
+299:Rock/Linkin Park/11 - The Very Best Of Linkin Park/30 - A Place For My Head.mp3
+300:Rock/Slipknot/Slipknot - Before I Forget.mp3
+301:Rock/Slipknot/Slipknot - Psychosocial.mp3
+302:Rock/Slipknot/Slipknot - Duality.mp3
+303:Rock/Slipknot/slipknot_-_DEAD_MEMORIES.mp3
+304:Rock/System of a Down/Lonely Day.mp3
+305:Rock/System of a Down/Violent Pornography.mp3
+306:Rock/System of a Down/B.Y.O.B..mp3
+307:Rock/System of a Down/Chop Suey!.mp3
+308:Rock/System of a Down/Toxicity.mp3
+309:Rock/System of a Down/Psycho.mp3
+310:Rock/System of a Down/Aerials.mp3
+311:Rock/10youtube.com_Skillet-Not-Gonna-Die-OFFICIAL-MUSIC-VIDEO_fgmpWkUcpjo.mp3
+312:Rock/Angra - 02 - Carry On.mp3
+313:Rock/Immortal - Fall Out Boy.mp3
+314:Rock/Nirvana - Smells Like Teen Spirit - 128K MP3.mp3
+315:Rock/Through The Fire And Flames - Dragonforce-1.mp3
+316:Rock/Blue Stahli - Metamorphosis (Life Theory Remix).mp3
+317:Rock/breakthrough mindflow .mp3
+318:Rock/Bring Me The Horizon -  Can You Feel My Heart.mp3
+319:Rock/Set It Off - Wolf In Sheep's Clothing (feat. William Beckett) [Lyric's].mp3
 playlist_end

@@ -9,6 +9,8 @@ XF86AudioRaiseVolume
 	amixer set Master 5%+
 XF86AudioLowerVolume
 	amixer set Master 5%-
+XF86AudioMute
+	amixer set Master toggle
 
 # NCMPCPP Keys
 shift + XF86AudioNext
@@ -37,23 +39,22 @@ super + Return
 
 # Task Manager
 control + shift + Escape
-	termite --exec=htop --class=Htop
+	termite -e "fish -ic htop" --class=Htop
 
 # Dmenu
 #super + d
 #	dmenu_run -i -x 415 -y 330 -w 450 -h 20 -l 4 -fn 
 'xft:edges:pixelsize=9:antialias=True:hinting=True' -nb '#111111' -nf '#FFFBF8' -sb '#383A58' -sf '#111111'
 
-# Rofi
+# Rofi // rofi -show drun -show-icons -width 100 -location 1
 super + d
-	rofi -show drun -show-icons -location 1
-
+	rofi -show drun -show-icons -font "xos4 Terminess Powerline 10" -location 1
 	
 # Explorador de Arquivos
 super + shift + Return
-	termite --exec=ranger --class=Ranger
+	termite -e "fish -ic ranger" --class=Ranger
 super + e
-	thunar
+	nemo
 
 # Navegador
 super + F1
@@ -65,7 +66,7 @@ super + F2
 
 # Vim
 super + F4
-	termite --exec=nvim --class=Vim
+	termite -e "fish -ic nvim" --class=Vim
 
 # VScode
 super + F5
@@ -89,7 +90,7 @@ control + Print
 
 # NCMPCPP
 super + F3
-	termite --exec=ncmpcpp --class=NCMPCPP
+	termite -e "fish -ic ncmpcpp" --class=NCMPCPP
 
 # VLC
 super + v

@@ -393,7 +393,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = custom/script
 interval = 600
 format-prefix = " "
-exec = "pacman -Qum | wc -l"
+exec = "checkupdates 2> /dev/null | wc -l"
 
 [module/updates-aur]
 type = custom/script

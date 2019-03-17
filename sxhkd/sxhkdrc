@@ -90,7 +90,7 @@ control + Print
 
 # NCMPCPP
 super + F3
-	termite -e "fish -ic ncmpcpp" --class=NCMPCPP
+	termite -e "fish -ic ncmpcpp" --class=NCMPCPP | termite -e "fish -ic cava" --class=Cava
 
 # VLC
 super + v

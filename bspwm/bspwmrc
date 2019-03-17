@@ -38,6 +38,7 @@ bspc rule -a gpick state=floating
 bspc rule -a Spotify desktop='^6'
 bspc rule -a vlc desktop='^6'
 bspc rule -a NCMPCPP desktop='^6'
+bspc rule -a Cava desktop='^6'
 bspc rule -a "Apache NetBeans IDE 10.0" desktop='^5'
 #bspc rule -a Transmisson-gtk state=floating
 #bspc rule -a Termite state=floating

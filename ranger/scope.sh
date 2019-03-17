@@ -109,11 +109,11 @@ handle_image() {
             # but might fail for unsupported types.
             exit 7;;
 
-        # Video
-        # video/*)
-        #     # Thumbnail
-        #     ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
-        #     exit 1;;
+         Video
+         video/*)
+             # Thumbnail
+             ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
+             exit 1;;
         # PDF
         # application/pdf)
         #     pdftoppm -f 1 -l 1 \

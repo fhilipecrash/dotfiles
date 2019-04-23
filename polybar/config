@@ -57,7 +57,11 @@ font-4 = 3270 Medium Nerd Font:size=10;0
 
 modules-left = mpd spotify
 modules-center = 
+<<<<<<< HEAD
 modules-right = wlan eth updates-pacman updates-aur volume date clock
+=======
+modules-right = eth updates-pacman updates-aur volume date clock
+>>>>>>> 01f3cd1a8c4428335b78813984be7dd87fba49ba
 
 #tray-detached = false
 #tray-position = right
@@ -313,7 +317,11 @@ interval = 3.0
 format-connected = <ramp-signal> <label-connected>
 label-connected = %essid%
 
+<<<<<<< HEAD
 #format-disconnected = "Desconectado"
+=======
+format-disconnected = "Desconectado"
+>>>>>>> 01f3cd1a8c4428335b78813984be7dd87fba49ba
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
@@ -351,9 +359,15 @@ format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
 #label-disconnected = Disconected
+<<<<<<< HEAD
 #format-disconnected = <label-disconnected>
 #label-disconnected = " Desconectado "
 #label-disconnected-foreground = ${colors.foreground-alt}
+=======
+format-disconnected = <label-disconnected>
+label-disconnected = " %ifname% desconectado "
+label-disconnected-foreground = ${colors.foreground-alt}
+>>>>>>> 01f3cd1a8c4428335b78813984be7dd87fba49ba
 
 [module/date]
 type = internal/date

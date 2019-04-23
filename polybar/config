@@ -1,11 +1,20 @@
-;=====================================================
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
 ;
 ;   To learn more about how to configure Polybar
 ;   go to https://github.com/jaagr/polybar
 ;
 ;   The README contains alot of information
 ;
-;=====================================================
+;==========================================================
 
 [colors]
 background = ${xrdb:color0:#222}
@@ -40,17 +49,15 @@ padding-right = 1
 module-margin-left = 0
 module-margin-right = 0
 
-#font-0 = Misc Tamsyn:pixelsize=7;1
-#font-0 = artwiz nu.se:pixelsize=10;0
 font-0 = xos4 Terminess Powerline:pixelsize=10;0
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-2 = Wuncon Siji:pixelsize=10
 font-3 = FontAwesome:size=10;1
-font-4 = 3270 Medium Nerd Font:size=10;1
+font-4 = 3270 Medium Nerd Font:size=10;0
 
-modules-left = powermenu mpd
+modules-left = mpd spotify
 modules-center = 
-modules-right = updates-pacman updates-aur eth volume date clock
+modules-right = wlan eth updates-pacman updates-aur volume date clock
 
 #tray-detached = false
 #tray-position = right
@@ -94,20 +101,15 @@ padding-right = 1
 module-margin-left = 0
 module-margin-right = 0
 
-#font-0 = Misc Tamsyn:pixelsize=10;1
-#font-0 = artwiz nu.se:pixelsize=10;0
 font-0 = xos4 Terminess Powerline:pixelsize=10;0
-#font-0 = nu:pixelsize=7;1
-#font-0 = OCR A Extended:pixelsize=7;1
-#font-0 = PF Tempesta Five Condensed:pixelsize=7;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-font-3 = FontAwesome:size=11;1
-font-4 = 3270Medium Nerd Font:size=10;1
+font-2 = Wuncon Siji:pixelsize=10;0
+font-3 = FontAwesome:size=11;0
+font-4 = 3270Medium Nerd Font:size=10;0
 
 modules-left = bspwm i3 
 modules-center = xwindow
-modules-right = cpu memory home
+modules-right = netspeedup netspeeddown cpu memory home
 
 tray-detached = false
 tray-position = right
@@ -163,7 +165,7 @@ interval = 25
 
 mount-0 = /home
 
-label-mounted = %{F${colors.foreground} | Home%{F-}: %used% / %total%
+label-mounted = %{F${colors.foreground} | : %used% / %total%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -232,17 +234,14 @@ label-empty-padding = 2
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-time>  <icon-prev>  <icon-stop>  <toggle>  <icon-next>  <icon-repeat>  <icon-random>  <bar-progress>  <label-song>
-format-stopped = <icon-prev>   <toggle>   <icon-next>   0:00/0:00   %{B-}
+format-online =  | <label-time> <icon-prev> <icon-stop> <toggle> <icon-next> <bar-progress>  <label-song>
+format-stopped =  |
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause =
-icon-next = 
-
-icon-random = 
-icon-repeat = 
+icon-prev = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
 
 icon-play-foreground = ${colors.foreground}
 icon-pause-foreground = ${colors.foreground}
@@ -260,6 +259,13 @@ bar-progress-empty = ─
 bar-progress-width = 10
 label-song-maxlen = 50
 label-song-ellipsis = true
+
+[module/spotify]
+type = custom/script
+interval = 1
+#format-prefix = " |"
+format = <label>
+exec = python ~/.config/polybar/spotify_status.py -f ' [Spotify]{play_pause} {artist} - {song}'
 
 [module/xbacklight]
 type = internal/xbacklight
@@ -286,7 +292,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU: "
+format-prefix = ": "
 format-prefix-foreground = ${colors.foreground}
 #format-underline = #E5680C
 label = %percentage%%
@@ -294,7 +300,7 @@ label = %percentage%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " | RAM: "
+format-prefix = " | : "
 format-prefix-foreground = ${colors.foreground}
 #format-underline = #E3E90C
 label = %percentage_used%%
@@ -305,10 +311,9 @@ interface = net1
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
 label-connected = %essid%
 
-format-disconnected = "Disconnected"
+#format-disconnected = "Desconectado"
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
@@ -321,21 +326,34 @@ ramp-signal-3 = 
 ramp-signal-4 = 
 ramp-signal-foreground = ${colors.foreground-alt}
 
+[module/netspeedup]
+type = internal/network
+interface = %default_interface%
+label-connected = "%upspeed:7%"
+format-connected = <label-connected>
+format-connected-prefix = " "
+
+[module/netspeeddown]
+type = internal/network
+interface = %default_interface%
+label-connected = "%downspeed:7%"
+format-connected = <label-connected>
+format-connected-prefix = " "
+
 [module/eth]
 type = internal/network
-interface = enp0s3
+#interface = enp0s29f7u4
+interface = ens34
 interval = 3.0
 
-format-connected-underline = #55aa55
-format-connected-prefix = " "
+format-connected-prefix = "  "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
 #label-disconnected = Disconected
-format-disconnected = <label-disconnected>
-format-disconnected-underline = ${self.format-connected-underline}
-label-disconnected = %ifname% disconnected
-label-disconnected-foreground = ${colors.foreground-alt}
+#format-disconnected = <label-disconnected>
+#label-disconnected = " Desconectado "
+#label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/date]
 type = internal/date
@@ -344,7 +362,7 @@ interval = 1
 date = " %Y/%m/%d"
 date-alt = " %Y/%m/%d"
 
-format-prefix = "  "
+format-prefix = " | "
 format-prefix-foreground = ${colors.foreground}
 #format-underline = #0a6cf5
 
@@ -357,7 +375,7 @@ time-alt = %H:%M:%S
 
 label = "%time%"
 
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
 #format-underline = #0a6cf5
 
@@ -365,12 +383,12 @@ format-prefix-foreground = ${colors.foreground}
 type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
-label-volume = "  "
+label-volume = " | "
 label-volume-foreground = ${root.foreground}
 
-format-muted-prefix = "  "
+format-muted-prefix = " | "
 format-muted-foreground = ${root.foreground}
-label-muted = " Mudo "
+label-muted = " Mudo"
 
 bar-volume-width = 10
 bar-volume-foreground-0 = ${colors.foreground}
@@ -382,7 +400,7 @@ bar-volume-foreground-5 = ${colors.foreground}
 bar-volume-foreground-6 = ${colors.foreground}
 bar-volume-gradient = false
 bar-volume-indicator = |
-bar-volume-indicator-font = 2
+bar-volume-indicator-font = 1
 bar-volume-fill = ─
 bar-volume-fill-font = 2
 bar-volume-empty = ─
@@ -392,13 +410,13 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/updates-pacman]
 type = custom/script
 interval = 600
-format-prefix = " "
+format-prefix = "  "
 exec = "checkupdates 2> /dev/null | wc -l"
 
 [module/updates-aur]
 type = custom/script
 interval = 600
-format-prefix = " | AUR "
+format-prefix = "  "
 exec = "yay -Qum 2> /dev/null | wc -l"
 
 [settings]

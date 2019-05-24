@@ -17,7 +17,8 @@
 ;==========================================================
 
 [colors]
-background = ${xrdb:color0:#222}
+#background = ${xrdb:color0:#222}
+background = #0000
 foreground = ${xrdb:color7:#222}
 foreground-alt = ${xrdb:color7:#222}
 primary = ${xrdb:color1:#222}
@@ -26,8 +27,8 @@ alert = ${xrdb:color3:#222}
 
 [bar/baixo]
 monitor = ${env:MONITOR:VGA-1}
-width = 99.5%
-height = 24
+width = 99.7%
+height = 20
 offset-x = 0.2%
 offset-y = 0.4%
 radius = 7.0
@@ -57,11 +58,7 @@ font-4 = 3270 Medium Nerd Font:size=10;0
 
 modules-left = mpd spotify
 modules-center = 
-<<<<<<< HEAD
 modules-right = wlan eth updates-pacman updates-aur volume date clock
-=======
-modules-right = eth updates-pacman updates-aur volume date clock
->>>>>>> 01f3cd1a8c4428335b78813984be7dd87fba49ba
 
 #tray-detached = false
 #tray-position = right
@@ -82,16 +79,18 @@ scroll-down = i3wm-wsprev
 
 [bar/cima]
 monitor = ${env:MONITOR:VGA-1}
-width = 99.5%
+width = 100%
 height = 24
-offset-x = 0.2%
+offset-x = 0%
 offset-y = 0.4%
-radius = 7.0
+#radius = 7.0
+radius = 0
 fixed-center = true
 bottom = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
+;foreground = #010014
 
 line-size = 2
 line-color = #f00
@@ -118,7 +117,7 @@ modules-right = netspeedup netspeeddown cpu memory home
 tray-detached = false
 tray-position = right
 tray-padding = 1
-tray-transparent = false
+tray-transparent = true
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
@@ -297,7 +296,7 @@ card = intel_backlight
 type = internal/cpu
 interval = 2
 format-prefix = ": "
-format-prefix-foreground = ${colors.foreground}
+format-prefix-foreground = %{F${colors.foreground
 #format-underline = #E5680C
 label = %percentage%%
 
@@ -305,7 +304,7 @@ label = %percentage%%
 type = internal/memory
 interval = 2
 format-prefix = " | : "
-format-prefix-foreground = ${colors.foreground}
+format-prefix-foreground = %{F${colors.foreground
 #format-underline = #E3E90C
 label = %percentage_used%%
 
@@ -317,11 +316,7 @@ interval = 3.0
 format-connected = <ramp-signal> <label-connected>
 label-connected = %essid%
 
-<<<<<<< HEAD
 #format-disconnected = "Desconectado"
-=======
-format-disconnected = "Desconectado"
->>>>>>> 01f3cd1a8c4428335b78813984be7dd87fba49ba
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
@@ -359,15 +354,9 @@ format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
 #label-disconnected = Disconected
-<<<<<<< HEAD
 #format-disconnected = <label-disconnected>
 #label-disconnected = " Desconectado "
 #label-disconnected-foreground = ${colors.foreground-alt}
-=======
-format-disconnected = <label-disconnected>
-label-disconnected = " %ifname% desconectado "
-label-disconnected-foreground = ${colors.foreground-alt}
->>>>>>> 01f3cd1a8c4428335b78813984be7dd87fba49ba
 
 [module/date]
 type = internal/date

@@ -39,7 +39,7 @@ super + Return
 
 # Task Manager
 control + shift + Escape
-	termite -e "fish -ic htop" --class=Htop
+	termite -e "zsh -ic htop" --class=Htop
 
 # Dmenu
 #super + d
@@ -52,7 +52,7 @@ super + d
 	
 # Explorador de Arquivos
 super + shift + Return
-	termite -e "fish -ic ranger" --class=Ranger
+	termite -e "zsh -ic ranger" --class=Ranger
 super + e
 	nemo
 
@@ -66,7 +66,7 @@ super + F2
 
 # Vim
 super + F4
-	termite -e "fish -ic nvim" --class=Vim
+	termite -e "zsh -ic nvim" --class=Vim
 
 # VScode
 super + F5
@@ -90,7 +90,11 @@ control + Print
 
 # NCMPCPP
 super + F3
-	termite -e "fish -ic ncmpcpp" --class=NCMPCPP | termite -e "fish -ic cava" --class=Cava
+	termite -e "zsh -ic ncmpcpp" --class=NCMPCPP | termite -e "zsh -ic cava" --class=Cava
+
+# Spotify
+super + shift + F3
+	spotify
 
 # VLC
 super + v
@@ -107,6 +111,10 @@ super + Escape
 # Fechar Janela
 super + shift + q
 	bspc node -{c,k}
+
+#rotate node
+super + u
+	bspc node @/ -R 90
 
 # alternate between the tiled and monocle layout
 super + m

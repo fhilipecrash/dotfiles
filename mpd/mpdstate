@@ -1,29 +1,102 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
-state: stop
-current: 4
+state: play
+current: 79
+time: 9.072000
 random: 1
 repeat: 1
 single: 0
 consume: 0
-crossfade: 0
+crossfade: 5
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/A1. Intro.flac
-1:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/A2. Last Living Souls.flac
-2:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/A3. Kids With Guns.flac
-3:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/A4. O Green World.flac
-4:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/B1. Dirty Harry.flac
-5:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/B2. Feel Good Inc..flac
-6:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/B3. El Mañana.flac
-7:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/C1. Every Planet We Reach Is Dead.flac
-8:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/C2. November Has Come.flac
-9:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/C3. All Alone.flac
-10:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/C4. White Light.flac
-11:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/D1. Dare.flac
-12:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/D2. Fire Coming Out Of The Monkey's Head.flac
-13:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/D3. Don't Get Lost In Heaven.flac
-14:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/D4. Demon Days.flac
+0:Gorillaz/Gorillaz/01 Re-Hash.m4a
+1:Gorillaz/Gorillaz/02 5_4.m4a
+2:Gorillaz/Gorillaz/03 Tomorrow Comes Today.m4a
+3:Gorillaz/Gorillaz/04 New Genius (Brother).m4a
+4:Gorillaz/Gorillaz/05 Clint Eastwood.m4a
+5:Gorillaz/Gorillaz/06 Man Research (Clapper).m4a
+6:Gorillaz/Gorillaz/07 Punk.m4a
+7:Gorillaz/Gorillaz/08 Sound Check (Gravity).m4a
+8:Gorillaz/Gorillaz/09 Double Bass.m4a
+9:Gorillaz/Gorillaz/10 Rock the House.m4a
+10:Gorillaz/Gorillaz/11 19-2000.m4a
+11:Gorillaz/Gorillaz/12 Latin Simone (Que Pasa Contigo).m4a
+12:Gorillaz/Gorillaz/13 Starshine.m4a
+13:Gorillaz/Gorillaz/14 Slow Country.m4a
+14:Gorillaz/Gorillaz/15 M1 A1.m4a
+15:Gorillaz/Gorillaz/16 Clint Eastwood (Ed Case_Sweetie Irie Refix) [Edit].m4a
+16:Gorillaz/Gorillaz/17 19-2000 (Soulchild Remix).m4a
+17:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/A1. Intro.flac
+18:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/A2. Last Living Souls.flac
+19:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/A3. Kids With Guns.flac
+20:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/A4. O Green World.flac
+21:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/B1. Dirty Harry.flac
+22:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/B2. Feel Good Inc..flac
+23:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/B3. El Mañana.flac
+24:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/C1. Every Planet We Reach Is Dead.flac
+25:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/C2. November Has Come.flac
+26:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/C3. All Alone.flac
+27:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/C4. White Light.flac
+28:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/D1. Dare.flac
+29:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/D2. Fire Coming Out Of The Monkey's Head.flac
+30:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/D3. Don't Get Lost In Heaven.flac
+31:Gorillaz/Gorillaz - Demon Days (2005)(2017)(US)[24-96][FLAC]/D4. Demon Days.flac
+32:Gorillaz/Humanz (Deluxe)/01 Intro_ I Switched My Robot Off.m4a
+33:Gorillaz/Humanz (Deluxe)/02 Ascension (feat. Vince Staples).m4a
+34:Gorillaz/Humanz (Deluxe)/03 Strobelite (feat. Peven Everett).m4a
+35:Gorillaz/Humanz (Deluxe)/04 Saturnz Barz (feat. Popcaan).m4a
+36:Gorillaz/Humanz (Deluxe)/05 Momentz (feat. De La Soul).m4a
+37:Gorillaz/Humanz (Deluxe)/06 Interlude_ The Non-Conformist Oat.m4a
+38:Gorillaz/Humanz (Deluxe)/07 Submission (feat. Danny Brown _ K.m4a
+39:Gorillaz/Humanz (Deluxe)/08 Charger (feat. Grace Jones).m4a
+40:Gorillaz/Humanz (Deluxe)/09 Interlude_ Elevator Going Up.m4a
+41:Gorillaz/Humanz (Deluxe)/10 Andromeda (feat. D.R.A.M.).m4a
+42:Gorillaz/Humanz (Deluxe)/11 Busted and Blue.m4a
+43:Gorillaz/Humanz (Deluxe)/12 Interlude_ Talk Radio.m4a
+44:Gorillaz/Humanz (Deluxe)/13 Carnival (feat. Anthony Hamilton).m4a
+45:Gorillaz/Humanz (Deluxe)/14 Let Me Out (feat. Mavis Staples _.m4a
+46:Gorillaz/Humanz (Deluxe)/15 Interlude_ Penthouse.m4a
+47:Gorillaz/Humanz (Deluxe)/16 Sex Murder Party (feat. Jamie Pri.m4a
+48:Gorillaz/Humanz (Deluxe)/17 She_s My Collar (feat. Kali Uchis.m4a
+49:Gorillaz/Humanz (Deluxe)/18 Interlude_ The Elephant.m4a
+50:Gorillaz/Humanz (Deluxe)/19 Hallelujah Money (feat. Benjamin.m4a
+51:Gorillaz/Humanz (Deluxe)/20 We Got the Power (feat. Jehnny Be.m4a
+52:Gorillaz/Humanz (Deluxe)/21 Interlude_ New World.m4a
+53:Gorillaz/Humanz (Deluxe)/22 The Apprentice (feat. Rag_n_Bone.m4a
+54:Gorillaz/Humanz (Deluxe)/23 Halfway to the Halfway House (fea.m4a
+55:Gorillaz/Humanz (Deluxe)/24 Out of Body (feat. Kilo Kish, Zeb.m4a
+56:Gorillaz/Humanz (Deluxe)/25 Ticker Tape (feat. Carly Simon _.m4a
+57:Gorillaz/Humanz (Deluxe)/26 Circle of Friendz (feat. Brandon.m4a
+58:Gorillaz/Plastic Beach (Deluxe Version)/01 Orchestral Intro (feat. Sinfonia.m4a
+59:Gorillaz/Plastic Beach (Deluxe Version)/02 Welcome to the World of the Plast.m4a
+60:Gorillaz/Plastic Beach (Deluxe Version)/03 White Flag (feat. Bashy, Kano and.m4a
+61:Gorillaz/Plastic Beach (Deluxe Version)/04 Rhinestone Eyes.m4a
+62:Gorillaz/Plastic Beach (Deluxe Version)/05 Stylo (feat. Mos Def and Bobby Wo.m4a
+63:Gorillaz/Plastic Beach (Deluxe Version)/06 Superfast Jellyfish (feat. Gruff.m4a
+64:Gorillaz/Plastic Beach (Deluxe Version)/07 Empire Ants (feat. Little Dragon).m4a
+65:Gorillaz/Plastic Beach (Deluxe Version)/08 Glitter Freeze (feat. Mark E Smit.m4a
+66:Gorillaz/Plastic Beach (Deluxe Version)/09 Some Kind of Nature (feat. Lou Re.m4a
+67:Gorillaz/Plastic Beach (Deluxe Version)/10 On Melancholy Hill.m4a
+68:Gorillaz/Plastic Beach (Deluxe Version)/11 Broken.m4a
+69:Gorillaz/Plastic Beach (Deluxe Version)/12 Sweepstakes (feat. Mos Def and Hy.m4a
+70:Gorillaz/Plastic Beach (Deluxe Version)/13 Plastic Beach (feat. Mick Jones a.m4a
+71:Gorillaz/Plastic Beach (Deluxe Version)/14 To Binge (feat. Little Dragon).m4a
+72:Gorillaz/Plastic Beach (Deluxe Version)/15 Cloud of Unknowing (feat. Bobby W.m4a
+73:Gorillaz/Plastic Beach (Deluxe Version)/16 Pirate Jet.m4a
+74:Gorillaz/Plastic Beach (Deluxe Version)/17 Pirate's Progress.m4a
+75:Gorillaz/Plastic Beach (Deluxe Version)/18 Three Hearts, Seven Seas, Twelve.m4a
+76:Gorillaz/The Now Now/01 Humility (feat. George Benson).m4a
+77:Gorillaz/The Now Now/02 Tranz.m4a
+78:Gorillaz/The Now Now/03 Hollywood (feat. Snoop Dogg & Jam.m4a
+79:Gorillaz/The Now Now/04 Kansas.m4a
+80:Gorillaz/The Now Now/05 Sorcererz.m4a
+81:Gorillaz/The Now Now/06 Idaho.m4a
+82:Gorillaz/The Now Now/07 Lake Zurich.m4a
+83:Gorillaz/The Now Now/08 Magic City.m4a
+84:Gorillaz/The Now Now/09 Fire Flies.m4a
+85:Gorillaz/The Now Now/10 One Percent.m4a
+86:Gorillaz/The Now Now/11 Souk Eye.m4a
 playlist_end

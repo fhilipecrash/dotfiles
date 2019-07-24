@@ -50,13 +50,11 @@ padding-right = 1
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = Terminess Powerline:pixelsize=10;0
+font-0 = xos4 Terminess Powerline:pixelsize=10;0
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10
-font-3 = FontAwesome 5 Free:size=10;1
-font-4 = FontAwesome 5 Brands:size=10;1
-font-5 = FontAwesome 5 Free Solid:size=10;1
-font-6 = 3270 Medium Nerd Font:size=10;0
+font-2 = Wuncon Siji:pixelsize=10
+font-3 = FontAwesome:size=10;1
+font-4 = 3270 Medium Nerd Font:size=10;0
 
 modules-left = mpd spotify
 modules-center = 
@@ -108,9 +106,9 @@ padding-right = 1
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = Terminess Powerline:pixelsize=10;0
+font-0 = xos4 Terminess Powerline:pixelsize=10;0
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;0
+font-2 = Wuncon Siji:pixelsize=10;0
 font-3 = FontAwesome:size=11;0
 font-4 = 3270Medium Nerd Font:size=10;0
 
@@ -141,7 +139,6 @@ label = %title:0:80:...%
 
 [module/battery]
 type = internal/battery
-# = icone da bateria
 battery = BAT0
 adapter = AC
 full-at = 98

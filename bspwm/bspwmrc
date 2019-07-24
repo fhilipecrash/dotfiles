@@ -3,7 +3,7 @@
 killall -9 sxhkd compton numlockx mpDris2
 
 #---------------------------------Workspace---------------------------------
-sxhkd & bspc monitor -d      
+sxhkd & bspc monitor -d       
 #---------------------------------------------------------------------------
 
 
@@ -38,6 +38,9 @@ bspc rule -a "Apache NetBeans IDE 11.0" desktop='^5'
 bspc rule -a Mysql-workbench-bin desktop='^5'
 bspc rule -a Zathura state=tiled
 bspc rule -a etcher-electron state=floating
+bspc rule -a Gimp.bin desktop='^7'
+bspc rule -a krita desktop='^7'
+bspc rule -a epsxe follow=on
 #bspc rule -a Transmisson-gtk state=floating
 #---------------------------------------------------------------------------
 

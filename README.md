@@ -17,6 +17,7 @@
 | Terminal Emulator | [Termite](https://github.com/thestinger/termite) |
 | Main Code Editor | [VSCode](https://code.visualstudio.com/) |
 | Music Player | [ncmpcpp](https://github.com/arybczak/ncmpcpp) with [MPD](https://github.com/MusicPlayerDaemon/MPD) and [Spotify](https://www.spotify.com) |
+| Sound visualizer (spectrogram) | [Cava](https://github.com/karlstav/cava) |
 | Video Player | [VLC](https://www.videolan.org/vlc/index.pt-BR.html) |
 
 https://github.com/FhilipeCrash/Dotfiles

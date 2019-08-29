@@ -1,7 +1,10 @@
 # DotFiles
 ### My bspwm configuration files
-
-System fonts: Windows 10 fonts, powerline fonts, font awesome, font siji
+| Program | Name |
+| :--- | :--- |
+| Linux Distribution | [Arch Linux](https://www.archlinux.org/) |
+| Window Manager | [bspwm](https://github.com/baskerville/bspwm)/[i3-gaps](https://github.com/Airblader/i3) |
+| System fonts | Windows 10 fonts, powerline fonts, font awesome, font siji
 Gtk/Qt theme: Arc variation generated from oomox with pywal
 Icon theme: Papirus variation generated from oomox with pywal
 Gtk, Qt & Polybar font: Terminess Powerline

@@ -1,5 +1,5 @@
 # DotFiles
-My bspwm configuration files
+### My bspwm configuration files
 
 System fonts: Windows 10 fonts, powerline fonts, font awesome, font siji
 Gtk/Qt theme: Arc variation generated from oomox with pywal

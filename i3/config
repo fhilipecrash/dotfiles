@@ -2,7 +2,9 @@
 set $mod Mod4
 
 ## Programas da inicialização
+exec --no-startup-id xrandr -s 1680x1050
 exec --no-startup-id numlockx on
+exec --no-startuo-id setxkbmap -model abnt2 -layout br -variant abnt2
 exec --no-startup-id compton
 exec --no-startup-id feh --bg-fill ~/Imagens/Wallpapers/Pixel\ Art/1_5181767357021814820.png
 exec --no-startup-id wal -R
@@ -61,7 +63,7 @@ bindsym Ctrl+Print exec flameshot full -d 3000 -p /home/fhilipe/Imagens/Screensh
 bindsym $mod+Shift+q kill
 
 # Inicia o Rofi
-bindsym $mod+d exec rofi -show drun -show-icons -font "xos4 Terminess Powerline 10" -location 1
+bindsym $mod+d exec rofi -show drun -show-icons -font "Terminess Powerline 10" -location 1
 
 # Volume
 bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ # Aumenta
@@ -142,6 +144,8 @@ bindsym $mod+Escape exec oblogout
 ## Window Rules
 # Espaçamento entre janelas
 gaps inner 5
+smart_gaps on
+workspace_auto_back_and_forth yes
 
 # Borda das janelas
 default_border none

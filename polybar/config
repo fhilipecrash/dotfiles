@@ -26,7 +26,7 @@ secondary = ${xrdb:color2:#222}
 alert = ${xrdb:color3:#222}
 
 [bar/baixo]
-monitor = ${env:MONITOR:VGA-1}
+monitor = ${env:MONITOR:Virtual-1}
 width = 100%
 height = 20
 offset-x = 0.2%
@@ -53,9 +53,9 @@ module-margin-right = 0
 font-0 = Terminess Powerline:pixelsize=10;0
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10
-font-3 = FontAwesome 5 Free:size=10;1
-font-4 = FontAwesome 5 Brands:size=10;1
-font-5 = FontAwesome 5 Free Solid:size=10;1
+font-3 = Font Awesome 5 Free:size=10;1
+font-4 = Font Awesome 5 Brands:size=10;1
+font-5 = Font Awesome 5 Free Solid:size=10;1
 font-6 = 3270 Medium Nerd Font:size=10;0
 
 modules-left = mpd spotify
@@ -82,7 +82,7 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
 [bar/cima]
-monitor = ${env:MONITOR:VGA-1}
+monitor = ${env:MONITOR:Virtual-1}
 width = 100%
 height = 24
 offset-x = 0%
@@ -111,8 +111,9 @@ module-margin-right = 0
 font-0 = Terminess Powerline:pixelsize=10;0
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;0
-font-3 = FontAwesome:size=11;0
-font-4 = 3270Medium Nerd Font:size=10;0
+font-3 = Font Awesome 5 Free:size=10;1
+font-4 = Font Awesome 5 Brands:size=10;1
+font-5 = Font Awesome 5 Free Solid:size=10;1
 
 modules-left = bspwm i3 
 modules-center = xwindow
@@ -171,7 +172,7 @@ animation-charging-framerate = 750
 type = internal/fs
 interval = 25
 
-mount-0 = /home
+mount-0 = /
 
 label-mounted = %{F${colors.foreground} | : %used% / %total%
 label-unmounted = %mountpoint% not mounted

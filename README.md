@@ -10,8 +10,8 @@
 | Web Browser | [Chrome](https:google.com/chrome) |
 | Gtk/Qt theme | [Arc](https://github.com/horst3180/arc-theme) variation generated from [oomox](https://github.com/themix-project/oomox) with [pywal](https://github.com/dylanaraps/pywal) |
 | Icon theme | [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) variation generated from [oomox](https://github.com/themix-project/oomox) with [pywal](https://github.com/dylanaraps/pywal) |
-| Gtk, Qt & Polybar font | [Terminus(Terminess Powerline)](https://github.com/powerline/fonts/tree/master/Terminus) |
-| Text editors/IDE's font | [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) |
+| Gtk, Qt & Polybar font | [Terminess Powerline](https://github.com/powerline/fonts/tree/master/Terminus) |
+| Text editors/IDE's font | [Monaco for Powerline](https://gist.github.com/kevinis/c788f85a654b2d7581d8) |
 | Text editors/IDE's theme | [Dank Neon](https://dankneon.com) |
 | Shell | [zsh](https://www.zsh.org/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) |
 | Terminal Emulator | [Termite](https://github.com/thestinger/termite) |

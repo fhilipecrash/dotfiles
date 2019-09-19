@@ -7,7 +7,7 @@
 | Bar | [polybar](https://github.com/jaagr/polybar) |
 | Program Launcher | [rofi](https://github.com/DaveDavenport/rofi) |
 | Wallpaper Setter | [feh](https://github.com/derf/feh) |
-| Web Browser | [Chrome](https:google.com/chrome) |
+| Web Browser | [Chrome](https://www.google.com/chrome/) |
 | Gtk/Qt theme | [Arc](https://github.com/horst3180/arc-theme) variation generated from [oomox](https://github.com/themix-project/oomox) with [pywal](https://github.com/dylanaraps/pywal) |
 | Icon theme | [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) variation generated from [oomox](https://github.com/themix-project/oomox) with [pywal](https://github.com/dylanaraps/pywal) |
 | Gtk, Qt & Polybar font | [Terminess Powerline](https://github.com/powerline/fonts/tree/master/Terminus) |

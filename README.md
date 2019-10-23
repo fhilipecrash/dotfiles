@@ -11,7 +11,7 @@
 | Gtk/Qt theme | [Arc](https://github.com/horst3180/arc-theme) variation generated from [oomox](https://github.com/themix-project/oomox) with [pywal](https://github.com/dylanaraps/pywal) |
 | Icon theme | [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) variation generated from [oomox](https://github.com/themix-project/oomox) with [pywal](https://github.com/dylanaraps/pywal) |
 | Gtk, Qt & Polybar font | [Terminess Powerline](https://github.com/powerline/fonts/tree/master/Terminus) |
-| Text editors/IDE's font | [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) |
+| Text editors/IDE's font | [Cascadia Code](https://github.com/microsoft/cascadia-code/releases) |
 | Text editors/IDE's theme | [Dank Neon](https://dankneon.com) |
 | Shell | [zsh](https://www.zsh.org/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) |
 | Terminal Emulator | [Termite](https://github.com/thestinger/termite) |

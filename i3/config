@@ -57,7 +57,7 @@ bindsym Control+Shift+Escape exec termite -e "zsh -ic htop" --class=Htop
 
 # Screenshots
 bindsym Print exec flameshot full -p /home/fhilipe/Imagens/Screenshots/
-bindsym Shift+Print exec flameshot gui
+bindsym Shift+Print exec flameshot gui -p /home/fhilipe/Imagens/Screenshots/
 bindsym Ctrl+Print exec flameshot full -d 3000 -p /home/fhilipe/Imagens/Screenshots/
 
 # Mata a janela focada

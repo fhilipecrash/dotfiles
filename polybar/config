@@ -116,14 +116,14 @@ font-4 = FontAwesome 5 Brands:size=10;1
 font-5 = FontAwesome 5 Free Solid:size=10;1
 font-6 = FontAwesome:size=10;0
 
-modules-left = bspwm i3 
+modules-left = i3 
 modules-center = xwindow
-modules-right = netspeedup netspeeddown cpu memory home
+modules-right = cpu memory home
 
 tray-detached = false
 tray-position = right
 tray-padding = 1
-tray-transparent = true
+pseudo-transparency = true
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
@@ -277,7 +277,6 @@ label-song-ellipsis = true
 [module/spotify]
 type = custom/script
 interval = 1
-#format-prefix = " |"
 format = <label>
 exec = python ~/.config/polybar/spotify_status.py -f ' [Spotify]{play_pause} {artist} - {song}'
 
@@ -321,11 +320,11 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = net1
+interface = wlan1
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-label-connected = %essid%
+label-connected = %essid% |
 
 #format-disconnected = "Desconectado"
 ;format-disconnected = <label-disconnected>
@@ -340,34 +339,19 @@ ramp-signal-3 = 
 ramp-signal-4 = 
 ramp-signal-foreground = ${colors.foreground-alt}
 
-[module/netspeedup]
-type = internal/network
-interface = %default_interface%
-label-connected = "%upspeed:7%"
-format-connected = <label-connected>
-format-connected-prefix = " "
-
-[module/netspeeddown]
-type = internal/network
-interface = %default_interface%
-label-connected = "%downspeed:7%"
-format-connected = <label-connected>
-format-connected-prefix = " "
-
 [module/eth]
 type = internal/network
-#interface = enp0s29f7u4
-interface = ens34
+interface = enp0s29f7u4
+#interface = ens34
 interval = 3.0
 
-format-connected-prefix = "  "
+format-connected-prefix = <label-connected>
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
+label-connected = " %local_ip% |"
 
-#label-disconnected = Disconected
-#format-disconnected = <label-disconnected>
-#label-disconnected = " Desconectado "
-#label-disconnected-foreground = ${colors.foreground-alt}
+format-disconnected = <label-disconnected>
+label-disconnected = "%{A1:networkmanager_dmenu:}  Desconectado |%{A}"
+label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/date]
 type = internal/date
@@ -397,10 +381,10 @@ format-prefix-foreground = ${colors.foreground}
 type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
-label-volume = " | "
+label-volume = "%{A1:pavucontrol:} | %{A}"
 label-volume-foreground = ${root.foreground}
 
-format-muted-prefix = " | "
+format-muted-prefix = "%{A1:pavucontrol:} | %{A}"
 format-muted-foreground = ${root.foreground}
 label-muted = " Mudo"
 
@@ -432,12 +416,6 @@ type = custom/script
 interval = 600
 format-prefix = "  "
 exec = "yay -Qum 2> /dev/null | wc -l"
-
-[module/updates-apt]
-type = custom/script
-interval = 600
-#format-prefix =
-#exec =
 
 [settings]
 screenchange-reload = true

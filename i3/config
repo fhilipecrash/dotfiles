@@ -64,12 +64,16 @@ bindsym Ctrl+Print exec flameshot full -d 3000 -p /home/fhilipe/Imagens/Screensh
 bindsym $mod+Shift+q kill
 
 # Inicia o Rofi
-bindsym $mod+d exec rofi -show drun -show-icons -font "Terminess Powerline 10" -location 1
+bindsym $mod+d exec rofi -show drun -show-icons -font "Cascadia Code 9" -location 1
 
 # Volume
 bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ # Aumenta
 bindsym XF86AudioLowerVolume exec amixer set Master 5%- # Diminui
 bindsym XF86AudioMute exec amixer set Master toggle # Muta
+
+# Brilho
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 # Controle de Mídia
 bindsym XF86AudioNext exec playerctl next # Próxima
@@ -161,7 +165,7 @@ for_window [class="Oblogout"] fullscreen
 assign [class="Google-chrome|Firefox|Opera"] 1 
 assign [class="Termite"] 2 
 assign [class="Nemo|Thunar|Ranger|Polo-gtk"] 3 
-assign [class="TelegramDesktop|Whatsie"] 4 
+assign [class="TelegramDesktop|Whatsie|discord"] 4 
 assign [class="Subl3|Vim|Code|Apache NetBeans 11.1|sun-awt-X11-XFramePeer|Mysql-workbench-bin"] 5 
 assign [class="vlc|NCMPCPP|Cava|Spotify"] 6 
 assign [class="Gimp.bin|krita"] 7 
@@ -197,6 +201,7 @@ set $ws4 "4 "
 set $ws5 "5 "
 set $ws6 "6 "
 set $ws7 "7 "
+set $ws8 "8 "
 
 # Muda para workspace
 bindsym $mod+1 workspace $ws1
@@ -206,6 +211,7 @@ bindsym $mod+4 workspace $ws4
 bindsym $mod+5 workspace $ws5
 bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
 
 # Move a janela focada pra workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -215,6 +221,7 @@ bindsym $mod+Shift+4 move container to workspace $ws4
 bindsym $mod+Shift+5 move container to workspace $ws5
 bindsym $mod+Shift+6 move container to workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
 
 ## Inicia a barra do i3
 # i3status ou i3blocks

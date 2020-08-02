@@ -16,7 +16,7 @@
 ![vga](/artworks/wallpapers/862678.png)
 ### [secondary](https://wall.alphacoders.com/big.php?i=862678&lang=Portuguese)
 
-### My bspwm configuration files
+## My bspwm configuration files
 | Program | Name |
 | :--- | :--- |
 | Linux Distribution | [Arch Linux](https://www.archlinux.org/) |

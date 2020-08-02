@@ -1,15 +1,20 @@
 # DotFiles
 
+### Dual Monitors
 ![dual-monitors](/artworks/desktop.png)
+
+### Neofetch
 ![neofetch](/artworks/neofetch.png)
+
+### Editors
 ![editors](/artworks/editors.png)
 
-### Wallpapers
+## Wallpapers
 
 ![lvds](/artworks/wallpapers/1042787.jpg)
+###[primary](https://wall.alphacoders.com/big.php?i=1042787&lang=Portuguese)
 ![vga](/artworks/wallpapers/862678.png)
-[primary](https://wall.alphacoders.com/big.php?i=1042787&lang=Portuguese)
-[secondary](https://wall.alphacoders.com/big.php?i=862678&lang=Portuguese)
+###[secondary](https://wall.alphacoders.com/big.php?i=862678&lang=Portuguese)
 
 ### My bspwm configuration files
 | Program | Name |

@@ -11,10 +11,11 @@
 
 ## Wallpapers
 
+### [Primary](https://wall.alphacoders.com/big.php?i=1042787&lang=Portuguese)
 ![lvds](/artworks/wallpapers/1042787.jpg)
-### [primary](https://wall.alphacoders.com/big.php?i=1042787&lang=Portuguese)
+
+### [Secondary](https://wall.alphacoders.com/big.php?i=862678&lang=Portuguese)
 ![vga](/artworks/wallpapers/862678.png)
-### [secondary](https://wall.alphacoders.com/big.php?i=862678&lang=Portuguese)
 
 ## My bspwm configuration files
 | Program | Name |

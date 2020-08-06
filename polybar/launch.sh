@@ -28,6 +28,8 @@ if [[ $my_laptop_external_monitor = VGA1\ connected* ]]; then
 
 	polybar primary -c ~/.config/polybar/apps-vga.ini &
 	polybar secondary -c ~/.config/polybar/apps-vga.ini &
+
+	polybar cima -c ~/.config/polybar/sys-tray.ini &
 else
 	polybar primary -c ~/.config/polybar/system-lvds.ini &
 	polybar secondary -c ~/.config/polybar/system-lvds.ini &
@@ -37,6 +39,8 @@ else
 
 	polybar secondary -c ~/.config/polybar/apps-lvds.ini &
 	polybar secondary -c ~/.config/polybar/apps-lvds.ini &
+
+	polybar cima -c ~/.config/polybar/sys-tray.ini &
 fi
 
 #polybar primary -c ~/.config/polybar/cpu.ini &

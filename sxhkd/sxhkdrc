@@ -58,6 +58,10 @@ super + F2
 super + F5
 	code
 
+# power menu
+super + Escape
+	~/.config/polybar/scripts/powermenu
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

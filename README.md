@@ -15,11 +15,11 @@
 ## Wallpaper
 
 ### [Dracula Arch](https://draculatheme.com/wallpaper)
-![wallpaper](/artworks/wallpapers/arch.jpg)
+![wallpaper](/artworks/wallpapers/arch.png)
 
 ### This polybar configuration is not mine, here's the link to the original, I just modified some things
 
-![polybar config](https://github.com/adi1090x/polybar-themes/tree/master/polybar-13)
+[polybar config](https://github.com/adi1090x/polybar-themes/tree/master/polybar-13)
 
 ## My bspwm configuration files
 | Program | Name |

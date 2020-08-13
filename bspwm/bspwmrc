@@ -4,15 +4,14 @@ sxhkd &
 
 my_laptop_external_monitor=$(xrandr --query | grep 'VGA1')
 if [[ $my_laptop_external_monitor = VGA1\ connected* ]]; then
-    xrandr --output LVDS1 --primary --mode 1366x768 --rotate normal --output VGA1 --mode 1360x768 --rotate normal --left-of LVDS1
-    feh --bg-fill ~/Imagens/Vaporwave/1042787.jpg --bg-fill ~/Imagens/Vaporwave/862678.png
-	bspc monitor LVDS1 -d IV V VI
-	bspc monitor VGA1 -d I II III
+    xrandr --output LVDS1 --primary --mode 1366x768 --rotate normal --output VGA1 --mode 1360x768 --rotate normal --right-of LVDS1
+	bspc monitor LVDS1 -d I II III
+	bspc monitor VGA1 -d IV V VI
 else
-	feh --bg-fill ~/Imagens/Vaporwave/1042787.jpg
 	bspc monitor -d I II III IV V VI
 fi
 
+feh --bg-fill ~/Imagens/dracula/arch.png
 ~/.config/polybar/launch.sh
 
 bspc config border_width         0
@@ -25,6 +24,7 @@ bspc config focus_follows_pointer true
 bspc config border_radius 		 6
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a megasync state=floating
 
 picom &
 flameshot &

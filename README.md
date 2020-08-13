@@ -9,13 +9,17 @@
 ### Editors
 ![editors](/artworks/editors.png)
 
-## Wallpapers
+### Apps
+![apps](/artworks/apps.png)
 
-### [Primary](https://wall.alphacoders.com/big.php?i=1042787&lang=Portuguese)
-![lvds](/artworks/wallpapers/1042787.jpg)
+## Wallpaper
 
-### [Secondary](https://wall.alphacoders.com/big.php?i=862678&lang=Portuguese)
-![vga](/artworks/wallpapers/862678.png)
+### [Dracula Arch](https://draculatheme.com/wallpaper)
+![wallpaper](/artworks/wallpapers/arch.jpg)
+
+### This polybar configuration is not mine, here's the link to the original, I just modified some things
+
+![polybar config](https://github.com/adi1090x/polybar-themes/tree/master/polybar-13)
 
 ## My bspwm configuration files
 | Program | Name |

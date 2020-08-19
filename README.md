@@ -19,8 +19,9 @@
 
 ## Wallpaper
 
-### [Dracula Arch](https://draculatheme.com/wallpaper)
+### [Dracula](https://draculatheme.com/wallpaper)
 ![wallpaper](/artworks/wallpapers/arch.png)
+![wallpaper2](/artworks/wallpapers/macos.png)
 
 ### This polybar configuration is not mine, here's the link to the original, I just modified some things
 

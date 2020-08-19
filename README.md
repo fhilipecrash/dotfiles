@@ -12,6 +12,11 @@
 ### Apps
 ![apps](/artworks/apps.png)
 
+### Mac (Hackingtosh)
+![mac](/artworks/mac.png)
+
+#### my machine is not good for hackintosh so it got weird xD
+
 ## Wallpaper
 
 ### [Dracula Arch](https://draculatheme.com/wallpaper)

@@ -37,7 +37,7 @@ Print
 	flameshot full -p /home/fhilipe/Imagens/Screenshots/
 
 shift + Print
-	flameshot gui
+	flameshot gui -p /home/fhilipe/Imagens/Screenshots/
 
 control + Print
 	flameshot full -d 3000 -p /home/fhilipe/Imagens/Screenshots/

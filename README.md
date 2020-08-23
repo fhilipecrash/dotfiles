@@ -15,7 +15,7 @@
 ### Mac (Hackintosh)
 ![mac](/artworks/mac.png)
 
-#### my machine is not good for hackintosh so it got weird xD
+#### one day I will use both systems at the same time xD
 
 ## Wallpaper
 

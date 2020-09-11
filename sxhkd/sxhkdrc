@@ -12,7 +12,7 @@ super + @space
 
 # file explorer
 super + e
-	nemo
+	nautilus
 
 # volume
 XF86AudioRaiseVolume
@@ -21,6 +21,12 @@ XF86AudioLowerVolume
 	amixer set Master 5%-
 XF86AudioMute
 	amixer set Master toggle
+
+# brightness keys
+XF86MonBrightnessUp
+	xbacklight -inc 10
+XF86MonBrightnessDown
+	xbacklight -dce 10
 
 # media keys
 XF86AudioNext

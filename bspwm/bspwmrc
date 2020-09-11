@@ -11,11 +11,11 @@ else
 	bspc monitor -d I II III IV V VI
 fi
 
-feh --bg-fill ~/Imagens/dracula/arch.png
+feh --bg-fill ~/Imagens/Wallpapers/mpsSVDr.png
 ~/.config/polybar/launch.sh
 
 bspc config border_width         0
-bspc config window_gap          12
+bspc config window_gap           5
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
@@ -24,11 +24,19 @@ bspc config focus_follows_pointer true
 #bspc config border_radius 		 6
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a megasync state=floating
+bspc rule -a MEGAsync state=floating
+bspc rule -a discord desktop='^4'
+bspc rule -a TelegramDesktop desktop='^4'
 
+
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
 picom &
 flameshot &
 numlockx on &
-kdeconnect-indicator &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-/usr/lib/xfce4/notifyd/xfce4-notifyd &
+# megasync &
+# mailspring &
+# insync start &
+# telegram-desktop &
+# discord &
+# kdeconnect-indicator &

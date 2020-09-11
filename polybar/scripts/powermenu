@@ -36,7 +36,7 @@ case $chosen in
         systemctl suspend
         ;;
     $logout)
-        openbox --exit
+        bspc quit
         ;;
 esac
 

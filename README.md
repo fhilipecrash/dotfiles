@@ -19,6 +19,11 @@
 
 ## Wallpaper
 
+### [Rocketseat Next Levelweek](https://nextlevelweek.com/inscricao/3)
+#### The wallpaper is from the last edition so I no longer have the link :P
+
+![wallpaper-nlw](/artworks/wallpapers/rocketseat-nlw.jpg)
+
 ### [Dracula](https://draculatheme.com/wallpaper)
 ![wallpaper](/artworks/wallpapers/arch.png)
 ![wallpaper2](/artworks/wallpapers/macos.png)
@@ -38,10 +43,11 @@
 | Web Browser | [Chrome](https://www.google.com/chrome/) |
 | Icon theme | [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) |
 | Text editors/IDE's and Gtk/Qt theme | [Dracula](https://draculatheme.com/) |
-| Text editors/IDE's font | [Cascadia Code](https://github.com/microsoft/cascadia-code/releases) |
-| Gtk, Qt & Polybar font | [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka) |
+| Terminal and text editors/IDE's font | [Cascadia Code](https://github.com/microsoft/cascadia-code/releases) |
+| Apps font | [SF Pro](https://developer.apple.com/fonts/) |
+| Polybar font | [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka) |
 | Shell | [zsh](https://www.zsh.org/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) |
-| Terminal Emulator | [Alacritty](https://github.com/alacritty/alacritty) |
+| Terminal Emulator | [Hyper](https://hyper.is/) |
 | Main Code Editor | [VSCode](https://code.visualstudio.com/) |
 | Music Player | [Spotify](https://www.spotify.com) |
 

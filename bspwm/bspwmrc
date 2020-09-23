@@ -11,9 +11,8 @@ else
 	bspc monitor -d I II III IV V VI
 fi
 
-feh --bg-fill ~/Imagens/Wallpapers/136059_original_7200x3572.jpg
+feh --bg-fill ~/Imagens/Wallpapers/NLW_wallpapers/1\ -\ NLW\ \#02\ -\ 1920x1080.jpg
 ~/.config/polybar/launch.sh
-xautolock -detectsleep -time 10 -locker "/home/fhilipe/.config/polybar/scripts/lock.sh" -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
 
 bspc config border_width         0
 bspc config window_gap           5
@@ -29,13 +28,13 @@ bspc rule -a MEGAsync state=floating
 #bspc rule -a discord desktop='^4'
 #bspc rule -a TelegramDesktop desktop='^4'
 
-
+xautolock -detectsleep -time 10 -locker "/home/fhilipe/.config/polybar/scripts/lock.sh" -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'" &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # /usr/lib/xfce4/notifyd/xfce4-notifyd &
-dunst &
 picom &
 flameshot &
 numlockx on &
+dunst &
 # megasync &
 # mailspring &
 # insync start &

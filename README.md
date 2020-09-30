@@ -3,30 +3,11 @@
 ### Dual Monitors
 ![dual-monitors](/artworks/desktop.png)
 
-### Neofetch
-![neofetch](/artworks/neofetch.png)
-
-### Editors
-![editors](/artworks/editors.png)
-
-### Apps
-![apps](/artworks/apps.png)
-
-### Mac (Hackintosh)
-![mac](/artworks/mac.png)
-
-#### one day I will use both systems at the same time xD
-
 ## Wallpaper
 
-### [Rocketseat Next Levelweek](https://nextlevelweek.com/inscricao/3)
-#### The wallpaper is from the last edition so I no longer have the link :P
+#### I don't remember where I got this wallpaper
 
-![wallpaper-nlw](/artworks/wallpapers/rocketseat-nlw.jpg)
-
-### [Dracula](https://draculatheme.com/wallpaper)
-![wallpaper](/artworks/wallpapers/arch.png)
-![wallpaper2](/artworks/wallpapers/macos.png)
+![wallpaper](/artworks/wallpapers/minimal-sunset-landscape-4k-w5.jpg)
 
 ### This polybar configuration is not mine, here's the link to the original, I just modified some things
 

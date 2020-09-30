@@ -19,13 +19,13 @@ i3lock --nofork                 \
     --clock			\
     --timecolor=eceff4ff	\
     --timestr="%H:%M"		\
-    --time-font='JetBrains Mono Nerd Font'	\
+    --time-font='Iosevka'	\
     --timesize=55		\
     --timepos="100:680"		\
     \
     --datecolor=d8dee9ff	\
     --datestr="%A, %d %B"	\
-    --date-font="JetBrains Mono Nerd Font"	\
+    --date-font="Iosevka"	\
     --datesize=30		\
     --datepos="180:730"	\
     \
@@ -34,5 +34,5 @@ i3lock --nofork                 \
     \
     --indicator			\
     \
-    --image=/home/fhilipe/Imagens/Wallpapers/e6c909a12a3a05493884afc91fa08437.cc64fb766a.png
+    --image=/home/fhilipe/Imagens/Wallpapers/lockscreen/e6c909a12a3a05493884afc91fa08437.6d1df93530.png
 

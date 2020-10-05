@@ -3,11 +3,14 @@
 ### Dual Monitors
 ![dual-monitors](/artworks/desktop.png)
 
+### Neofetch
+![neofetch](/artworks/neofetch.png)
+
 ## Wallpaper
 
 #### I don't remember where I got this wallpaper
 
-![wallpaper](/artworks/wallpapers/minimal-sunset-landscape-4k-w5.jpg)
+![wallpaper](/artworks/wallpapers/wallpaper.jpg)
 
 ### This polybar configuration is not mine, here's the link to the original, I just modified some things
 

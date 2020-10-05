@@ -54,7 +54,7 @@ super + F3
 
 # navegador
 super + F1
-	google-chrome-stable
+	google-chrome-stable --force-dark-mode
 
 # sublime
 super + F2

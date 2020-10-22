@@ -1,0 +1,151 @@
+# Font configuration
+font:
+ # Normal (roman) font face
+ normal:
+   # Font family
+   #
+   # Default:
+   #   - (macOS) Menlo
+   #   - (Linux/BSD) monospace
+   #   - (Windows) Consolas
+   family: Cascadia Code
+
+   # The `style` can be specified to pick a specific face.
+   style: Regular
+
+ # Bold font face
+ bold:
+   # Font family
+   #
+   # If the bold family is not specified, it will fall back to the
+   # value specified for the normal font.
+   family: Cascadia Code
+
+   # The `style` can be specified to pick a specific face.
+   style: Bold
+
+ # Italic font face
+ italic:
+   # Font family
+   #
+   # If the italic family is not specified, it will fall back to the
+   # value specified for the normal font.
+   family: Cascadia Code
+
+   # The `style` can be specified to pick a specific face.
+   style: Italic
+
+ # Bold italic font face
+ bold_italic:
+   # Font family
+   #
+   # If the bold italic family is not specified, it will fall back to the
+   # value specified for the normal font.
+   family: Cascadia Code
+
+   # The `style` can be specified to pick a specific face.
+   style: Bold Italic
+
+ # Point size
+ size: 12
+
+ # Colors (Tomorrow Night Bright)
+# Colors (Dracula)
+colors:
+  # Default colors
+  primary:
+    background: '0x282a36'
+    foreground: '0xf8f8f2'
+
+    # Bright and dim foreground colors
+    #
+    # The dimmed foreground color is calculated automatically if it is not present.
+    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
+    # is `false`, the normal foreground color will be used.
+    #dim_foreground: '0x9a9a9a'
+    #bright_foreground: '0xffffff'
+
+  # Cursor colors
+  #
+  # Colors which should be used to draw the terminal cursor. If these are unset,
+  # the cursor color will be the inverse of the cell color.
+  cursor:
+    text: '0x44475a'
+    cursor: '0xf8f8f2'
+
+  # Selection colors
+  #
+  # Colors which should be used to draw the selection area. If selection
+  # background is unset, selection color will be the inverse of the cell colors.
+  # If only text is unset the cell text color will remain the same.
+  selection:
+    text: '0xf8f8f2'
+    background: '0x44475a'
+
+  # Normal colors
+  normal:
+    black:   '0x000000'
+    red:     '0xff5555'
+    green:   '0x50fa7b'
+    yellow:  '0xf1fa8c'
+    blue:    '0xbd93f9'
+    magenta: '0xff79c6'
+    cyan:    '0x8be9fd'
+    white:   '0xbfbfbf'
+
+  # Bright colors
+  bright:
+    black:   '0x4d4d4d'
+    red:     '0xff6e67'
+    green:   '0x5af78e'
+    yellow:  '0xf4f99d'
+    blue:    '0xcaa9fa'
+    magenta: '0xff92d0'
+    cyan:    '0x9aedfe'
+    white:   '0xe6e6e6'
+
+  # Dim colors
+  #
+  # If the dim colors are not set, they will be calculated automatically based
+  # on the `normal` colors.
+  dim:
+    black:   '0x14151b'
+    red:     '0xff2222'
+    green:   '0x1ef956'
+    yellow:  '0xebf85b'
+    blue:    '0x4d5b86'
+    magenta: '0xff46b0'
+    cyan:    '0x59dffc'
+    white:   '0xe6e6d1'
+
+  # Indexed Colors
+  #
+  # The indexed colors include all colors from 16 to 256.
+  # When these are not set, they're filled with sensible defaults.
+  #
+  # Example:
+  #   `- { index: 16, color: '0xff00ff' }`
+  #
+  indexed_colors: []
+
+# Visual Bell
+# ...
+
+window:
+  # Window dimensions (changes require restart)
+  decorations: transparent
+
+  dimensions:
+    columns: 100
+    lines: 30
+
+  #
+  # Specified in number of columns/lines, not pixels.
+  # If both are `0`, this setting is ignored.
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is not scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 12
+    y: 30

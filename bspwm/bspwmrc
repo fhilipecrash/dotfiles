@@ -2,16 +2,16 @@
 
 sxhkd &
 
-my_laptop_external_monitor=$(xrandr --query | grep 'VGA-1')
-if [[ $my_laptop_external_monitor = VGA-1\ connected* ]]; then
-    xrandr --output LVDS-1 --primary --mode 1366x768 --rotate normal --output VGA-1 --mode 1360x768 --rotate normal --right-of LVDS-1
-	bspc monitor LVDS-1 -d I II III
-	bspc monitor VGA-1 -d IV V VI
+my_laptop_external_monitor=$(xrandr --query | grep 'VGA1')
+if [[ $my_laptop_external_monitor = VGA1\ connected* ]]; then
+    xrandr --output LVDS1 --primary --mode 1366x768 --rotate normal --output VGA1 --mode 1360x768 --rotate normal --right-of LVDS1
+	bspc monitor LVDS1 -d I II III
+	bspc monitor VGA1 -d IV V VI
 else
 	bspc monitor -d I II III IV V VI
 fi
 
-feh --bg-fill ~/Imagens/Wallpapers/j7JT3nA.jpg
+feh --bg-fill ~/Imagens/Wallpapers/f16fedc86686146624897737cf4338d8.jpg
 ~/.config/polybar/launch.sh
 
 bspc config border_width         0
@@ -35,8 +35,8 @@ flameshot &
 numlockx on &
 dunst &
 megasync &
-# mailspring &
+# mailspring -b &
 # insync start &
-# telegram-desktop &
-# discord &
+# telegram-desktop -startintray &
+# discord --start-minimized &
 # kdeconnect-indicator &

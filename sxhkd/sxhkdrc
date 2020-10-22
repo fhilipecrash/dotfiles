@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	hyper
+	alacritty
 
 # program launcher
 super + @space
@@ -54,7 +54,7 @@ super + F3
 
 # navegador
 super + F1
-	google-chrome-stable --force-dark-mode
+	microsoft-edge-dev
 
 # sublime
 super + F2

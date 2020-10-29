@@ -22,7 +22,7 @@ configuration {
     location:                       7;
 }
 
-@import "colors.rasi"
+@import "colors_light.rasi"
 
 window {
     transparency:                   "real";

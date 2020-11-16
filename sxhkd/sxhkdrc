@@ -7,12 +7,16 @@ super + Return
 	alacritty
 
 # program launcher
-super + @space
+super + space
 	./.config/rofi/launchers/launcher.sh
 
 # file explorer
 super + e
 	nautilus
+
+# turn on/off picom (use for games)
+super + shift + q
+	./scripts/picom-on-off.sh
 
 # volume
 XF86AudioRaiseVolume
@@ -69,7 +73,7 @@ super + Escape
 	~/.config/polybar/scripts/powermenu
 
 # make sxhkd reload its configuration files:
-super + Escape
+super + Control + Escape
 	pkill -USR1 -x sxhkd
 
 #

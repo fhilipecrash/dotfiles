@@ -22,7 +22,7 @@ configuration {
     location:                       7;
 }
 
-@import "colors_light.rasi"
+@import "colors_dark.rasi"
 
 window {
     transparency:                   "real";
@@ -31,8 +31,8 @@ window {
     border-radius:                  20px;
     height:                         30%;
     width:                          17%;
-    x-offset:                       30;
-    y-offset:                       -90;
+    x-offset:                       21;
+    y-offset:                       -470;
 }
 
 prompt {

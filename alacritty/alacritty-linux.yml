@@ -8,10 +8,10 @@ font:
    #   - (macOS) Menlo
    #   - (Linux/BSD) monospace
    #   - (Windows) Consolas
-   family: Cascadia Code
+   family: Iosevka Nerd Font
 
    # The `style` can be specified to pick a specific face.
-   style: Regular
+   style: Medium Oblique
 
  # Bold font face
  bold:
@@ -19,10 +19,10 @@ font:
    #
    # If the bold family is not specified, it will fall back to the
    # value specified for the normal font.
-   family: Cascadia Code
+   family: Iosevka Nerd Font
 
    # The `style` can be specified to pick a specific face.
-   style: Bold
+   style: Bold Oblique
 
  # Italic font face
  italic:
@@ -30,10 +30,10 @@ font:
    #
    # If the italic family is not specified, it will fall back to the
    # value specified for the normal font.
-   family: Cascadia Code
+   family: Iosevka Nerd Font
 
    # The `style` can be specified to pick a specific face.
-   style: Italic
+   style: Italic Oblique
 
  # Bold italic font face
  bold_italic:
@@ -41,13 +41,13 @@ font:
    #
    # If the bold italic family is not specified, it will fall back to the
    # value specified for the normal font.
-   family: Cascadia Code
+   family: Iosevka Nerd Font
 
    # The `style` can be specified to pick a specific face.
-   style: Bold Italic
+   style: Bold Italic Oblique
 
  # Point size
- size: 9.0
+ size: 10
 
  # Colors (Tomorrow Night Bright)
 # Colors (Dracula)
@@ -132,6 +132,9 @@ colors:
 # ...
 
 window:
+  dimensions:
+    columns: 120
+    lines: 37
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.

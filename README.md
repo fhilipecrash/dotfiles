@@ -13,7 +13,7 @@
 
 #### [Link](https://www.wallpaperflare.com/search?wallpaper=%E7%84%A6%E8%8C%B6)
 
-![wallpaper](/artworks/wallpapers/wallpaper.jpg)
+![wallpaper](/artworks/wallpapers/wallpapers.jpg)
 
 ## My bspwm configuration files
 | Program | Name |

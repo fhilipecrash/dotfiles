@@ -15,10 +15,6 @@
 
 ![wallpaper](/artworks/wallpapers/wallpaper.jpg)
 
-### This polybar configuration is not mine, here's the link to the original, I just modified some things
-
-[polybar config](https://github.com/adi1090x/polybar-themes/tree/master/polybar-13)
-
 ## My bspwm configuration files
 | Program | Name |
 | :--- | :--- |
@@ -27,12 +23,11 @@
 | Bar | [polybar](https://github.com/jaagr/polybar) |
 | Program Launcher | [rofi](https://github.com/DaveDavenport/rofi) |
 | Wallpaper Setter | [feh](https://github.com/derf/feh) |
-| Web Browser | [Edge](https://www.microsoft.com/pt-br/edge) |
+| Web Browser | [Microsoft Edge](https://www.microsoft.com/pt-br/edge) |
 | Icon theme | [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) |
 | Text editors/IDE's and Gtk/Qt theme | [Dracula](https://draculatheme.com/) |
-| Terminal and text editors/IDE's font | [Cascadia Code](https://github.com/microsoft/cascadia-code/releases) |
-| Apps font | [SF Pro](https://developer.apple.com/fonts/) |
-| Polybar font | [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka) |
+| Text editors/IDE's font | [Cascadia Code](https://github.com/microsoft/cascadia-code/releases) |
+| System and terminal font | [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka) |
 | Shell | [zsh](https://www.zsh.org/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) |
 | Terminal Emulator | [Alacritty](https://github.com/alacritty/alacritty) |
 | Main Code Editor | [VSCode](https://code.visualstudio.com/) |

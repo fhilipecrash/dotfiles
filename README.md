@@ -1,14 +1,17 @@
 # DotFiles
 
-### Dual Monitors
-![dual-monitors](/artworks/desktop.png)
-
 ### Neofetch
 ![neofetch](/artworks/neofetch.png)
 
+### File Manager
+![neofetch](/artworks/nautilus.png)
+
+### Editor
+![neofetch](/artworks/vscode.png)
+
 ## Wallpaper
 
-#### I don't remember where I got this wallpaper
+#### [Link](https://www.wallpaperflare.com/search?wallpaper=%E7%84%A6%E8%8C%B6)
 
 ![wallpaper](/artworks/wallpapers/wallpaper.jpg)
 

@@ -84,7 +84,7 @@
 
     ### Text ###
 
-    font = SF Pro Text 10
+    font = Iosevka 10
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -176,7 +176,7 @@
     dmenu = /usr/bin/rofi -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /home/loki/apps/firefox/firefox -new-tab
+    browser = google-chrome-stable
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
@@ -257,9 +257,13 @@
     background = "#282A36"
     foreground = "#eceff4"
     frame_color = "#bf616a"
-    timeout = 0
+    timeout = 5
     # Icon for notifications with critical urgency, uncomment to enable
     #icon = /path/to/icon
+
+[google_chrome]
+    appname = Google Chrome
+    timeout = 5
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.

@@ -124,7 +124,8 @@ SPACESHIP_CHAR_SUFFIX=" "
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias mysql="/opt/lampp/bin/mysql"
+alias spotify="flatpak run com.spotify.Client"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

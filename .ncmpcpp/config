@@ -1,0 +1,22 @@
+##### connection settings #####
+## Needer for tag editor and file operations to work
+mpd_host = "127.0.0.1"
+mpd_port = "6600"
+mpd_music_dir = ~/Música
+mpd_crossfade_time = 5
+
+song_status_format ={{$6%a$3 - }{%t}}|{%f}
+progressbar_look = "─╼·"
+playlist_shorten_total_times = "yes"
+follow_now_playing_lyrics = "yes"
+autocenter_mode = "yes"
+centered_cursor = "yes"
+visualizer_type = "wave_filled"
+user_interface = alternative
+
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "30"
+visualizer_in_stereo = "yes"
+#visualizer_type = "spectrum"
+visualizer_look = "+|"

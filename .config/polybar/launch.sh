@@ -18,4 +18,4 @@ polybar primary -c ~/.config/polybar/config.ini &
 sleep 1 &&
 polybar music -c ~/.config/polybar/config.ini &
 polybar secondary -c ~/.config/polybar/config.ini &
-polybar secondary-lvds -c ~/.config/polybar/config.ini &
+#polybar secondary-lvds -c ~/.config/polybar/config.ini &

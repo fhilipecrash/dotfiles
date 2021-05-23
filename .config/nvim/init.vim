@@ -5,9 +5,6 @@ Plug 'dstein64/vim-startuptime'
 "Conquer of Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" Easy motion
-"Plug 'https://github.com/easymotion/vim-easymotion'
-
 " Lightning fast left-right movement
 Plug 'https://github.com/unblevable/quick-scope'
 
@@ -16,16 +13,6 @@ Plug 'https://github.com/bling/vim-bufferline'
 
 " Linting with ALE
 Plug 'w0rp/ale'
-
-" LSP Completion Engine for C++
-"Plug 'prabirshrestha/async.vim'
-"Plug 'prabirshrestha/vim-lsp'
-
-" Window manager
-Plug 'paroxayte/vwm.vim'
-
-" Emmet for vim
-Plug 'mattn/emmet-vim'
 
 " Enable multiple selection with <C-n>
 Plug 'terryma/vim-multiple-cursors'
@@ -48,6 +35,9 @@ Plug 'https://github.com/Konfekt/FastFold'
 " Pretty start screen
 Plug 'https://github.com/mhinz/vim-startify'
 
+" Autocomplete
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
 " JSX Pretty
 Plug 'maxmellon/vim-jsx-pretty'
 
@@ -56,6 +46,10 @@ Plug 'othree/yajs.vim'
 
 " JavaScript
 Plug 'pangloss/vim-javascript'
+
+" Typescript
+"Plug 'leafgarland/typescript-vim'
+"Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 
 " Prettier
 Plug 'prettier/vim-prettier', {
@@ -81,7 +75,6 @@ Plug 'tpope/vim-surround'
 
 " Identation guides for better visualization
 Plug 'Yggdroot/indentLine'
-"Plug 'nathanaelkane/vim-indent-guides'
 
 " File manager sidebar and git integration
 Plug 'scrooloose/nerdtree'
@@ -115,12 +108,6 @@ Plug 'ap/vim-css-color'
 " Status bar
 Plug 'itchyny/lightline.vim'
 
-" Easier comments
-"Plug 'scrooloose/nerdcommenter'
-
-" Don't repeat yourself!
-"Plug 'tpope/vim-repeat'
-
 " Nice clipboard
 "Plug 'svermeulen/vim-easyclip'
 
@@ -137,7 +124,8 @@ Plug 'tpope/vim-eunuch'
 Plug 'junegunn/fzf.vim'
 
 " Theme
-Plug 'dracula/vim', { 'as': 'dracula' }
+"Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
 
 " VimPlug END
 call plug#end()
@@ -216,7 +204,7 @@ inoremap <C-h>v <Esc>:vsplit<CR>
 "#######################################################
 
 " set coc.nvim path
-set runtimepath^=/home/zsucrilhos/.vim/plugged/coc.nvim
+set runtimepath^=/home/fhilipe/.vim/plugged/coc.nvim
 
 " Shortcut to open the config file with 'C'
 function! SetupCommandAbbrs(from, to)
@@ -369,7 +357,7 @@ else
     map <C-k> :NERDTreeToggle<CR>
 
     "    Open _my-sources folder
-    map <F10> :NERDTree /home/zsucrilhos/_my-sources/
+    map <F10> :NERDTree /home/fhilipe/www/
 endif
 
 
@@ -424,7 +412,7 @@ let g:EasyClipAlwaysMoveCursorToEndOfPaste = 1
 set laststatus=2
 
 let g:lightline = {
-      \ 'colorscheme': 'dracula',
+      \ 'colorscheme': 'onedark',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'filename' ], [ 'bufferline' ] ],
       \ },
@@ -487,7 +475,7 @@ set termguicolors
 set relativenumber
 
 " My colorscheme
-colorscheme dracula
+colorscheme onedark
 
 filetype on
 filetype indent on
@@ -503,9 +491,9 @@ set hidden
 set cursorline!
 
 " Tabs and spaces
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set shiftround
 set expandtab
 

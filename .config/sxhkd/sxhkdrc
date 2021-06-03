@@ -16,7 +16,7 @@ super + e
 
 # turn on/off picom (use for games)
 super + shift + q
-	./scripts/picom-on-off.sh
+	./.bin/picom-on-off.sh
 
 # volume
 XF86AudioRaiseVolume
@@ -58,11 +58,11 @@ super + F3
 
 # navegador
 super + F1
-	microsoft-edge-dev
+	google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode
 
 # sublime
 super + F2
-	subl3
+	subl
 
 # vscode
 super + F5

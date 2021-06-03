@@ -1,6 +1,6 @@
 * {
-  accent:           #9F7DCF;
-  background:       #282a36;
+  accent:           #8FBCBB;
+  background:       #2E3440;
   background-light: #404552;
   foreground:       #E4E4E4;
   on:               #44ad4d;

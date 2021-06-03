@@ -1,7 +1,5 @@
 #! /bin/sh
 
-sxhkd &
-
 #my_laptop_external_monitor=$(xrandr --query | grep 'VGA1')
 #if [[ $my_laptop_external_monitor = VGA1\ connected* ]]; then
 #    xrandr --output LVDS1 --primary --mode 1366x768 --rotate normal --output VGA1 --mode 1360x768 --rotate normal --above LVDS1
@@ -12,10 +10,27 @@ sxhkd &
 #fi
 
 xrandr --output LVDS1 --off --output VGA1 --mode 1360x768
-bspc monitor -d I II III IV V VI
-
-feh --bg-fill ~/Imagens/Wallpapers/aesthetic\ anime/wallpaperflare.com_wallpaper\ \(2\).jpg
+sxhkd &
+#dwall -s island
+feh --bg-fill ~/Imagens/Wallpapers/NuFVbLW.jpg
 ~/.config/polybar/launch.sh
+xsetroot -cursor_name left_ptr &
+xautolock -detectsleep -time 10 -locker "/home/fhilipe/.config/polybar/scripts/lock.sh" -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'" &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+picom &
+flameshot &
+/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
+#eww daemon &
+#numlockx on &
+dunst &
+# megasync &
+# mailspring -b &
+# insync start &
+# telegram-desktop -startintray &
+# discord --start-minimized &
+# kdeconnect-indicator &
+
+bspc monitor -d I II III IV V VI
 
 bspc config border_width         0
 bspc config window_gap           5
@@ -31,16 +46,4 @@ bspc rule -a MEGAsync state=floating
 #bspc rule -a discord desktop='^4'
 #bspc rule -a TelegramDesktop desktop='^4'
 
-xsetroot -cursor_name left_ptr &
-xautolock -detectsleep -time 10 -locker "/home/fhilipe/.config/polybar/scripts/lock.sh" -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'" &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-picom &
-flameshot &
-#numlockx on &
-dunst &
-megasync &
-# mailspring -b &
-# insync start &
-# telegram-desktop -startintray &
-# discord --start-minimized &
-# kdeconnect-indicator &
+

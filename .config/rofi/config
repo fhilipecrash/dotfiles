@@ -1,3 +1,0 @@
-################ Arquivo para execução do Rofi
-rofi.theme: ~/.config/rofi/slate.rasi
-#rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi

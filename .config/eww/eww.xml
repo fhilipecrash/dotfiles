@@ -1,0 +1,17 @@
+<eww>
+    <includes>
+        <file path="./bar.xml"/>
+        <file path="./script-vars.xml"/>
+        <file path="./widgets.xml"/>
+    </includes>
+
+    <definitions>
+    </definitions>
+
+    <variables>
+        <!-- Put your <script-var> and <var>'s in here -->
+    </variables>
+
+    <windows>
+    </windows>
+</eww>

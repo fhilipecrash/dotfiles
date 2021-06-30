@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu>
+
+<menu id="new menu 1" label="Openbox">
+	<separator label="Openbox"/>
+	<item label="Reconfigure" icon="/home/aidoneus/.icons/Custom-apks/Crayons/backup.png">
+		<action name="Reconfigure"/>
+	</item>
+	<item label="Openbox RC" icon="/home/aidoneus/.icons/Custom-apks/Crayons/notes_2_alt.png">
+		<action name="Execute">
+			<command>subl .config/openbox/rc.xml</command>
+		</action>
+	</item>
+	<item label="Openbox Autostart" icon="/home/aidoneus/.icons/Custom-apks/Crayons/lockscreen_start.png">
+		<action name="Execute">
+			<command>subl .config/openbox/autostart</command>
+		</action>
+	</item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+	<separator label=" Hey Fhilipe "/>
+	<item label="Apps" icon="/home/aidoneus/.icons/Custom-apks/Crayons/nexa_iconpack.png">
+		<action name="Execute">
+			<command>./.config/rofi/launchers/launcher.sh</command>
+		</action>
+	</item>
+	<separator/>
+	<item label="Files" icon="/home/aidoneus/.icons/Custom-apks/Crayons/file_manager.png">
+		<action name="Execute">
+			<command>thunar</command>
+		</action>
+	</item>
+	<item label="Web" icon="/home/aidoneus/.icons/Custom-apks/Crayons/firefox_focus.png">
+		<action name="Execute">
+			<command>google-chrome-stable</command>
+		</action>
+	</item>
+	<item label="Terminal" icon="/home/aidoneus/.icons/Custom-apks/Crayons/connectbot.png">
+		<action name="Execute">
+			<command>kitty</command>
+		</action>
+	</item>
+	<separator/>
+	<menu id="new menu 1" icon="/home/aidoneus/.icons/Custom-apks/Crayons/dropbox.png"/>
+	<separator/>
+	<item label="Exit" icon="/home/aidoneus/.icons/Custom-apks/Crayons/bhim.png">
+		<action name="Exit">
+			<prompt>yes</prompt>
+		</action>
+	</item>
+	<item label="Shutdown" icon="/home/aidoneus/.icons/Custom-apks/Crayons/icarros.png">
+		<action name="Execute">
+			<command>~/.config/rofi/scripts/powermenu.sh</command>
+		</action>
+	</item>
+</menu>
+
+</openbox_menu>

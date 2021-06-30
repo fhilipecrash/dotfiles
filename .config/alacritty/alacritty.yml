@@ -7,128 +7,99 @@ env:
   # available, otherwise `xterm-256color` is used.
   TERM: 'xterm-256color'
 
-# Font configuration
-font:
- # Normal (roman) font face
- normal:
-   # Font family
-   #
-   # Default:
-   #   - (macOS) Menlo
-   #   - (Linux/BSD) monospace
-   #   - (Windows) Consolas
-   family: Iosevka Nerd Font
-
-   # The `style` can be specified to pick a specific face.
-   style: Medium
-
- # Bold font face
- bold:
-   # Font family
-   #
-   # If the bold family is not specified, it will fall back to the
-   # value specified for the normal font.
-   family: Iosevka Nerd Font
-
-   # The `style` can be specified to pick a specific face.
-   style: Bold
-
- # Italic font face
- italic:
-   # Font family
-   #
-   # If the italic family is not specified, it will fall back to the
-   # value specified for the normal font.
-   family: Iosevka Nerd Font
-
-   # The `style` can be specified to pick a specific face.
-   style: Italic
-
- # Bold italic font face
- bold_italic:
-   # Font family
-   #
-   # If the bold italic family is not specified, it will fall back to the
-   # value specified for the normal font.
-   family: Iosevka Nerd Font
-
-   # The `style` can be specified to pick a specific face.
-   style: Bold Italic
-
- # Point size
- size: 10
-
-#background_opacity: 0.9
-# Colors (Nord)
-colors:
-  primary:
-    background: '#2e3440'
-    foreground: '#d8dee9'
-    dim_foreground: '#a5abb6'
-  cursor:
-    text: '#2e3440'
-    cursor: '#d8dee9'
-  vi_mode_cursor:
-    text: '#2e3440'
-    cursor: '#d8dee9'
-  selection:
-    text: CellForeground
-    background: '#4c566a'
-  search:
-    matches:
-      foreground: CellBackground
-      background: '#88c0d0'
-    bar:
-      background: '#434c5e'
-      foreground: '#d8dee9'
-  normal:
-    black: '#3b4252'
-    red: '#bf616a'
-    green: '#a3be8c'
-    yellow: '#ebcb8b'
-    blue: '#81a1c1'
-    magenta: '#b48ead'
-    cyan: '#88c0d0'
-    white: '#e5e9f0'
-  bright:
-    black: '#4c566a'
-    red: '#bf616a'
-    green: '#a3be8c'
-    yellow: '#ebcb8b'
-    blue: '#81a1c1'
-    magenta: '#b48ead'
-    cyan: '#8fbcbb'
-    white: '#eceff4'
-  dim:
-    black: '#373e4d'
-    red: '#94545d'
-    green: '#809575'
-    yellow: '#b29e75'
-    blue: '#68809a'
-    magenta: '#8c738c'
-    cyan: '#6d96a5'
-    white: '#aeb3bb'
-  indexed_colors: []
-# Visual Bell
-# ...
-
-cursor:
-  style: 'Underline'
-
 window:
   dimensions:
     columns: 145
-    lines: 32
-  # Window dimensions (changes require restart)
-  #
-  # Specified in number of columns/lines, not pixels.
-  # If both are `0`, this setting is ignored.
+    lines: 40
   # Window padding (changes require restart)
   #
-  # Blank space added around the window in pixels. This padding is not scaled
+  # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 15
-    y: 25
+    x: 24
+    y: 24
 
-  decorations: full
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 1000
+
+  # Scrolling distance multiplier.
+  multiplier: 3
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux/BSD) monospace
+    #   - (Windows) Consolas
+    family: 'MesloLGS NF'
+
+    # The `style` can be specified to pick a specific face.
+    style: Regular
+
+  # Bold font face
+  bold:
+    # Font family
+    #
+    # If the bold family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: 'JetBrainsMono Nerd Font'
+
+    # The `style` can be specified to pick a specific face.
+    #style: Bold
+
+  # Italic font face
+  italic:
+    # Font family
+    #
+    # If the italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: 'JetBrainsMono Nerd Font'
+
+    # The `style` can be specified to pick a specific face.
+    #style: Italic
+
+  # Point size
+  size: 9
+
+colors:
+  # Default colors
+  primary:
+    background: '0x1d212a'
+    foreground: '0xe3e3e3'
+
+  # Normal colors
+  normal:
+    black:   '0x1d212a'
+    red:     '0xfc8993'
+    green:   '0x89e19c'
+    yellow:  '0xfbdf90'
+    blue:    '0xa7bdfb'
+    magenta: '0xd990cd'
+    cyan:    '0x81d4ee'
+    white:   '0xe3e3e3'
+
+  # Bright colors
+  bright:
+    black:   '0x585e74'
+    red:     '0xfb9199'
+    green:   '0x8de19f'
+    yellow:  '0xffe28e'
+    blue:    '0xafc3fb'
+    magenta: '0xdf95d3'
+    cyan:    '0x81d4ee'
+    white:   '0xe3e3e3'
+
+cursor:
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: 'Beam'

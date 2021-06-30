@@ -28,7 +28,7 @@ configuration {
 @import "colors.rasi"
 
 * {
-  text-font:                            "Iosevka 12";
+  text-font:                            "CaskaydiaCove Nerd Font 12";
 
   inputbar-margin:                      3px 3px;
   prompt-padding:                       10px 10px;

@@ -1,49 +1,49 @@
 #! /bin/sh
 
-#my_laptop_external_monitor=$(xrandr --query | grep 'VGA1')
-#if [[ $my_laptop_external_monitor = VGA1\ connected* ]]; then
-#    xrandr --output LVDS1 --primary --mode 1366x768 --rotate normal --output VGA1 --mode 1360x768 --rotate normal --above LVDS1
-#	bspc monitor VGA1 -d I II III
-#	bspc monitor LVDS1 -d IV V VI
-#else
-#bspc monitor -d I II III IV V VI
-#fi
+pgrep -x sxhkd > /dev/null || sxhkd &
 
-xrandr --output LVDS1 --off --output VGA1 --mode 1360x768
-sxhkd &
-#dwall -s island
-feh --bg-fill ~/Imagens/Wallpapers/NuFVbLW.jpg
-~/.config/polybar/launch.sh
-xsetroot -cursor_name left_ptr &
-xautolock -detectsleep -time 10 -locker "/home/fhilipe/.config/polybar/scripts/lock.sh" -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'" &
+# ##############################################################################
+# #                                AUTOSTART APPS                              #
+# ##############################################################################
+
+dunst --config $HOME/.config/dunst/dunstrc &
+eww daemon &
+picom --config $HOME/.config/picom/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-picom &
-flameshot &
-/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
-#eww daemon &
-#numlockx on &
-dunst &
-# megasync &
-# mailspring -b &
-# insync start &
-# telegram-desktop -startintray &
-# discord --start-minimized &
-# kdeconnect-indicator &
+xsetroot -cursor_name left_ptr &
+xinput set-button-map 14 3 2 1 4 5 6 7 8 9 &
+sh $HOME/.config/polybar/launch.sh
+feh --bg-fill ~/Pictures/Wallpapers/xavier-cuenca-w4-3.jpg
+xautolock -detectsleep -time 10 -locker "betterlockscreen -l dim" -notify 30 -notifier "notify-send -u critical -t 30 -- 'LOCKING screen in 30 seconds'" &
 
-bspc monitor -d I II III IV V VI
+# ##############################################################################
+# #                            GENERAL CONFIGURATION                           #
+# ##############################################################################
 
-bspc config border_width         0
-bspc config window_gap           5
+bspc monitor -d I II III IV V VI VII VIII
+
+bspc config border_width         3
+bspc config window_gap           10
+
+bspc config top_padding          37
+bspc config bottom_padding       0
+
+bspc config normal_border_color  "#282828"
+bspc config active_border_color  "#282828"
+bspc config focused_border_color "#282828"
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-bspc config focus_follows_pointer true
-#bspc config border_radius 		 6
 
-#bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a MEGAsync state=floating
-#bspc rule -a discord desktop='^4'
-#bspc rule -a TelegramDesktop desktop='^4'
+# ##############################################################################
+# #                                 WINDOW RULES                               #
+# ##############################################################################
 
+bpsc rule -a google-chrome desktop=^1
+bspc rule -a firefox desktop=^1
+bspc rule -a org.gnome.Nautilus desktop=^3
+bspc rule -a discord desktop=^4
+bspc rule -a Code desktop=^2
+bspc rule -a spotify desktop=^6
 

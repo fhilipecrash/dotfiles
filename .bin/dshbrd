@@ -1,0 +1,20 @@
+#!/bin/bash
+# Opens eww dashboard
+
+if [ ! -d /tmp/i3 ]; then
+    mkdir -p /tmp/i3
+fi
+
+if [ -e /tmp/i3/eww.lock ]; then
+    eww close-all; rm -rf /tmp/i3/eww.lock
+else
+    eww daemon; sleep 0.4
+
+    eww close-all
+    eww open-many pfile file-launcher weather date player-art player quotes launcher slider-bars rofi screenshot widget-lock power widget-time
+
+    echo "test" | tee /tmp/i3/eww.lock
+
+    # i3-msg gaps right all set 343
+    # bspc config right_padding 340
+fi

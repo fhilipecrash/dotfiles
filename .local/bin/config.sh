@@ -22,7 +22,7 @@ then
   $EDITOR ~/.config/dunst/dunstrc
 elif [ $1 == "alacritty" ]
 then
-  $EDITOR ~/.config/dunst/dunstrc
+  $EDITOR ~/.config/alacritty/alacritty.yml
 elif [ $1 == "picom" ]
 then
   $EDITOR ~/.config/picom/picom.conf

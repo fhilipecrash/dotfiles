@@ -14,10 +14,10 @@ downloadDependencies() {
 
         if [[ -e /usr/bin/paru ]]; then
             echo -e "[*] paru detected. Installing dependencies..."
-            paru -S openbox rofi polybar neovim-nightly-bin kitty dunst picom-ibhagwan-git brightnessctl playerctl dunst hsetroot maim viewnior jq xclip
+            paru -S openbox rofi polybar neovim-nightly-bin kitty dunst picom-ibhagwan-git brightnessctl playerctl dunst hsetroot feh viewnior jq xclip xautolock nautilus
         elif [[ -e /usr/bin/yay ]]; then
             echo -e "[*] yay detected. Installing dependencies..."
-            yay -S openbox rofi polybar neovim-nightly-bin kitty dunst picom-ibhagwan-git brightnessctl playerctl dunst hsetroot maim viewnior jq xclip
+            yay -S openbox rofi polybar neovim-nightly-bin kitty dunst picom-ibhagwan-git brightnessctl playerctl dunst hsetroot feh viewnior jq xclip xautolock nautilus
         else
             # Line from https://github.com/Axarva/dotfiles-2.0/blob/9f0a71d7b23e1213383885f2ec641da48eb01681/install-on-arch.sh#L67
             read -r -p "Would you like to install yay? [Y/n]: " yay
@@ -29,7 +29,7 @@ downloadDependencies() {
                     (cd $HOME/.setup-scripto && makepkg -si)
 
                     echo "[*] yay installed. Installing dependencies..."
-                    yay -S bspwm sxhkd rofi polybar neovim-nightly-bin kitty picom-ibhagwan-git brightnessctl playerctl dunst hsetroot maim viewnior jq xclip
+                    yay -S bspwm sxhkd rofi polybar neovim-nightly-bin kitty picom-ibhagwan-git brightnessctl playerctl dunst hsetroot feh viewnior jq xclip xautolock nautilus
                     ;;
                 [nN])
                     echo "[*] Okay. Will not install yay."
@@ -110,21 +110,45 @@ copyFiles() {
     fi
 
     if [[ -d $HOME/.local/bin ]]; then
-        cp -r ./bin/* $HOME/.local/bin
+        cp -r ./.local/bin/* $HOME/.local/bin
     else
-        mkdir $HOME/.local/bin && cp -r ./bin/* $HOME/.local/bin
+        mkdir $HOME/.local/bin && cp -r ./.local/bin/* $HOME/.local/bin
     fi
 
     if [ -d $HOME/.local/share/fonts ]; then
-        cp -r ./etc/fonts/* $HOME/.local/share/fonts
+        cp -r ./.local/share/fonts/* $HOME/.local/share/fonts
     else
-        mkdir $HOME/.local/share/fonts && cp -r ./etc/fonts/* $HOME/.local/share/fonts
+        mkdir $HOME/.local/share/fonts && cp -r ./.local/share/fonts/* $HOME/.local/share/fonts
     fi
 
     if [ -d $HOME/.icons ]; then
         cp -r ./.icons/* $HOME/.icons
     else
         mkdir $HOME/.icons && cp -r ./.icons/* $HOME/.icons
+    fi
+
+    if [ -d $HOME/.themes ]; then
+        cp -r ./.themes/* $HOME/.themes
+    else
+        mkdir $HOME/.themes && cp -r ./.themes/* $HOME/.themes
+    fi
+
+    if [ -e $HOME/.zshrc ]; then
+        rm $HOME/.zshrc && cp ./.zshrc $HOME/
+    else
+        cp ./.zshrc $HOME/
+    fi
+
+    if [ -e $HOME/.Xresources ]; then
+        rm $HOME/.Xresources && cp ./.Xresources $HOME/
+    else
+        cp ./.Xresources $HOME/
+    fi
+
+    if [ -e $HOME/.yarnrc ]; then
+        rm $HOME/.yarnrc && cp ./.yarnrc $HOME/
+    else
+        cp ./.yarnrc $HOME/
     fi
 
     sleep 1
@@ -163,7 +187,7 @@ success() {
     rm -rf $HOME/.setup-scripto
 
     whiptail --title "$title" \
-        --msgbox "Setup success. Please restart BSPWM if you are on an active session. Check notes on the repository's README." 20 50
+        --msgbox "Setup success. Please restart Openbox if you are on an active session. Check notes on the repository's README." 20 50
 }
 
 echo "[*] Starting setup script..."

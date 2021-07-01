@@ -384,16 +384,16 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Thunar</name>
+          <name>File Manager</name>
         </startupnotify>
-        <command>thunar</command>
+        <command>nautilus</command>
       </action>
     </keybind>
     <keybind key="W-F1">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Google Chrome</name>
+          <name>Web Browser</name>
         </startupnotify>
         <command>google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode</command>
       </action>
@@ -416,7 +416,7 @@
         <command>flatpak run com.spotify.Client</command>
       </action>
     </keybind>
-    <keybind key="W-F4">
+    <keybind key="W-F5">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>

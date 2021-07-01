@@ -24,11 +24,12 @@ vnoremap <S-y> "+y
 "nnoremap <C-H> <C-W><C-H>
 
 " NerdTree
-nmap <C-b> :NERDTreeToggle<CR>
+nmap <C-b> :NvimTreeToggle<CR>
 "nnoremap <Leader>nf :NERDTreeFind<cr>
 
 " nvim-bufferline.lua
-nmap <S-n> :BufferLineCycleNext<CR>
+nmap <S-n> :BufferLineCyclePrev<CR>
+nmap <S-m> :BufferLineCycleNext<CR>
 
 nnoremap <Leader>gy :Goyo<CR>
 

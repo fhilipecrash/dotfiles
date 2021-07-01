@@ -21,7 +21,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'michaelb/vim-tips'
 
 " Nerdtree
-Plug 'preservim/nerdtree'
+"Plug 'preservim/nerdtree'
 
 "nvim-tree
 Plug 'kyazdani42/nvim-web-devicons' 

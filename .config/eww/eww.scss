@@ -71,6 +71,7 @@ button {
 .time {
     padding: 0 20px 0 0px;
     color: #c2c6c3;
+    font-family: CaskaydiaCove Nerd Font;
 }
 
 .workspaces {
@@ -137,7 +138,7 @@ button {
 }
 
 .profile-icon {
-    background-image: url("/home/aidoneus/Downloads/Images/profile.png");
+    background-image: url("/home/fhilipe/.face");
     background-size: 120px;
     background-repeat: no-repeat;
     margin-bottom: -30px;
@@ -145,7 +146,7 @@ button {
 }
 
 .profile-name {
-    font-family: "Sarasa Term J", "Rec Mono Casual";
+    font-family: "Sarasa Mono SC Nerd", "Rec Mono Casual";
     font-size: 18px;
     margin-top: 20px;
 }
@@ -165,7 +166,7 @@ button {
 .file-launcher {
     padding: 6px;
     font-size: 16px;
-    font-family: "Sarasa Term J";
+    font-family: "Sarasa Mono SC Nerd";
 }
 
 .file-launcher button {
@@ -182,7 +183,7 @@ button {
 .hour,
 .dot-dot,
 .minute {
-    font-family: "JetBrainsMonoMedium Nerd Font Mono", "HandyCasualCondensed-Regular";
+    font-family: "JetBrains Mono";
     font-size: 40px;
     font-weight: bold;
 }
@@ -201,7 +202,7 @@ button {
 
 .weather {
     padding: 20px; 
-    font-family: "Sarasa Term J";
+    font-family: "Sarasa Mono SC Nerd";
     font-size: 14px;
     color: #e3e3e3;
 }
@@ -215,7 +216,7 @@ button {
 }
 .date .month {
     background-color: #1d212a;
-    font-family: "JetBrainsMonoMedium Nerd Font Mono";
+    font-family: "JetBrains Mono";
     font-weight: bold;
     font-size: 18px;
     color: #e3e3e3;
@@ -267,7 +268,7 @@ button {
 
 .song-title,
 .song-artist {
-    font-family: "Sarasa Term HC", "Stick";
+    font-family: "Sarasa Mono SC Nerd", "Stick";
     font-size: 14px;
     padding-left: 15px;
 }

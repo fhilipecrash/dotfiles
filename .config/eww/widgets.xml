@@ -7,7 +7,7 @@
                     <box class="profile-icon"></box>
                     <box class="profile-name" orientation="v">
                         <box class="hostname">Hey {{profile_name}}!</box>
-                        <box class="username">@obliviousofcraps</box>
+                        <box class="username">@fhilipecrash</box>
                     </box>
                 </box>
             </box>
@@ -15,12 +15,12 @@
 
         <def name="file-launcher">
             <box class="file-launcher" orientation="v" valign="center" halign="center" spacing="5" space-evenly="false">
-                <button onclick="setsid -f thunar ~" >Home</button>
-                <button onclick="setsid -f thunar ~/Downloads" >Downloads</button>
-                <button onclick="setsid -f thunar ~/Documents" >Documents</button>
-                <button onclick="setsid -f thunar ~/Pictures" >Pictures</button>
-                <button onclick="setsid -f thunar ~/Music" >Music</button>
-                <button onclick="setsid -f thunar ~/MEGAsync Downloads" >Mega</button>
+                <button onclick="setsid -f nautilus ~" >Home</button>
+                <button onclick="setsid -f nautilus ~/Downloads" >Downloads</button>
+                <button onclick="setsid -f nautilus ~/Documents" >Documents</button>
+                <button onclick="setsid -f nautilus ~/Pictures" >Pictures</button>
+                <button onclick="setsid -f nautilus ~/Music" >Music</button>
+                <button onclick="setsid -f nautilus ~/MEGAsync Downloads" >Mega</button>
             </box>
         </def>
 
@@ -88,31 +88,31 @@
         <def name="launcher">
             <box orientation="v" space-evenly="true">
                 <box class="launcher" orientation="h" space-evenly="true">
-                    <button onclick="setsid -f vivaldi-stable " style="background-image:url('/home/aidoneus/.icons/Custom-apks/Kamijara/vivaldi_browser.png')"></button>
-                    <button onclick="setsid -f firefox " style="background-image:url('/home/aidoneus/.icons/Custom-apks/Crayons/firefox_nightly.png')"></button>
-                    <button onclick="setsid -f kitty -d ~" style="background-image:url('/home/aidoneus/.icons/Custom-apks/Crayons/termux.png')"></button>
-                    <button onclick="setsid -f thunar ~" style="background-image:url('/home/aidoneus/.icons/Custom-apks/Crayons/filemanager_plus.png')"></button>
-                    <button onclick="setsid -f vivaldi-stable https://discord.com/channels/@me" style="background-image:url('/home/aidoneus/.icons/Custom-apks/Crayons/discord_alt1.png')"></button>
+                    <button onclick="setsid -f google-chrome-stable " style="background-image:url('/home/fhilipe/.icons/Icon-apks/Crayons/chrome.png')"></button>
+                    <button onclick="setsid -f firefox " style="background-image:url('/home/fhilipe/.icons/Icon-apks/Crayons/firefox_nightly.png')"></button>
+                    <button onclick="setsid -f kitty -d ~" style="background-image:url('/home/fhilipe/.icons/Icon-apks/Crayons/termux.png')"></button>
+                    <button onclick="setsid -f nautilus ~" style="background-image:url('/home/fhilipe/.icons/Icon-apks/Crayons/filemanager_plus.png')"></button>
+                    <button onclick="setsid -f discord " style="background-image:url('/home/fhilipe/.icons/Icon-apks/Crayons/discord_alt1.png')"></button>
                 </box>
                 <box class="launcher" orientation="h" space-evenly="true">
-                    <button onclick="setsid -f vivaldi-stable github.com" style="background-image:url('/home/aidoneus/.icons/Custom-apks/Crayons/github.png')"></button>
-                    <button onclick="./scripts/launch-spotify" style="background-image:url('/home/aidoneus/.icons/Custom-apks/Crayons/spotify.png')"></button>
-                    <button onclick="setsid -f vivaldi-stable https://reddit.com" style="background-image:url('/home/aidoneus/.icons/Custom-apks/Crayons/reddit.png')"></button>
-                    <button onclick="setsid -f vivaldi-stable https://youtube.com" style="background-image:url('/home/aidoneus/.icons/Custom-apks/Crayons/youtube_music.png')"></button>
-                    <button onclick="setsid -f vivaldi-stable https://twitter.com" style="background-image:url('/home/aidoneus/.icons/Custom-apks/Crayons/tweetcaster.png')"></button>
+                    <button onclick="setsid -f google-chrome-stable github.com" style="background-image:url('/home/fhilipe/.icons/Icon-apks/Crayons/github.png')"></button>
+                    <button onclick="./scripts/launch-spotify" style="background-image:url('/home/fhilipe/.icons/Icon-apks/Crayons/spotify.png')"></button>
+                    <button onclick="setsid -f google-chrome-stable https://reddit.com" style="background-image:url('/home/fhilipe/.icons/Icon-apks/Crayons/reddit.png')"></button>
+                    <button onclick="setsid -f google-chrome-stable https://youtube.com" style="background-image:url('/home/fhilipe/.icons/Icon-apks/Crayons/youtube_music.png')"></button>
+                    <button onclick="setsid -f google-chrome-stable https://twitter.com" style="background-image:url('/home/fhilipe/.icons/Icon-apks/Crayons/tweetcaster.png')"></button>
                 </box>
             </box>
         </def>
 
         <def name="rofi">
             <box orientation="h" halign="center" valign="center" space-evenly="true">
-                <button class="rofi" onclick="setsid -f rofi -show drun" style="background-image:url('/home/aidoneus/.icons/Custom-apks/Crayons/nexa_iconpack.png')"></button>
+                <button class="rofi" onclick="setsid -f rofi -show drun" style="background-image:url('/home/fhilipe/.icons/Icon-apks/Crayons/nexa_iconpack.png')"></button>
             </box>
         </def>
         
         <def name="screenshot">
             <box orientation="h" halign="center" valign="center" space-evenly="true">
-                <button class="rofi" onclick="~/.local/bin/scripts/screenshot.sh" style="background-image:url('/home/aidoneus/.icons/Custom-apks/Crayons/instagram.png')"></button>
+                <button class="rofi" onclick="~/.local/bin/scripts/screenshot.sh" style="background-image:url('/home/fhilipe/.icons/Icon-apks/Crayons/instagram.png')"></button>
             </box>
         </def>
 

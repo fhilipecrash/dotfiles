@@ -14,11 +14,10 @@ downloadDependencies() {
 
         if [[ -e /usr/bin/paru ]]; then
             echo -e "[*] paru detected. Installing dependencies..."
-            paru -S openbox rofi polybar neovim-nightly-bin kitty dunst picom-ibhagwan-git brightnessctl playerctl dunst hsetroot feh viewnior jq xclip xautolock nautilus
+            paru -S bspwm sxhkd rofi polybar neovim-nightly-bin kitty picom-ibhagwan-git brightnessctl playerctl dunst hsetroot feh eog jq xclip xautolock nautilus betterlockscreen
         elif [[ -e /usr/bin/yay ]]; then
             echo -e "[*] yay detected. Installing dependencies..."
-            yay -S openbox rofi polybar neovim-nightly-bin kitty dunst picom-ibhagwan-git brightnessctl playerctl dunst hsetroot feh viewnior jq xclip xautolock nautilus
-        else
+            yay -S bspwm sxhkd rofi polybar neovim-nightly-bin kitty picom-ibhagwan-git brightnessctl playerctl dunst hsetroot feh eog jq xclip xautolock nautilus betterlockscreen
             # Line from https://github.com/Axarva/dotfiles-2.0/blob/9f0a71d7b23e1213383885f2ec641da48eb01681/install-on-arch.sh#L67
             read -r -p "Would you like to install yay? [Y/n]: " yay
             sleep 1.5
@@ -29,7 +28,7 @@ downloadDependencies() {
                     (cd $HOME/.setup-scripto && makepkg -si)
 
                     echo "[*] yay installed. Installing dependencies..."
-                    yay -S bspwm sxhkd rofi polybar neovim-nightly-bin kitty picom-ibhagwan-git brightnessctl playerctl dunst hsetroot feh viewnior jq xclip xautolock nautilus
+                    yay -S bspwm sxhkd rofi polybar neovim-nightly-bin kitty picom-ibhagwan-git brightnessctl playerctl dunst hsetroot feh eog jq xclip xautolock nautilus betterlockscreen
                     ;;
                 [nN])
                     echo "[*] Okay. Will not install yay."
@@ -60,11 +59,11 @@ copyFiles() {
         mkdir $HOME/.config/kitty && cp -r ./.config/kitty/* $HOME/.config/kitty
     fi
 
-    if [[ -d $HOME/.config/openbox ]]; then
-        mkdir $HOME/.config/openbox.bak && mv $HOME/.config/openbox/* $HOME/.config/openbox.bak
-        cp -r ./.config/openbox/* $HOME/.config/openbox/
+    if [[ -d $HOME/.config/bspwm ]]; then
+        mkdir $HOME/.config/bspwm.bak && mv $HOME/.config/bspwm/* $HOME/.config/bspwm.bak
+        cp -r ./.config/bspwm/* $HOME/.config/bspwm/
     else
-        mkdir $HOME/.config/openbox && cp -r ./.config/openbox/* $HOME/.config/openbox
+        mkdir $HOME/.config/bspwm && cp -r ./.config/bspwm/* $HOME/.config/bspwm
     fi
 
     if [[ -d $HOME/.config/dunst ]]; then
@@ -187,7 +186,7 @@ success() {
     rm -rf $HOME/.setup-scripto
 
     whiptail --title "$title" \
-        --msgbox "Setup success. Please restart Openbox if you are on an active session. Check notes on the repository's README." 20 50
+        --msgbox "Setup success. Please restart bspwm if you are on an active session. Check notes on the repository's README." 20 50
 }
 
 echo "[*] Starting setup script..."

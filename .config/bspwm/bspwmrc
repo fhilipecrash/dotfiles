@@ -7,14 +7,16 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 # ##############################################################################
 
 dunst --config $HOME/.config/dunst/dunstrc &
-eww daemon &
+$HOME/.local/bin/eww daemon &
 picom --config $HOME/.config/picom/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 xsetroot -cursor_name left_ptr &
 xinput set-button-map 14 3 2 1 4 5 6 7 8 9 &
-sh $HOME/.config/polybar/launch.sh
-feh --bg-fill ~/Pictures/Wallpapers/xavier-cuenca-w4-3.jpg
+sh $HOME/.config/polybar/launch.sh &
+feh --bg-fill ~/Pictures/Wallpapers/pastel/thumbrefeeldtowerz2.png &
 xautolock -detectsleep -time 10 -locker "betterlockscreen -l dim" -notify 30 -notifier "notify-send -u critical -t 30 -- 'LOCKING screen in 30 seconds'" &
+blueman-applet &
+premid &
 
 # ##############################################################################
 # #                            GENERAL CONFIGURATION                           #
@@ -40,7 +42,8 @@ bspc config gapless_monocle      true
 # #                                 WINDOW RULES                               #
 # ##############################################################################
 
-bpsc rule -a google-chrome desktop=^1
+#bpsc rule -a kitty state=floating
+bpsc rule -a Google-chrome desktop=^1
 bspc rule -a firefox desktop=^1
 bspc rule -a org.gnome.Nautilus desktop=^3
 bspc rule -a discord desktop=^4

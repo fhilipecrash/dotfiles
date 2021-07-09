@@ -54,7 +54,7 @@ super + ctrl + space
 
 # Start alacritty
 super + Return
-    alacritty
+    kitty
 
 # Open application menu
 super + space
@@ -75,7 +75,7 @@ super + Print
 
 # Open file manager
 super + e
-    thunar
+    nautilus
 
 # Open browser
 super + F1
@@ -100,7 +100,7 @@ super + shift + q
 
 # Manage volume
 XF86Audio{Raise,Lower}Volume
-    amixer -q set Master 5%{+,-}
+    ./.local/bin/scripts/change-volume {up,down}
 
 XF86AudioMute
     amixer set Master toggle

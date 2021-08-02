@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ -z $1 ]
+then
+  echo 'Esperado: "pascal arquivo", sem ".pas"'
+elif [ ! -e $1.pas ]
+then
+  echo 'Arquivo inexistente'
+  echo 'Esperado: "pascal arquivo", sem ".pas"'
+else
+  fpc $1 && ./$1 && rm $1 $1.o
+fi

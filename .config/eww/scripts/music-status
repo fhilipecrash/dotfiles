@@ -1,9 +1,0 @@
-#!/bin/bash
-
-status="$(mpc status)"
-
-if [[ $status == *"[playing]"* ]]; then
-    echo "/home/aidoneus/.icons/Custom-apks/Crayons/pause-button.svg"
-else
-    echo "/home/aidoneus/.icons/Custom-apks/Crayons/play-button.svg"
-fi

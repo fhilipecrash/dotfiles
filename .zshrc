@@ -21,6 +21,7 @@ alias mysql="/opt/lampp/bin/mysql"
 alias config="~/.local/bin/config"
 alias pascal="~/.local/bin/pascal"
 alias lvim="~/.local/bin/lvim"
+alias ls="exa -la --icons"
 
 # Default editor
 export EDITOR=~/.local/bin/lvim

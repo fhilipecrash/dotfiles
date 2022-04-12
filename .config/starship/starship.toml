@@ -20,3 +20,6 @@ disabled = true
 
 [lua]
 symbol = "[](blue) "
+
+[python]
+symbol = "[󰌠](yellow) "

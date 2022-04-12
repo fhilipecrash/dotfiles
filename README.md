@@ -1,5 +1,4 @@
 # DotFiles
 
-I deleted several things from my dotfiles because I decided to use only the necessary settings, since I use Gnome.
-I will put Windows configuration files as well because Windows 11 is quite a viable system for development, so I will use it more often
-
+Configuration files that will be with the [post install script](https://github.com/FhilipeCrash/post-install-script). <br>
+Awesome, starship, zsh and alacritty settings are from [rxyhn's dotfiles](https://github.com/rxyhn/dotfiles), I just made some changes.

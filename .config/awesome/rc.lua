@@ -33,8 +33,8 @@ file_manager = "nautilus"
 music_client = terminal .. " --class music -e ncmpcpp"
 
 -- 🌏 Weather API
-openweathermap_key = "5a89d1a76e30a20bdafacd21bd86ec45" -- API Key
-openweathermap_city_id = "3393001" -- City ID
+openweathermap_key = "" -- API Key
+openweathermap_city_id = "" -- City ID
 weather_units = "metric" -- Unit
 
 -- 🖥 Screen

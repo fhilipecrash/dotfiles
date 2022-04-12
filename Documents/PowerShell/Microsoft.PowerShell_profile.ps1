@@ -9,4 +9,6 @@ Import-Module Terminal-Icons
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 
-oh-my-posh --init --shell pwsh --config $HOME\Documents\PowerShell\my_powerlevel10k.omp.json | Invoke-Expression
+# Start Starship
+Invoke-Expression (&starship init powershell)
+$ENV:STARSHIP_CONFIG = "$HOME\.config\starship\starship.toml"

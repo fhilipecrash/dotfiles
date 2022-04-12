@@ -60,6 +60,10 @@ awful.keyboard.append_global_keybindings({
             tray_toggle()
         end,
         {description = "toggle system tray", group = "launcher"}),
+        awful.key({modkey, shift}, "w", function()
+            awful.spawn.with_shell("picom-toggle")
+        end,
+        {description = "toggle picom", group = "launcher"}),
 })
 
 -- Client and Tabs Bindings

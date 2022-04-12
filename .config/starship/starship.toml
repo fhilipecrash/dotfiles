@@ -16,10 +16,10 @@ disabled = false
 disabled = false
 
 [line_break]
-disabled = true
+disabled = false
 
 [lua]
 symbol = "[](blue) "
 
 [python]
-symbol = "[󰌠](yellow) "
+symbol = "[󰌠](yellow)  "

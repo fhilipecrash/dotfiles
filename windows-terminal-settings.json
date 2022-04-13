@@ -33,14 +33,16 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "initialCols": 140,
     "profiles": 
     {
         "defaults": 
         {
             "colorScheme": "One Dark Custom",
+            "cursorShape": "underscore",
             "font": 
             {
-                "face": "MesloLGS NF",
+                "face": "Sarasa Mono K Nerd Font",
                 "size": 11,
                 "weight": "normal"
             },
@@ -86,6 +88,29 @@
     },
     "schemes": 
     [
+        {
+            "background": "#061115",
+            "black": "#1C252C",
+            "blue": "#6791C9",
+            "brightBlack": "#1C252C",
+            "brightBlue": "#6791C9",
+            "brightCyan": "#67AFC1",
+            "brightGreen": "#78B892",
+            "brightPurple": "#BC83E3",
+            "brightRed": "#78B892",
+            "brightWhite": "#D9D7D6",
+            "brightYellow": "#DE8F78",
+            "cursorColor": "#D9D7D6",
+            "cyan": "#67AFC1",
+            "foreground": "#D9D7D6",
+            "green": "#78B892",
+            "name": "Aestethic Night",
+            "purple": "#BC83E3",
+            "red": "#DF5B61",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D9D7D6",
+            "yellow": "#DE8F78"
+        },
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",

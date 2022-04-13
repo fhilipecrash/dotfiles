@@ -15,19 +15,19 @@ window:
 
 font:
   normal:
-    family: Sarasa Mono K
+    family: Sarasa Mono K Nerd Font
     style: Regular
 
   bold:
-    family: Sarasa Mono K
+    family: Sarasa Mono K Nerd Font
     style: Bold
 
   italic:
-    family: Sarasa Mono K
+    family: Sarasa Mono K Nerd Font
     style: Italic
 
   bold_italic:
-    family: Sarasa Mono K
+    family: Sarasa Mono K Nerd Font
     style: Bold Italic
 
   size: 11

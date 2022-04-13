@@ -18,6 +18,12 @@ disabled = false
 [line_break]
 disabled = false
 
+[shell]
+zsh_indicator = "_"
+powershell_indicator = "󰌠"
+style = "cyan bold"
+disabled = false
+
 [lua]
 symbol = "[](blue) "
 

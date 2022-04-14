@@ -15,12 +15,6 @@ disabled = false
 [directory]
 disabled = false
 
-[shell]
-zsh_indicator = "_"
-powershell_indicator = "󰨊 "
-style = "cyan bold"
-disabled = false
-
 [line_break]
 disabled = false
 

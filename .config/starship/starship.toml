@@ -15,13 +15,13 @@ disabled = false
 [directory]
 disabled = false
 
-[line_break]
-disabled = false
-
 [shell]
 zsh_indicator = "_"
-powershell_indicator = "󰌠"
+powershell_indicator = "󰨊 "
 style = "cyan bold"
+disabled = false
+
+[line_break]
 disabled = false
 
 [lua]

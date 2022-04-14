@@ -63,6 +63,13 @@ cd() {
 	builtin cd "$@" && command ls --group-directories-first --color=auto -F
 }
 
+# zsh keybinds
+bindkey "^[[H"    beginning-of-line
+bindkey "^[[F"    end-of-line
+bindkey "^[[3~"   delete-char
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
+
 # alias
 alias sr='source ~/.zshrc'
 alias wifi="nmtui-connect"
@@ -71,8 +78,15 @@ alias l="ls -l"
 alias la="ls -a"
 alias lla="ls -la"
 alias lt="ls --tree"
+alias pwsh="pwsh -nologo"
+
+# nvm 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # init starship
 eval "$(starship init zsh)"
 # setup starship custom prompt
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
+

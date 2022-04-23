@@ -36,6 +36,17 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 # Only display some tags for the command cd
 zstyle ':completion:*:*:cd:*' tag-order local-directories directory-stack path-directories
 
+# path
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$(yarn global bin)"
+
+# env
+export VISUAL=lvim;
+export EDITOR=lvim;
+export SUDO_PROMPT="[sudo] %p : "
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+
 # History configurations
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
@@ -75,15 +86,22 @@ alias sr='source ~/.zshrc'
 alias wifi="nmtui-connect"
 alias ls="exa --color=auto --icons"
 alias l="ls -l"
-alias la="ls -a"
+alias la="l -a"
 alias lla="ls -la"
 alias lt="ls --tree"
 alias pwsh="pwsh -nologo"
 
 # nvm 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# asdf init
+. $HOME/.asdf/asdf.sh
+# asdf fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# set DOTNET_ROOT
+. ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 
 # init starship
 eval "$(starship init zsh)"

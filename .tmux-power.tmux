@@ -116,7 +116,7 @@ tmux_set status-left ""
 
 # Window status
 #tmux_set window-status-format " #I:#W "
-tmux_set window-status-format " #I:#W "
+tmux_set window-status-format "#[bg=$BG,fg=$TC,nobold] #I:#W "
 tmux_set window-status-current-format "#[bg=$TC,fg=$G06,bold] #I:#W #[fg=$TC,bg=$BG,nobold]$right_arrow_icon"
 
 # Window separator

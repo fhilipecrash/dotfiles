@@ -6,8 +6,18 @@ import:
 env:
   TERM: xterm-256color
 
+shell:
+  program: /usr/bin/zsh
+  args:
+    - -c
+    - tmux attach -t main || tmux new -s main
+
 window:
   dynamic_padding: true
+
+  dimensions:
+    columns: 135
+    lines: 25
 
   padding:
     x: 25
@@ -35,36 +45,6 @@ font:
   offset:
     x: 0
     y: 0
-
-# aesthetic night colors
-# colors:
-#   primary:
-#     background: '0x061115'
-#     foreground: '0xD9D7D6'
-
-#   cursor:
-#     text:   '0x061115'
-#     cursor: '0xD9D7D6'
-
-#   normal:
-#     black:   '0x1C252C'
-#     red:     '0xDF5B61'
-#     green:   '0x78B892'
-#     yellow:  '0xDE8F78'
-#     blue:    '0x6791C9'
-#     magenta: '0xBC83E3'
-#     cyan:    '0x67AFC1'
-#     white:   '0xD9D7D6'
-
-#   bright:
-#     black:   '0x1C252C'
-#     red:     '0xDF5B61'
-#     green:   '0x78B892'
-#     yellow:  '0xDE8F78'
-#     blue:    '0x6791C9'
-#     magenta: '0xBC83E3'
-#     cyan:    '0x67AFC1'
-#     white:   '0xD9D7D6'
 
 cursor:
   style: Underline

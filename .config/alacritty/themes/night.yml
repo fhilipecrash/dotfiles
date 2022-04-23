@@ -3,13 +3,13 @@
 
 colors:
   primary:
-    background: '#061115'
+    background: '#23252E'
     foreground: '#D9D7D6'
   cursor:
     text:   CellForeground
     cursor: '#D9D7D6'
   bright:
-    black:   '#1C252C'
+    black:   '#4b5164'
     red:     '#DF5B61'
     green:   '#78B892'
     yellow:  '#DE8F78'
@@ -18,7 +18,7 @@ colors:
     cyan:    '#67AFC1'
     white:   '#D9D7D6'
   normal:
-    black:   '#1C252C'
+    black:   '#616981'
     red:     '#DF5B61'
     green:   '#78B892'
     yellow:  '#DE8F78'

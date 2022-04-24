@@ -74,8 +74,8 @@ cd() {
 }
 
 # zsh keybinds
-bindkey "^[[H"    beginning-of-line
-bindkey "^[[F"    end-of-line
+bindkey "^[[1~"    beginning-of-line
+bindkey "^[[4~"    end-of-line
 bindkey "^[[3~"   delete-char
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
@@ -89,11 +89,6 @@ alias la="l -a"
 alias lla="ls -la"
 alias lt="ls --tree"
 alias pwsh="pwsh -nologo"
-
-# nvm 
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # asdf init
 . $HOME/.asdf/asdf.sh

@@ -8,9 +8,10 @@ vicmd_symbol = "[](bold yellow)"
 format = "$symbol [|](bold bright-black) "
 
 [hostname]
-ssh_only = true
-format = "[$hostname](bold blue) "
-disabled = false
+disabled = true
+
+[username]
+disabled = true
 
 [directory]
 disabled = false

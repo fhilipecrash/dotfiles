@@ -69,9 +69,9 @@ if [ "$TERM" = "linux" ] ; then
 fi
 
 # custom function
-cd() {
-	builtin cd "$@" && command ls --group-directories-first --color=auto -F
-}
+#cd() {
+#	builtin cd "$@" && command ls --group-directories-first --color=auto -F
+#}
 
 # zsh keybinds
 bindkey "^[[1~"    beginning-of-line
@@ -89,6 +89,7 @@ alias la="l -a"
 alias lla="ls -la"
 alias lt="ls --tree"
 alias pwsh="pwsh -nologo"
+alias history="history 1"
 
 # asdf init
 . $HOME/.asdf/asdf.sh

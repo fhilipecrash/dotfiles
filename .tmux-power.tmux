@@ -36,37 +36,38 @@ prefix_highlight_pos=$(tmux_get @tmux_power_prefix_highlight_pos)
 time_format=$(tmux_get @tmux_power_time_format '%T')
 date_format=$(tmux_get @tmux_power_date_format '%F')
 # short for Theme-Colour
-TC=$(tmux_get '@tmux_power_theme' 'gold')
-case $TC in
-    'gold' )
-        TC='#ffb86c'
-        ;;
-    'redwine' )
-        TC='#b34a47'
-        ;;
-    'moon' )
-        TC='#00abab'
-        ;;
-    'forest' )
-        TC='#228b22'
-        ;;
-    'violet' )
-        TC='#9370db'
-        ;;
-    'snow' )
-        TC='#fffafa'
-        ;;
-    'coral' )
-        TC='#ff7f50'
-        ;;
-    'sky' )
-        TC='#87ceeb'
-        ;;
-    'default' ) # Useful when your term changes colour dynamically (e.g. pywal)
-        TC='colour3'
-        ;;
-esac
+# TC=$(tmux_get '@tmux_power_theme' 'default')
+# case $TC in
+#     'gold' )
+#         TC='#ffb86c'
+#         ;;
+#     'redwine' )
+#         TC='#b34a47'
+#         ;;
+#     'moon' )
+#         TC='#00abab'
+#         ;;
+#     'forest' )
+#         TC='#228b22'
+#         ;;
+#     'violet' )
+#         TC='#9370db'
+#         ;;
+#     'snow' )
+#         TC='#fffafa'
+#         ;;
+#     'coral' )
+#         TC='#ff7f50'
+#         ;;
+#     'sky' )
+#         TC='#87ceeb'
+#         ;;
+#     'default' ) # Useful when your term changes colour dynamically (e.g. pywal)
+#         TC='colour2'
+#         ;;
+# esac
 
+TC=colour2
 G01=#080808 #232
 G02=#121212 #233
 G03=#1c1c1c #234
@@ -88,7 +89,7 @@ tmux_set status-interval 1
 tmux_set status on
 
 # Basic status bar colors
-tmux_set status-fg "$FG"
+tmux_set status-fg "$TC"
 tmux_set status-bg "$BG"
 tmux_set status-attr none
 

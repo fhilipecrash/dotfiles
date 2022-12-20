@@ -117,16 +117,27 @@ eval "$(starship init zsh)"
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
 # set window title
-#set_title() { printf '\033]0;%s\007' $(ps -q $$ -o comm=) }
-#case "$TERM" in (rxvt|rxvt-*|st|st-*|*xterm*|(dt|k|E)term)
-#    local term_title () { print -n "\e]0;${(j: :q)@}\a" }
-#    precmd () {
-#      term_title "$DIR" "zsh"
-#    }
-#    preexec () {
-#      #local CMD="${(ps -q $$ -o comm=)}"
-#      local CMD="${(j:\n:)${(f)1}}"
-#      term_title "$DIR" "$CMD"
-#    }
-#  ;;
-#esac
+if [ `uname` = "Linux" ] ; then
+    case "$TERM" in
+        xterm*|rxvt*)
+            function xtitle () {
+                builtin print -n -- "\e]0;$@\a"
+            }
+            ;;
+        screen)
+            function xtitle () {
+                builtin print -n -- "\ek$@\e\\"
+            }
+            ;;
+        *)
+            function xtitle () {
+            }
+    esac
+
+    function precmd () {
+        xtitle "$(print zsh)"
+    }
+     function preexec () {
+        xtitle "$1"
+    }
+fi

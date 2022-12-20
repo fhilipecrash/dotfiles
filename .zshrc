@@ -37,15 +37,18 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*:*:cd:*' tag-order local-directories directory-stack path-directories
 
 # path
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$PATH:$(yarn global bin)"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/go/bin"
+case `uname` in
+    Darwin)
+        export PATH="$PATH:/usr/local/opt/openjdk@17/bin"
+    ;;
+esac
 
 # env
-export VISUAL=lvim;
-export EDITOR=lvim;
+export VISUAL=nvim;
+export EDITOR=nvim;
 export SUDO_PROMPT="[sudo] %p : "
-export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
 # History configurations
 HISTFILE="$HOME/.zsh_history"
@@ -58,8 +61,16 @@ setopt hist_verify            # show command with history expansion to user befo
 setopt share_history          # share command history data
 
 # source plugins
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+case `uname` in
+    Darwin)
+        source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+        source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+    ;;
+    Linux)
+        source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+        source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    ;;
+esac
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#484E5B,underline"
 
@@ -67,11 +78,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#484E5B,underline"
 if [ "$TERM" = "linux" ] ; then
     echo -en "\e]P0232323"
 fi
-
-# custom function
-#cd() {
-#	builtin cd "$@" && command ls --group-directories-first --color=auto -F
-#}
 
 # zsh keybinds
 bindkey "^[[1~"    beginning-of-line
@@ -82,7 +88,6 @@ bindkey "^[[1;5C" forward-word
 
 # alias
 alias sr='source ~/.zshrc'
-alias wifi="nmtui-connect"
 alias ls="exa --color=auto --icons"
 alias l="ls -l"
 alias la="l -a"
@@ -90,16 +95,23 @@ alias lla="ls -la"
 alias lt="ls --tree"
 alias pwsh="pwsh -nologo"
 alias history="history 1"
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
 # asdf init
-. $HOME/.asdf/asdf.sh
+case `uname` in
+    Darwin)
+        . /usr/local/opt/asdf/libexec/asdf.sh
+    ;;
+    Linux)
+        . /opt/asdf-vm/asdf.sh
+    ;;
+esac
+
 # asdf fpath
 fpath=(${ASDF_DIR}/completions $fpath)
-# set DOTNET_ROOT
-. ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh
 
 # init starship
 eval "$(starship init zsh)"
+
 # setup starship custom prompt
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
-

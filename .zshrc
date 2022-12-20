@@ -22,7 +22,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # case insensitive tab
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path "$HOME/.config/zsh/.zcompcache"
 
-# Define completers
+# define completers
 zstyle ':completion:*' completer _extensions _complete _approximate
 
 zstyle ':completion:*:*:*:*:corrections' format '%F{yellow}!- %d (errors: %e) -!%f'
@@ -33,7 +33,7 @@ zstyle ':completion:*:*:*:*:warnings' format ' %F{red}-- no matches found --%f'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
-# Only display some tags for the command cd
+# only display some tags for the command cd
 zstyle ':completion:*:*:cd:*' tag-order local-directories directory-stack path-directories
 
 # path
@@ -50,7 +50,7 @@ export VISUAL=nvim;
 export EDITOR=nvim;
 export SUDO_PROMPT="[sudo] %p : "
 
-# History configurations
+# history configurations
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=20000
@@ -63,12 +63,12 @@ setopt share_history          # share command history data
 # source plugins
 case `uname` in
     Darwin)
-        source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-        source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-    ;;
-    Linux)
         source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
         source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    ;;
+    Linux)
+        source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+        source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
     ;;
 esac
 
@@ -115,3 +115,18 @@ eval "$(starship init zsh)"
 
 # setup starship custom prompt
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
+
+# set window title
+#set_title() { printf '\033]0;%s\007' $(ps -q $$ -o comm=) }
+#case "$TERM" in (rxvt|rxvt-*|st|st-*|*xterm*|(dt|k|E)term)
+#    local term_title () { print -n "\e]0;${(j: :q)@}\a" }
+#    precmd () {
+#      term_title "$DIR" "zsh"
+#    }
+#    preexec () {
+#      #local CMD="${(ps -q $$ -o comm=)}"
+#      local CMD="${(j:\n:)${(f)1}}"
+#      term_title "$DIR" "$CMD"
+#    }
+#  ;;
+#esac

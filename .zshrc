@@ -50,6 +50,11 @@ export VISUAL=nvim;
 export EDITOR=nvim;
 export SUDO_PROMPT="[sudo] %p : "
 
+# browser path (wsl only)
+if [[ $(grep -i Microsoft /proc/version) ]]; then
+    export BROWSER=/mnt/c/Users/fhili/AppData/Local/Microsoft/WindowsApps/firefox.exe
+fi
+
 # history configurations
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000

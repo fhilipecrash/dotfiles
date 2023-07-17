@@ -1,9 +1,9 @@
 # Alias
-Set-Alias lvim $HOME\.local\bin\lvim.ps1
 Set-Alias ll ls
 
 # Import Modules
 Import-Module Terminal-Icons
+Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
 
 # PSReadLine
 Set-PSReadLineOption -PredictionSource History

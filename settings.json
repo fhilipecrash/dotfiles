@@ -6,18 +6,73 @@
         {
             "command": 
             {
+                "action": "newTab"
+            },
+            "keys": "ctrl+t"
+        },
+        {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+v"
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 0
+            },
+            "keys": "alt+1"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "command": "unbound",
+            "keys": "ctrl+alt+1"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+2"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+3"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+4"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+5"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+2"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 4
+            },
+            "keys": "alt+5"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 3
+            },
+            "keys": "alt+4"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
         },
         {
             "command": 
@@ -27,6 +82,38 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 1
+            },
+            "keys": "alt+2"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 2
+            },
+            "keys": "alt+3"
+        },
+        {
+            "command": "closePane",
+            "keys": "ctrl+w"
+        },
+        {
+            "command": 
+            {
+                "action": "newTab",
+                "index": 1
+            },
+            "keys": "ctrl+shift+t"
         }
     ],
     "centerOnLaunch": true,
@@ -34,15 +121,27 @@
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "initialCols": 150,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
         {
+            "bellStyle": "none",
             "colorScheme": "Catppuccin Mocha",
+            "cursorShape": "underscore",
             "font": 
             {
                 "face": "Sarasa Mono K Nerd Font",
-                "size": 11
+                "size": 11.0,
+                "features": {
+                    "ss01": 1,
+                    "liga": 0
+                }
             },
             "intenseTextStyle": "all",
             "opacity": 75,
@@ -318,5 +417,6 @@
             "yellow": "#808000"
         }
     ],
+    "themes": [],
     "useAcrylicInTabRow": true
 }

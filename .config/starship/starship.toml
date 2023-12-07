@@ -22,5 +22,5 @@ disabled = false
 [lua]
 symbol = "[](blue) "
 
-[python]
-symbol = "[󰌠](yellow)  "
+#[python]
+#symbol = "[󰌠](yellow)  "

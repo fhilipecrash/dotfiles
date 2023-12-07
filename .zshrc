@@ -121,28 +121,40 @@ eval "$(starship init zsh)"
 # setup starship custom prompt
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
-# set window title
-if [ `uname` = "Linux" ] ; then
-    case "$TERM" in
-        xterm*|rxvt*)
-            function xtitle () {
-                builtin print -n -- "\e]0;$@\a"
-            }
-            ;;
-        screen)
-            function xtitle () {
-                builtin print -n -- "\ek$@\e\\"
-            }
-            ;;
-        *)
-            function xtitle () {
-            }
-    esac
+function xtitle () {
+    builtin print -n -- "\e]0;$@\a"
+}
 
-    function precmd () {
-        xtitle "$(print zsh)"
-    }
-     function preexec () {
-        xtitle "$1"
-    }
-fi
+function precmd () {
+    xtitle "$(print $USER)@$(hostname):$(pwd | sed "s|$HOME|~|")"
+}
+
+function chpwd () {
+    xtitle "$(print $USER)@$(hostname):$(pwd | sed "s|$HOME|~|")"
+}
+
+# set window title
+#if [ `uname` = "Linux" ] ; then
+#    case "$TERM" in
+#        xterm*|rxvt*)
+#            function xtitle () {
+#                builtin print -n -- "\e]0;$@\a"
+#            }
+#            ;;
+#        screen)
+#            function xtitle () {
+#                builtin print -n -- "\ek$@\e\\"
+#            }
+#            ;;
+#        *)
+#            function xtitle () {
+#            }
+#    esac
+#
+#    function precmd () {
+#        xtitle "$(print zsh)"
+#    }
+#     function preexec () {
+#        xtitle "$1"
+#    }
+#fi

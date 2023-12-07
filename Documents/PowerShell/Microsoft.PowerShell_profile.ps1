@@ -1,11 +1,6 @@
 # Alias
 Set-Alias la ls
 
-function cd {
-    Set-Location -Path @Args
-    $host.ui.RawUI.WindowTitle = "$($Env:UserName)@$(Invoke-Expression -Command 'hostname'):$(pwd)"
-}
-
 function Set-Location {
     [CmdletBinding()]
     param(

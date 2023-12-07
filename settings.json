@@ -19,14 +19,6 @@
             "keys": "ctrl+c"
         },
         {
-            "command": 
-            {
-                "action": "switchToTab",
-                "index": 0
-            },
-            "keys": "alt+1"
-        },
-        {
             "command": "unbound",
             "keys": "ctrl+alt+1"
         },
@@ -66,6 +58,14 @@
             "command": 
             {
                 "action": "switchToTab",
+                "index": 0
+            },
+            "keys": "alt+1"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
                 "index": 3
             },
             "keys": "alt+4"
@@ -75,6 +75,10 @@
             "keys": "ctrl+v"
         },
         {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -82,10 +86,6 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -132,19 +132,20 @@
         "defaults": 
         {
             "bellStyle": "none",
-            "colorScheme": "Catppuccin Mocha",
+            "colorScheme": "Poimandres",
             "cursorShape": "underscore",
             "font": 
             {
                 "face": "Sarasa Mono K Nerd Font",
-                "size": 11.0,
-                "features": {
-                    "ss01": 1,
-                    "liga": 0
-                }
+                "features": 
+                {
+                    "liga": 0,
+                    "ss01": 1
+                },
+                "size": 11.0
             },
             "intenseTextStyle": "all",
-            "opacity": 75,
+            "opacity": 90,
             "padding": "15",
             "scrollbarState": "hidden",
             "useAcrylic": true
@@ -179,8 +180,21 @@
             {
                 "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
                 "hidden": false,
+                "icon": "C:\\Users\\fhili\\Documents\\386451_arch linux_archlinux_icon.png",
                 "name": "Arch",
                 "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{01aeb34f-4b2e-54e9-b05e-4807839f63ff}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{fd0009e4-efcb-55eb-8f58-267f1e593dee}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
@@ -302,6 +316,29 @@
             "yellow": "#C18301"
         },
         {
+            "background": "#1B1E28",
+            "black": "#000000",
+            "blue": "#89ddff",
+            "brightBlack": "#ACCDFF",
+            "brightBlue": "#add7ff",
+            "brightCyan": "#add7ff",
+            "brightGreen": "#5de4c7",
+            "brightPurple": "#f087bd",
+            "brightRed": "#d0679d",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#fffac2",
+            "cursorColor": "#B473FF",
+            "cyan": "#89ddff",
+            "foreground": "#ACCDFF",
+            "green": "#5de4c7",
+            "name": "Poimandres",
+            "purple": "#f087bd",
+            "red": "#d0679d",
+            "selectionBackground": "#7CB424",
+            "white": "#FFFFFF",
+            "yellow": "#fffac2"
+        },
+        {
             "background": "#002B36",
             "black": "#002B36",
             "blue": "#268BD2",
@@ -392,6 +429,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#D3D7CF",
             "yellow": "#C4A000"
+        },
+        {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
         },
         {
             "background": "#000000",

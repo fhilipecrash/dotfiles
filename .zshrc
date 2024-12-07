@@ -103,17 +103,17 @@ alias history="history 1"
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
 # asdf init
-case `uname` in
-    Darwin)
-        . /usr/local/opt/asdf/libexec/asdf.sh
-    ;;
-    Linux)
-        . /opt/asdf-vm/asdf.sh
-    ;;
-esac
+#case `uname` in
+#    Darwin)
+#        . /usr/local/opt/asdf/libexec/asdf.sh
+#    ;;
+#    Linux)
+#        . /opt/asdf-vm/asdf.sh
+#    ;;
+#esac
 
 # asdf fpath
-fpath=(${ASDF_DIR}/completions $fpath)
+#fpath=(${ASDF_DIR}/completions $fpath)
 
 # init starship
 eval "$(starship init zsh)"
@@ -158,3 +158,11 @@ function chpwd () {
 #        xtitle "$1"
 #    }
 #fi
+
+# nvm init
+source /usr/share/nvm/init-nvm.sh
+
+# pyenv init
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

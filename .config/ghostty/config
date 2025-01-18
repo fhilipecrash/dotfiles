@@ -14,3 +14,5 @@ shell-integration-features = no-cursor
 
 keybind = ctrl+t=new_tab
 keybind = ctrl+w=close_surface
+
+theme = catppuccin-mocha

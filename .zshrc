@@ -50,11 +50,6 @@ export VISUAL=nvim;
 export EDITOR=nvim;
 export SUDO_PROMPT="[sudo] %p : "
 
-# browser path (wsl only)
-if [[ $(grep -i Microsoft /proc/version) ]]; then
-    export BROWSER=/mnt/c/Users/fhili/AppData/Local/Microsoft/WindowsApps/firefox.exe
-fi
-
 # history configurations
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
@@ -77,7 +72,7 @@ case `uname` in
     ;;
 esac
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#484E5B,underline"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="underline"
 
 # tty
 if [ "$TERM" = "linux" ] ; then
@@ -102,21 +97,16 @@ alias pwsh="pwsh -nologo"
 alias history="history 1"
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
-# asdf init
-#case `uname` in
-#    Darwin)
-#        . /usr/local/opt/asdf/libexec/asdf.sh
-#    ;;
-#    Linux)
-#        . /opt/asdf-vm/asdf.sh
-#    ;;
-#esac
-
-# asdf fpath
-#fpath=(${ASDF_DIR}/completions $fpath)
-
 # init starship
 eval "$(starship init zsh)"
+
+# init nvm
+source /usr/share/nvm/init-nvm.sh
+
+# init pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # setup starship custom prompt
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
@@ -133,36 +123,3 @@ function chpwd () {
     xtitle "$(print $USER)@$(hostname):$(pwd | sed "s|$HOME|~|")"
 }
 
-# set window title
-#if [ `uname` = "Linux" ] ; then
-#    case "$TERM" in
-#        xterm*|rxvt*)
-#            function xtitle () {
-#                builtin print -n -- "\e]0;$@\a"
-#            }
-#            ;;
-#        screen)
-#            function xtitle () {
-#                builtin print -n -- "\ek$@\e\\"
-#            }
-#            ;;
-#        *)
-#            function xtitle () {
-#            }
-#    esac
-#
-#    function precmd () {
-#        xtitle "$(print zsh)"
-#    }
-#     function preexec () {
-#        xtitle "$1"
-#    }
-#fi
-
-# nvm init
-source /usr/share/nvm/init-nvm.sh
-
-# pyenv init
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"

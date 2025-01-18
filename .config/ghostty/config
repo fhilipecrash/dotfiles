@@ -1,0 +1,16 @@
+window-theme = ghostty
+window-height = 38
+window-width = 145
+window-padding-x = 10
+window-padding-y = 5
+
+adw-toolbar-style = flat
+
+font-family = "Sarasa Mono K Nerd Font"
+font-size = 10
+
+cursor-style = underline
+shell-integration-features = no-cursor
+
+keybind = ctrl+t=new_tab
+keybind = ctrl+w=close_surface

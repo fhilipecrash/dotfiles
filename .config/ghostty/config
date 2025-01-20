@@ -9,11 +9,14 @@ adw-toolbar-style = flat
 font-family = "Sarasa Mono K Nerd Font"
 font-size = 10
 
-cursor-style = underline
+cursor-style = block
+
 shell-integration-features = no-cursor
 
 keybind = ctrl+t=new_tab
 keybind = ctrl+w=close_surface
+
+working-directory = home
 
 theme = Pnevma
 

@@ -16,7 +16,5 @@ shell-integration-features = no-cursor
 keybind = ctrl+t=new_tab
 keybind = ctrl+w=close_surface
 
-working-directory = home
-
 theme = Pnevma
 

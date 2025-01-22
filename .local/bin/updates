@@ -1,2 +1,0 @@
-#!/bin/sh
-checkupdates && /usr/bin/yay -Qum

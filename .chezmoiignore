@@ -1,0 +1,5 @@
+{{- if ne .chezmoi.os "linux" }}
+.zshrc
+.config/ghostty/config
+{{- end }}
+README.md

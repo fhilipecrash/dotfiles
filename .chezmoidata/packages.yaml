@@ -1,0 +1,55 @@
+packages:
+  arch:
+    aur:
+      - nvm
+      - heroic-games-launcher-bin
+      - visual-studio-code-bin
+      - beekeeper-studio-bin
+      - papirus-folders
+      - zen-browser-bin
+      - spotify
+    pacman:
+      - btop
+      - docker
+      - docker-compose
+      - fastfetch
+      - flatpak
+      - git
+      - github-cli
+      - goverlay
+      - libreoffice-fresh
+      - libreoffice-fresh-pt-br
+      - mangohud
+      - python
+      - python-pip
+      - python-pipx
+      - python-virtualenv
+      - vlc
+      - lib32-mangohud
+      - steam
+      - discord
+      - kcalc
+      - ghostty
+      - lutris
+      - wine-staging
+      - wine-gecko
+      - wine-mono
+      - qbittorrent
+      - obs-studio
+    flatpak:
+      - com.github.Matoking.protontricks
+      - net.davidotek.pupgui2
+  windows:
+    winget:
+      - Spotify.Spotift
+      - Discord.Discord
+      - Fastfetch-cli.Fastfetch
+      - Git.Git
+      - GitHub.cli
+      - Microsoft.PowerShell
+      - Microsoft.VisualStudioCode
+      - OBSProject.OBSStudio
+      - TheDocumentFoundation.LibreOffice
+      - Valve.Steam
+      - VideoLAN.VLC
+      - Zen-Team.Zen-Browser

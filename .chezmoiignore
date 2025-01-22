@@ -1,10 +1,12 @@
 {{- if ne .chezmoi.os "linux" }}
 .zshrc
 .config/ghostty
+.chezmoiscripts/linux/**
 {{- end }}
 {{- if ne .chezmoi.os "windows" }}
 Documents
 AppData
+.chezmoiscripts/windows/**
 {{- end }}
 README.md
 fonts

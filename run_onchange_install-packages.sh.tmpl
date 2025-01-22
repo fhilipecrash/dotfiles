@@ -1,0 +1,7 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+yay -S zsh ghostty pyenv nvm starship zsh-autosuggestions zsh-syntax-highlighting inetutils eza
+{{ else if eq .chezmoi.os "windows" -}}
+#!/bin/sh
+brew install ripgrep
+{{ end -}}

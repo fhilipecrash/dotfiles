@@ -88,7 +88,7 @@ bindkey "^[[1;5C" forward-word
 
 # alias
 alias sr='source ~/.zshrc'
-alias ls="exa --color=auto --icons"
+alias ls="eza --color=auto --icons"
 alias l="ls -l"
 alias la="l -a"
 alias lla="ls -la"

@@ -1,5 +1,10 @@
 {{- if ne .chezmoi.os "linux" }}
 .zshrc
-.config/ghostty/config
+.config/ghostty
+{{- end }}
+{{- if ne .chezmoi.os "windows" }}
+Documents/PowerShell
+AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState
 {{- end }}
 README.md
+fonts

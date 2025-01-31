@@ -1,0 +1,23 @@
+# Moe-Dark Ghostty Conversion
+palette = 0=#a36751
+palette = 1=#ff597d
+palette = 2=#2bafaf
+palette = 3=#39abdc
+palette = 4=#ff6277
+palette = 5=#c679dd
+palette = 6=#ffe185
+palette = 7=#9cacad
+palette = 8=#ba765d
+palette = 9=#ff658e
+palette = 10=#2cb5b3
+palette = 11=#3bb4e8
+palette = 12=#ff6378
+palette = 13=#c679dd
+palette = 14=#ffe78f
+palette = 15=#a5b5b6
+
+background = #26292e
+foreground = #bdc3c7
+cursor-color = #bdc3c7
+selection-background = #202227
+selection-foreground = #bdc3c7

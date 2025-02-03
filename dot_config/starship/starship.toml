@@ -17,11 +17,13 @@ $golang\
 $haskell\
 $java\
 $rust\
-[](fg:#86BBD8 bg:#5e81ac)\
+[](fg:#86BBD8 bg:#81a1c1)\
+$cmd_duration\
+[](fg:#81a1c1 bg:#5e81ac)\
 $character\
 $time\
 [ ](fg:#5e81ac)
-[└─> ](bold green)
+[└─ ](bold green)
 """
 
 # Disable the blank line at the start of the prompt
@@ -29,6 +31,11 @@ add_newline = false
 
 [line_break]
 disabled = false
+
+[cmd_duration]
+style = "bg:#81a1c1 bold"
+min_time = 1000
+format = '[took $duration]($style)'
 
 # You can also replace your username with a neat symbol like  to save some space
 [username]
@@ -111,6 +118,7 @@ style = "bg:#88c0d0 fg:#2e3440 bold"
 format = '[ $symbol ($version) ]($style)'
 
 [python]
+symbol = "󰌠"
 style = "bg:#88c0d0 fg:#2e3440 bold"
 format = '[ $symbol ($version) ]($style)'
 

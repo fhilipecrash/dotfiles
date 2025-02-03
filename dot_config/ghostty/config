@@ -12,6 +12,8 @@ font-size = 10
 
 cursor-style = block
 
+confirm-close-surface = false
+
 shell-integration-features = no-cursor
 
 keybind = ctrl+t=new_tab

@@ -23,7 +23,7 @@ $cmd_duration\
 $character\
 $time\
 [ ](fg:#5e81ac)
-[└─ ](bold green)
+[└─  ](bold green)
 """
 
 # Disable the blank line at the start of the prompt

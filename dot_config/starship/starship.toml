@@ -1,148 +1,26 @@
-format = """
-[┌─](bold green)(bg:inverted fg:#bf616a)\
-[▐](bg:#bf616a fg:#bf616a)\
-$username$hostname\
-[](bg:#d08770 fg:#bf616a)\
-$directory\
-[](fg:#d08770 bg:#ebcb8b)\
-$git_branch\
-$git_status\
-[](fg:#ebcb8b bg:#86BBD8)\
-$c\
-$elixir\
-$elm\
-$nodejs\
-$python\
-$golang\
-$haskell\
-$java\
-$rust\
-[](fg:#86BBD8 bg:#81a1c1)\
-$cmd_duration\
-[](fg:#81a1c1 bg:#5e81ac)\
-$character\
-$time\
-[ ](fg:#5e81ac)
-[└─  ](bold green)
-"""
+format = "$all"
+add_newline = true
 
-# Disable the blank line at the start of the prompt
-add_newline = false
+[character]
+error_symbol = "[](bold red)"
+success_symbol = "[](bold green)"
+vicmd_symbol = "[](bold yellow)"
+format = "$symbol [|](bold bright-black) "
+
+[hostname]
+disabled = true
+
+[username]
+disabled = true
+
+[directory]
+disabled = false
 
 [line_break]
 disabled = false
 
-[cmd_duration]
-style = "bg:#81a1c1 bold"
-min_time = 1000
-format = '[took $duration]($style)'
+[lua]
+symbol = "[](blue) "
 
-# You can also replace your username with a neat symbol like  to save some space
-[username]
-show_always = true
-style_user = "bg:#bf616a bold"
-style_root = "bg:#bf616a bold"
-format = '[$user]($style)'
-
-[hostname]
-style = "bg:#bf616a bold"
-format = '[@$hostname ]($style)'
-ssh_only = false
-disabled = false
-
-[directory]
-style = "bg:#d08770 bold"
-format = "[ $path ]($style)"
-truncation_length = 0
-truncation_symbol = ""
-
-
-[c]
-symbol = " "
-style = "bg:#88c0d0 fg:#2e3440 bold"
-format = '[ $symbol ($version) ]($style)'
-
-[docker_context]
-symbol = " "
-style = "bg:#81a1c1 fg:#2e3440 bold"
-format = '[ $symbol $context ]($style) $path'
-
-[kubernetes]
-symbol = "☸ "
-style = "bg:#81a1c1 fg:#2e3440 bold"
-format = '[ $symbol $context ]($style)'
-disabled = true
-
-[elixir]
-symbol = " "
-style = "bg:#88c0d0"
-format = '[ $symbol ($version) ]($style)'
-
-[elm]
-symbol = " "
-style = "bg:#88c0d0"
-format = '[ $symbol ($version) ]($style)'
-
-[git_branch]
-symbol = ""
-style = "bg:#ebcb8b bold fg:#bf616a"
-format = '[ $symbol $branch ]($style)'
-
-[git_status]
-style = "bg:#ebcb8b bold fg:#bf616a"
-format = '[$all_status$ahead_behind ]($style)'
-
-[golang]
-symbol = " "
-style = "bg:#88c0d0 fg:#2e3440 bold"
-format = '[ $symbol ($version) ]($style)'
-
-[haskell]
-symbol = " "
-style = "bg:#88c0d0"
-format = '[ $symbol ($version) ]($style)'
-
-[java]
-symbol = " "
-style = "bg:#88c0d0 fg:#2e3440 bold"
-format = '[ $symbol ($version) ]($style)'
-
-[julia]
-symbol = " "
-style = "bg:#88c0d0 fg:#2e3440 bold"
-format = '[ $symbol ($version) ]($style)'
-
-[nodejs]
-symbol = ""
-style = "bg:#88c0d0 fg:#2e3440 bold"
-format = '[ $symbol ($version) ]($style)'
-
-[python]
-symbol = "󰌠"
-style = "bg:#88c0d0 fg:#2e3440 bold"
-format = '[ $symbol ($version) ]($style)'
-
-[nim]
-symbol = " "
-style = "bg:#88c0d0 fg:#2e3440 bold"
-format = '[ $symbol ($version) ]($style)'
-
-[rust]
-symbol = ""
-style = "bg:#88c0d0 fg:#2e3440 bold"
-format = '[ $symbol ($version) ]($style)'
-
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "bg:#5e81ac bold"
-# format = '[ ♥ $time ]($style)'
-format = '[$time ]($style)'
-
-[character]
-disabled = false
-success_symbol = "[ ♥ ](bg:#5e81ac)"
-error_symbol = "[ ✖ ](bg:#5e81ac)"
-# format = '[ ♥ $time ]($style)'
-format = "$symbol"
-
+#[python]
+#symbol = "[󰌠](yellow)  "

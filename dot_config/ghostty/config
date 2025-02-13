@@ -19,6 +19,6 @@ shell-integration-features = no-cursor
 keybind = ctrl+t=new_tab
 keybind = ctrl+w=close_surface
 
-theme = Pnevma
+theme = moe-dark
 #background-blur = true
 #background-opacity = 0.7

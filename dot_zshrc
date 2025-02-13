@@ -93,6 +93,7 @@ alias l="ls -l"
 alias la="l -a"
 alias lla="ls -la"
 alias lt="ls --tree"
+alias cat="bat"
 alias pwsh="pwsh -nologo"
 alias history="history 1"
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'

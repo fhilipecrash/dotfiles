@@ -62,7 +62,7 @@
     "keyColor": "blue"
     },
     {
-    "type": "host",
+    "type": "chassis",
     "key": "󰌢 SYSTEM",
     "keyColor": "green"
     },

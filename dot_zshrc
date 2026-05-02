@@ -1,5 +1,6 @@
 #! /bin/zsh
 SHELL=$(which zsh || echo '/bin/zsh')
+(cat ~/.local/state/quickshell/user/generated/terminal/sequences.txt)
 
 setopt autocd              # change directory just by typing its name
 setopt interactivecomments # allow comments in interactive mode
@@ -97,6 +98,7 @@ alias cat="bat"
 alias pwsh="pwsh -nologo"
 alias history="history 1"
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+alias nvidia-smi='watch -n 1 nvidia-smi'
 
 # init starship
 eval "$(starship init zsh)"

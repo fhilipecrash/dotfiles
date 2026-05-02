@@ -8,6 +8,7 @@ window-padding-y = 10
 adw-toolbar-style = flat
 
 font-family = "Sarasa Mono K Nerd Font"
+#font-family = "JetBrainsMono NF"
 font-size = 10
 
 cursor-style = block
@@ -19,7 +20,7 @@ shell-integration-features = no-cursor
 keybind = ctrl+t=new_tab
 keybind = ctrl+w=close_surface
 
-#theme = Monokai Pro Spectrum
+#theme = Aura
 theme = moe-dark
 #background-blur = true
 #background-opacity = 0.7
